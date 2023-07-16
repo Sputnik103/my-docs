@@ -1,7 +1,12 @@
 site_name: My Docs
 nav:
+  - 主页: index.md
+  - About me ...:   
     - hello.md
-    - spider.md
+  - Python随想录: 
+    - Selenium爬虫应用实例: python_cases/spider.md
+  - 生活记录: 
+    - 毕业旅行——霓虹: life/毕业旅行.md
 theme:
   name: material
 markdown_extensions:
