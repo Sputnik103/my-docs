@@ -5,6 +5,8 @@ nav:
     - hello.md
   - Python随想录: 
     - Selenium爬虫应用实例: python_cases/spider.md
+  - Markdown相关:
+    - Markdown常用格式: markdown/markdown_template.md
   - 生活记录: 
     - 毕业旅行——霓虹: life/毕业旅行.md
 theme:
