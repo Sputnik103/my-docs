@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Zhang Zhou's website
 nav:
   - 主页: index.md
   - About me ...:   
@@ -10,7 +10,26 @@ nav:
   - 生活记录: 
     - 毕业旅行——霓虹: life/毕业旅行.md
 theme:
+  # https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
   name: material
+
+  # https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme
+  custom_dir: overrides
+
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+  palette:
+    primary: white
+    accent: deep orange
+
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
+  font:
+    text: Noto Serif
+    code: Roboto Mono
+
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
+  icon:
+    logo: fontawesome/solid/code
+  favicon: favicon.png
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -18,4 +37,3 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
-
