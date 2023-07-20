@@ -18,8 +18,27 @@ theme:
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
   palette:
-    primary: white
-    accent: deep orange
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  language: zh # 一些提示性的文字会变成中文
+  logo: assets/logo.png
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
   font:
@@ -27,8 +46,6 @@ theme:
     code: Roboto Mono
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
-  icon:
-    logo: fontawesome/solid/code
   favicon: favicon.png
 markdown_extensions:
   - pymdownx.arithmatex:
