@@ -1,14 +1,27 @@
+#
+# Personal Website
+# 
 site_name: Zhang Zhou's website
+site_url: https://zhangzhou.site/ # must have the trailing slash
+site_author: Zhang Zhou
+site_description: Interesting little things in my life and learning process.
+copyright: > # should remain a link to the original theme
+  &copy; 2023-2023 Zhang Zhou's website<br>
+  <a href="https://github.com/Sputnik103/my-docs">Blog Theme</a> /
+  <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
 nav:
   - 主页: index.md
-  - About me ...:   
+  - About me:   
     - hello.md
   - Python随想录: 
     - Selenium爬虫应用实例: python_cases/spider.md
   - Markdown相关:
     - Markdown常用格式: markdown/markdown_template.md
   - 生活记录: 
+    - バイト: life/intern.md
+    - 旅行: life/旅行.md
     - 毕业旅行——霓虹: life/毕业旅行.md
+
 theme:
   # https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
   name: material
@@ -38,7 +51,7 @@ theme:
         name: Switch to light mode
 
   language: zh # 一些提示性的文字会变成中文
-  logo: assets/logo.png
+  logo: assets/logo.gif
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
   font:
@@ -46,10 +59,103 @@ theme:
     code: Roboto Mono
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
+  # icon:
+  #   logo: fontawesome/solid/code
   favicon: favicon.png
+
+  features:
+    # Navigation
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+    # - navigation.instant # some features may not work properly with XHR
+    - navigation.tracking # the URL changes with the active anchor
+    - navigation.tabs # first top-level folders are shown as tabs
+    # - navigation.tabs.sticky # tabs always show
+    # - navigation.sections # second-level folders are expanded
+    # - navigation.expand # all folders are expanded
+    - navigation.indexes # link an index page to its parent folder
+    - navigation.top # 回到页面顶部
+    # - toc.integrate # show the table of contents in the navigation panel
+    
+    # Search
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
+    - search.suggest # display the likeliest completion for the last word
+    - search.highlight # highlight all occurrences
+    - search.share # show a share button of the current search
+
+    # Header
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/
+    # - header.autohide # hide the post title when scroll down
+
+    # Content
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations
+    - content.code.annotate # add comment to code blocks
+    - content.tabs.link # link tabs with the same label
+
+#
+# Extensions
+#
 markdown_extensions:
-  - pymdownx.arithmatex:
+  #
+  # Python Markdown
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  #
+  - abbr # add a small tooltip to elements
+  - admonition # add call-out blocks
+  - attr_list # allow to add HTML attributes and CSS classes
+  - def_list # add description lists
+  - footnotes # define inline footnotes
+  - meta # attach arbitrary key-value pairs to a document
+  - md_in_html # allow to write Markdown inside HTML elements
+  - tables # create tables in Markdown
+  - toc: # generate a table of contents from documents
+      permalink: '#' # anchor
+      toc_depth: 4 # header 1 to header 4
+      slugify: !!python/name:pymdownx.slugs.uslugify # convert title to html-compatible text
+  - sane_lists # make better lists
+  - smarty: # convert some special characters
+      smart_angled_quotes: true
+
+  #
+  # Python Markdown Extensions
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/
+  #
+  - pymdownx.arithmatex: # render math equations
       generic: true
+  # - pymdownx.betterem: # improve the detection of Markup to emphasize text in Markdown
+      # smart_enable: all
+  - pymdownx.caret # define superscript
+  - pymdownx.mark # highlight text
+  - pymdownx.tilde # define subscript
+  - pymdownx.critic # track changes
+  - pymdownx.details # add collapsible call-outs
+  - pymdownx.emoji: # add inlines bundled and custom icons and emojis 
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences # define code blocks and nesting of code
+  - pymdownx.highlight: # highlight of code blocks
+      linenums_style: pymdownx-inline
+      # anchor_linenums: true # create anchor link on each line of code
+  - pymdownx.inlinehilite # highlight inline code blocks
+  - pymdownx.smartsymbols # convert some sequences of characters into their corresponding symbols
+  - pymdownx.snippets: #  embed content from arbitrary files into a document
+      check_paths: true
+  - pymdownx.tabbed: # group related content and code blocks under accessible tabs
+      alternate_style: true
+  - pymdownx.tasklist: # define list of task with checkbox
+      custom_checkbox: true
+  - pymdownx.escapeall:
+      hardbreak: true # use \ to create new line
+      nbsp: true # use \<space> to create &nbsp;
+  # - pymdownx.keys # syntax ++ctrl+c++ does not look clear in MD document
+  - pymdownx.progressbar
+  
+  #
+  # Extra extensions
+  #
+  - markdown_captions # add caption to figures
+  - customblocks # use ::: to create a new <div>
+  # - cell_row_span # merge cells in a table
+  # - kbdextension # syntax [[ctrl]][[c]] does not look clear in MD document
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
