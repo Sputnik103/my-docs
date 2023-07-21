@@ -152,32 +152,32 @@ markdown_extensions:
 #
 # Extras
 #
-extra:
+# extra:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
-  analytics:
-    provider: google
-    property: G-144Q0VJMBT
-    # property: UA-42618265-2
+  # analytics:
+  #   provider: google
+  #   property: G-144Q0VJMBT
+  #   # property: UA-42618265-2
   
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#cookie-consent
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+  # # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#cookie-consent
+  # consent:
+  #   title: Cookie consent
+  #   description: >-
+  #     We use cookies to recognize your repeated visits and preferences, as well
+  #     as to measure the effectiveness of our documentation and whether users
+  #     find what they're searching for. With your consent, you're helping us to
+  #     make our documentation better.
   
-  disqus: "Sputnik103-github-io"
+  # disqus: "Sputnik103-github-io"
   
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Sputnik103
-      name: GitHub | Sputnik103
-    - icon: fontawesome/brands/bilibili
-      link: https://space.bilibili.com/13132391
-      name: BiliBili | Jason_ZZ
+  # social:
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/Sputnik103
+  #     name: GitHub | Sputnik103
+  #   - icon: fontawesome/brands/bilibili
+  #     link: https://space.bilibili.com/13132391
+  #     name: BiliBili | Jason_ZZ
   # generator: false # hide the line "Made with Material for MkDocs"
 
   #
@@ -187,6 +187,9 @@ extra:
   - customblocks # use ::: to create a new <div>
   # - cell_row_span # merge cells in a table
   # - kbdextension # syntax [[ctrl]][[c]] does not look clear in MD document
+# extra_css:
+#   - docs/assets/view-bigimg.css
+#   - docs/assets/extra.css
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
