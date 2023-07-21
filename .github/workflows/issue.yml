@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: 3.x
         # 使用pip包管理工具安装mkdocs-material
-      - run: pip install mkdocs-material 
+      - run: 
+          pip install mkdocs-material
+          pip install -U markdown-captions
+          pip install -U markdown-customblocks
         # 使用mkdocs-material部署gh-pages分支
       - run: mkdocs gh-deploy --force 
