@@ -27,6 +27,5 @@ jobs:
         pip install mkdocs-material
         pip install -U markdown-captions
         pip install -U markdown-customblocks
-        pip install mkdocs-variables-plugin
         # 使用mkdocs-material部署gh-pages分支
       - run: mkdocs gh-deploy --force 
