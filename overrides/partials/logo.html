@@ -1,0 +1,90 @@
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Logo -->
+{% if config.theme.logo %}
+  <img src="{{ config.theme.logo | url }}" alt="logo" />
+{% else %}
+  {% set icon = config.theme.icon.logo or "material/library" %}
+  {% include ".icons/" ~ icon ~ ".svg" %}
+{% endif %}
+
+
+<!-- Add this inside the <body> section -->
+<script>
+  // 本段代码实现了logo随主体变化而变化
+  // Function to toggle the logo based on the theme
+  function toggleLogoBasedOnTheme() {
+    const logoElement = document.querySelector('.md-header__button.md-logo img');
+    const lightLogoSrc = '/assets/logo_light.gif';
+    const darkLogoSrc = '/assets/logo_dark.gif';
+
+    // Get the value of data-md-color-scheme attribute
+    const colorScheme = document.body.getAttribute('data-md-color-scheme');
+
+    // Check if the current theme is dark (slate)
+    const isDarkTheme = colorScheme === 'slate';
+
+    // Set the appropriate logo based on the theme
+    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
+  }
+
+  // Function to handle the theme change event
+  function handleThemeChange() {
+    // Listen for the themechange event on the document
+    document.addEventListener('themechange', function () {
+      // Call the function to toggle the logo based on the theme
+      toggleLogoBasedOnTheme();
+    });
+  }
+
+  // Function to handle the dark mode switch event
+  function handleDarkModeSwitch() {
+    const darkModeInput = document.getElementById('__palette_2');
+
+    // Listen for the change event on the dark mode switch
+    darkModeInput.addEventListener('change', function () {
+      // Call the function to toggle the logo based on the theme
+      toggleLogoBasedOnTheme();
+    });
+  }
+
+  // Function to handle the light mode switch event
+  function handleLightModeSwitch() {
+    const lightModeInput = document.getElementById('__palette_1');
+
+    // Listen for the change event on the light mode switch
+    lightModeInput.addEventListener('change', function () {
+      // Call the function to toggle the logo based on the theme
+      toggleLogoBasedOnTheme();
+    });
+  }
+
+  // Call the function when the page loads
+  document.addEventListener('DOMContentLoaded', function () {
+    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
+    handleThemeChange(); // Add event listener for theme change
+    handleDarkModeSwitch(); // Add event listener for dark mode switch
+    handleLightModeSwitch(); // Add event listener for light mode switch
+  });
+</script>
+  

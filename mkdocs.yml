@@ -10,17 +10,19 @@ copyright: > # should remain a link to the original theme
   <a href="https://github.com/Sputnik103/my-docs">Blog Theme</a> /
   <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
 nav:
-  - 主页: index.md
-  - About me:   
-    - hello.md
-  - Python随想录: 
+  - Home: index.md
+  - About: about/index.md
+  - Life: 
+    - life/index.md
+    - バイト（打工）:
+      - バイト（打工）: life/intern.md
+    - 旅行:
+      - 解封后旅行（回忆版）: life/解封后旅行.md
+      - 毕业旅行——霓虹: life/毕业旅行.md
+  - Python: 
     - Selenium爬虫应用实例: python_cases/spider.md
-  - Markdown相关:
+  - Markdown:
     - Markdown常用格式: markdown/markdown_template.md
-  - 生活记录: 
-    - バイト: life/intern.md
-    - 旅行: life/旅行.md
-    - 毕业旅行——霓虹: life/毕业旅行.md
 
 theme:
   # https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
@@ -51,7 +53,7 @@ theme:
         name: Switch to light mode
 
   language: zh # 一些提示性的文字会变成中文
-  logo: assets/logo_light.gif
+  logo: /assets/logo_light.gif
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
   font:
@@ -194,4 +196,3 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
-  - js/switch_logo.js
