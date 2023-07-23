@@ -31,7 +31,6 @@
 
 <!-- Add this inside the <body> section -->
 <script>
-  // 本段代码实现了logo随主体变化而变化
   // Function to toggle the logo based on the theme
   function toggleLogoBasedOnTheme() {
     const logoElement = document.querySelector('.md-header__button.md-logo img');
@@ -46,6 +45,15 @@
 
     // Set the appropriate logo based on the theme
     logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
+  }
+
+  // Function to handle the theme change event
+  function handleThemeChange() {
+    // Listen for the themechange event on the document
+    document.addEventListener('themechange', function () {
+      // Call the function to toggle the logo based on the theme
+      toggleLogoBasedOnTheme();
+    });
   }
 
   // Function to handle the dark mode switch event
