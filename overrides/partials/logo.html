@@ -48,15 +48,6 @@
     logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
   }
 
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
   // Function to handle the dark mode switch event
   function handleDarkModeSwitch() {
     const darkModeInput = document.getElementById('__palette_2');
