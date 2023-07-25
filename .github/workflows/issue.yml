@@ -25,4 +25,4 @@ jobs:
         # 使用pip包管理工具安装mkdocs-material
       - run: python3 -m pip install -r requirements.txt
         # 使用mkdocs-material部署gh-pages分支
-      - run: mkdocs gh-deploy --force -b publishment
+      - run: mkdocs gh-deploy --force
