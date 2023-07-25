@@ -107,7 +107,7 @@ markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   #
   - abbr # add a small tooltip to elements
-  - admonition # add call-out blocks !!!info等
+  - admonition # add call-out blocks (!!!info等)
   - attr_list # allow to add HTML attributes and CSS classes
   - def_list # add description lists
   - footnotes # define inline footnotes
