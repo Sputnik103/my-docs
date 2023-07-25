@@ -15,13 +15,17 @@ nav:
   - Life: 
     - life/index.md
     - バイト（打工）:
-      - バイト（打工）: life/intern.md
+      - 咨询实习: life/intern/consulting.md
+      - 互联网实习: life/intern/internet.md
+      - 金融实习: life/intern/finance.md
     - 旅行:
-      - 解封后旅行（回忆版）: life/解封后旅行.md
-      - 毕业旅行——霓虹: life/毕业旅行.md
+      - 解封后旅行（回忆版）: life/travel/travel_after_covid.md
+      - 毕业旅行——霓虹: life/travel/graduation_travel.md
   - Python: 
+    - python_cases/index.md
     - Selenium爬虫应用实例: python_cases/spider.md
   - Markdown:
+    - markdown/index.md
     - Markdown常用格式: markdown/markdown_template.md
 
 theme:
@@ -69,6 +73,7 @@ theme:
     # Navigation
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
     # - navigation.instant # some features may not work properly with XHR
+    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
     - navigation.tracking # the URL changes with the active anchor
     - navigation.tabs # first top-level folders are shown as tabs
     # - navigation.tabs.sticky # tabs always show
@@ -102,7 +107,7 @@ markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   #
   - abbr # add a small tooltip to elements
-  - admonition # add call-out blocks
+  - admonition # add call-out blocks !!!info等
   - attr_list # allow to add HTML attributes and CSS classes
   - def_list # add description lists
   - footnotes # define inline footnotes
