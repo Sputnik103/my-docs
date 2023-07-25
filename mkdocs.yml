@@ -27,6 +27,7 @@ nav:
   - Markdown:
     - markdown/index.md
     - Markdown常用格式: markdown/markdown_template.md
+  - Tags: tags/tags.md
 
 theme:
   # https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
@@ -67,7 +68,7 @@ theme:
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
   # icon:
   #   logo: fontawesome/solid/code
-  favicon: favicon.png
+  favicon: /assets/favicon3.png
 
   features:
     # Navigation
@@ -79,7 +80,6 @@ theme:
     # - navigation.tabs.sticky # tabs always show
     # - navigation.sections # second-level folders are expanded
     # - navigation.expand # all folders are expanded
-    - navigation.indexes # link an index page to its parent folder
     - navigation.top # 回到页面顶部
     # - toc.integrate # show the table of contents in the navigation panel
     
