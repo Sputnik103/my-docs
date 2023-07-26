@@ -3,7 +3,7 @@
 # 
 site_name: Zhang Zhou's website
 site_url: https://zhangzhou.site/ # must have the trailing slash
-site_author: Zhang Zhou
+site_author: Zhang Zhou(jason_zhang_03@icloud.com)
 site_description: Interesting little things in my life and learning process.
 copyright: > # should remain a link to the original theme
   &copy; 2023-2023 Zhang Zhou's website<br>
@@ -12,23 +12,26 @@ copyright: > # should remain a link to the original theme
 nav:
   - Home: index.md
   - About: about/index.md
-  - Life: 
-    - life/index.md
+  - Blog: 
+    - blog/index.md
     - バイト（打工）:
-      - 咨询实习: life/intern/consulting.md
-      - 互联网实习: life/intern/internet.md
-      - 金融实习: life/intern/finance.md
+      - 咨询实习: blog/intern/consulting.md
+      - 互联网实习: blog/intern/internet.md
+      - 金融实习: blog/intern/finance.md
     - 旅行:
-      - 解封后旅行（回忆版）: life/travel/travel_after_covid.md
-      - 毕业旅行——霓虹: life/travel/graduation_travel.md
-  - Python: 
-    - python_cases/index.md
-    - Selenium爬虫应用实例: python_cases/spider.md
-  - Markdown:
-    - markdown/index.md
-    - Markdown常用格式: markdown/markdown_template.md
+      - 解封后旅行（回忆版）: blog/travel/travel_after_covid.md
+      - 毕业旅行——霓虹: blog/travel/graduation_travel.md
+  - Projects: 
+    - projects/index.md
+    - Selenium爬虫应用实例: projects/spider.md
+  - Articles:
+    - articles/index.md
+    - Markdown常用格式: articles/markdown_template.md
   - Tags: tags/tags.md
 
+#
+# Theme settings
+#
 theme:
   # https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
   name: material
@@ -40,22 +43,22 @@ theme:
   palette:
 
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: white
-      accent: deep orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    # - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: white
+    accent: deep orange
+      # toggle:
+      #   icon: material/brightness-7
+      #   name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: deep orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    # # Palette toggle for dark mode
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   primary: black
+    #   accent: deep orange
+    #   toggle:
+    #     icon: material/brightness-4
+    #     name: Switch to light mode
 
   language: zh # 一些提示性的文字会变成中文
   logo: /assets/logo_light.gif
@@ -99,6 +102,48 @@ theme:
     - content.tabs.link # link tabs with the same label
 
 #
+# Plugins
+#
+plugins:
+  - search # must be included at the first place
+  # - tags: # we have our own internal tag feature
+        # tags_file: tags.md # generated links do not work
+  - awesome-pages:
+      # collapse_single_pages: true # replaced by navigation.indexes
+  # - section-index # must be after awesome-pages, replaced by navigation.indexes
+  - git-revision-date-localized:
+        enable_creation_date: true
+        fallback_to_build_date: true
+        type: iso_date
+  - encryptcontent:
+        hljs: false
+        arithmatex: false
+        mermaid2: false
+        password_button: true
+        remember_password: true
+        default_expire_dalay: 24
+        # reload_scripts:
+            # - "./assets/extra.js"
+  - exclude:
+        glob:
+          - '*/exclude/*'
+        regex:
+          - '.*\[exclude\].*'
+  # - pdf-with-js:
+        # enable: false # should enable only when need PDF files
+        # add_download_button: false
+        # display_header_footer: true
+        # header_template: >-
+            # <div style="font-size:8px; margin:auto; color:lightgray;">
+                # <span class="title"></span>
+            # </div>
+        # footer_template: >-
+            # <div style="font-size:8px; margin:auto; color:lightgray;">
+                # Page <span class="pageNumber"></span> of 
+                # <span class="totalPages"></span>
+            # </div>
+
+#
 # Extensions
 #
 markdown_extensions:
@@ -117,7 +162,7 @@ markdown_extensions:
   - toc: # generate a table of contents from documents
       permalink: '#' # anchor
       toc_depth: 4 # header 1 to header 4
-      slugify: !!python/name:pymdownx.slugs.uslugify # convert title to html-compatible text
+      # slugify: !!python/name:pymdownx.slugs.uslugify # convert title to html-compatible text
   - sane_lists # make better lists
   - smarty: # convert some special characters
       smart_angled_quotes: true
@@ -155,37 +200,6 @@ markdown_extensions:
       nbsp: true # use \<space> to create &nbsp;
   # - pymdownx.keys # syntax ++ctrl+c++ does not look clear in MD document
   - pymdownx.progressbar
-  
-#
-# Extras
-#
-# extra:
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
-  # analytics:
-  #   provider: google
-  #   property: G-144Q0VJMBT
-  #   # property: UA-42618265-2
-  
-  # # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#cookie-consent
-  # consent:
-  #   title: Cookie consent
-  #   description: >-
-  #     We use cookies to recognize your repeated visits and preferences, as well
-  #     as to measure the effectiveness of our documentation and whether users
-  #     find what they're searching for. With your consent, you're helping us to
-  #     make our documentation better.
-  
-  # disqus: "Sputnik103-github-io"
-  
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer
-  # social:
-  #   - icon: fontawesome/brands/github
-  #     link: https://github.com/Sputnik103
-  #     name: GitHub | Sputnik103
-  #   - icon: fontawesome/brands/bilibili
-  #     link: https://space.bilibili.com/13132391
-  #     name: BiliBili | Jason_ZZ
-  # generator: false # hide the line "Made with Material for MkDocs"
 
   #
   # Extra extensions
@@ -194,9 +208,41 @@ markdown_extensions:
   - customblocks # use ::: to create a new <div>
   # - cell_row_span # merge cells in a table
   # - kbdextension # syntax [[ctrl]][[c]] does not look clear in MD document
-# extra_css:
-#   - docs/assets/view-bigimg.css
-#   - docs/assets/extra.css
+
+#
+# Extras
+#
+extra:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
+  analytics:
+    provider: google
+    property: G-144Q0VJMBT
+    # property: UA-42618265-2
+  
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#cookie-consent
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  
+  disqus: "Sputnik103-github-io"
+  
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Sputnik103
+      name: GitHub | Sputnik103
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/13132391
+      name: BiliBili | Jason_ZZ
+  generator: false # hide the line "Made with Material for MkDocs"
+
+extra_css:
+  # - /assets/view-bigimg.css
+  - /assets/extra.css
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

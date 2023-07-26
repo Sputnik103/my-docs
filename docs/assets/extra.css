@@ -66,7 +66,7 @@
 }
 /* paragraph */
 .md-typeset {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 /* headers */
 .md-typeset h1 {
@@ -174,14 +174,14 @@
 }
 /* admonitions */
 .md-typeset :is(.admonition, details) {
-    border: none !important;
+    /* border: none !important;
     background-color: aliceblue !important;
-    box-shadow: none;
-    font-size: unset;
-    margin: 1em 0;
-    padding: 0.5em 1em;
+    box-shadow: none; */
+    font-size: 0.8rem;
+    /* margin: 1em 0;
+    padding: 0.5em 1em; */
 }
-.md-typeset :is(.admonition-title, summary) {
+/* .md-typeset :is(.admonition-title, summary) {
     border: none;
     background-color: unset !important;
     margin: 0.25em 0;
@@ -220,7 +220,7 @@ html .md-typeset :is(.admonition-title,summary):last-child {
   background-color: teal;
   -webkit-mask-image: var(--md-admonition-icon--tag);
           mask-image: var(--md-admonition-icon--tag);
-}
+} */
 /* list */
 .md-typeset .task-list-indicator:before {
     background-color: gray;
