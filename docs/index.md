@@ -38,7 +38,7 @@ while "False":
 
 		1999年10月3日（生日）以来的经历，音乐，电影，书籍……这里是一切与我相关，想了解我的话就来看吧！
 
-        [Unveil secrets](About/){.md-button}
+        [Explore](About/){.md-button}
 
     ::: col
 

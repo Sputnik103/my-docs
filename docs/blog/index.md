@@ -1,9 +1,19 @@
 ---
 title: 生·活
-hide:
-- feedback
-- comments
+description: ""
+disqus: ""
 ---
+
+<style>
+    .md-typeset h1 {
+        color: navy;
+    }
+    .md-typeset h2 {
+        color: black;
+    }
+</style>
+
+
 
 这里主要是一些实习经历与见闻，有好有坏，当然还是秉着记录有趣生活的初衷。
 
