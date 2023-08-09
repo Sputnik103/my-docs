@@ -62,8 +62,9 @@ tags:
 </div>
 
 ![type:video](assets/japan/IMG_5395.mp4)
-![type:video](./assets/japan/IMG_5395.mp4)
-
+<video controls>
+  <source src="../assets/japan/IMG_5395.mp4" type="video/mp4">
+</video>
 
 ![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16905870640733.jpg)
 
