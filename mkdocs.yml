@@ -110,7 +110,7 @@ plugins:
         - en
         # 日语搜索汉字
         - ja
-  # - mkdocs-video
+  - mkdocs-video
   - glightbox:
       effect: zoom
       zoomable: true
