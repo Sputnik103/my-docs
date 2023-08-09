@@ -6,7 +6,7 @@ tags:
   - Japan
 ---
 
- <style>
+ <!-- <style>
     .polaroid {
         display: inline-block;
         padding: 10px 10px 30px 10px;
@@ -19,7 +19,7 @@ tags:
         max-width: 100%;
         border: 1px solid black
     }
-</style>
+</style> -->
 
 
 ## Day 1 上海→大阪
@@ -29,7 +29,7 @@ tags:
 上海浦东➡️大阪关西国际机场，预计时间2.5小时实际只飞了2小时，但是日本有一个小时时差，落地净亏1小时。
 关西国际机场是日本填海造陆的产物，滑行的跑道几乎是四面环水，最后降落的时候有一段非常贴近海面的滑行，非常的炫酷。（太炫酷了然后忘记拍照了）
 入境后乘坐了JR Haruka特急线，车身纹满了hello kitty的图案，非常的有少女心。但是不得不说日本的铁路系统真的很复杂，我们一开始上错了车（另一趟车也能到达目的地但不是特急），后来匆匆忙忙补票上车了again没有来得及拍照，最后在离开大阪的时候补拍了一张。
-
+<!-- 
 <div class="image-grid" data-columns="2">
     <div class="image-item">
         <div class="image-container">
@@ -43,12 +43,12 @@ tags:
             <div class="image-title">我拍的</div>
         </div>
     </div>
-</div>
+</div> -->
 
 !!! info
     上面说到关西机场是填海造陆的产物，haruka在出机场那一段路上就是穿越海面而行，两边的景色非常美丽，在列车上还看到了一朵类似核爆的云。
 
-<div class="image-grid" data-columns="2">
+<!-- <div class="image-grid" data-columns="2">
     <div class="image-item">
         <div class="image-container">
             <img src="../assets/japan/haruka-download.jpeg" alt="图片描述1">
@@ -59,7 +59,7 @@ tags:
             <img src="../assets/japan/haruka.jpeg" alt="图片描述2">
         </div>
     </div>
-</div>
+</div> -->
 
 ![type:video](./assets/japan/IMG_5395.mp4)
 <video controls="" autoplay="" name="media">
