@@ -21,7 +21,7 @@ hide:
     }
 </style>
 
-# 🎉 Congrats! You found me! 🎉
+# 🎉Congrats! You found me🎉!
 
 ```python title="Hello.py"
 while "False":
@@ -38,7 +38,7 @@ while "False":
 
 		1999年10月3日（生日）以来的经历，音乐，电影，书籍……这里是一切与我相关，想了解我的话就来看吧！
 
-        [Explore](About/){.md-button}
+        [Explore](about/index.md){.md-button}
 
     ::: col
 
@@ -46,7 +46,7 @@ while "False":
 
 		这里是我的一些随想与见闻，记录下来与你分享，希望你至少能在这里收获快乐。
 
-        [Read news](Blog/){.md-button}
+        [Read news](blog/index.md){.md-button}
 
 
 ::: row
@@ -57,7 +57,7 @@ while "False":
 
         A list of my projects which are done for learning and practicing in free time. Wanna give me a hand ?! Let's do it together.
 
-        [See projects](projects/){.md-button}
+        [See projects](projects/index.md){.md-button}
 	
 	::: col
 
@@ -65,7 +65,7 @@ while "False":
 
         A list of my projects which are done for learning and practicing in free time. Wanna give me a hand ?! Let's do it together.
 
-        [See articles](articles/){.md-button}
+        [See articles](articles/index.md){.md-button}
 
 
 ## :material-github: GitHub Stats
