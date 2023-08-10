@@ -6,19 +6,10 @@ tags:
   - Japan
 ---
 
- <style>
-    .polaroid {
-        display: inline-block;
-        padding: 10px 10px 30px 10px;
-        background-color: white;
-        border: 1px solid black;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .polaroid img {
-        max-width: 100%;
-        border: 1px solid black
-    }
+<style>
+p{
+text-indent: 2em; /*首行缩进*/
+}
 </style>
 
 
@@ -30,86 +21,123 @@ tags:
 关西国际机场是日本填海造陆的产物，滑行的跑道几乎是四面环水，最后降落的时候有一段非常贴近海面的滑行，非常的炫酷。（太炫酷了然后忘记拍照了）
 入境后乘坐了JR Haruka特急线，车身纹满了hello kitty的图案，非常的有少女心。但是不得不说日本的铁路系统真的很复杂，我们一开始上错了车（另一趟车也能到达目的地但不是特急），后来匆匆忙忙补票上车了again没有来得及拍照，最后在离开大阪的时候补拍了一张。
 
-<div class="image-grid" data-columns="2">
-    <div class="image-item">
-        <div class="image-container">
-            <img src="../assets/japan/haruka-download.jpeg" alt="图片描述1">
-            <div class="image-title">网图</div>
-        </div>
-    </div>
-    <div class="image-item">
-        <div class="image-container">
-            <img src="../assets/japan/haruka.jpeg" alt="图片描述2">
-            <div class="image-title">我拍的</div>
-        </div>
-    </div>
-</div>
+<figure align="center">
+  <img src="../assets/japan/haruka.jpeg" alt="haruka">
+  <figcaption>haruka号<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 !!! info
     上面说到关西机场是填海造陆的产物，haruka在出机场那一段路上就是穿越海面而行，两边的景色非常美丽，在列车上还看到了一朵类似核爆的云。
 
-<div class="image-grid" data-columns="2">
-    <div class="image-item">
-        <div class="image-container">
-            <img src="../assets/japan/haruka-download.jpeg" alt="图片描述1">
-        </div>
-    </div>
-    <div class="image-item">
-        <div class="image-container">
-            <img src="../assets/japan/haruka.jpeg" alt="图片描述2">
-        </div>
-    </div>
+<figure align="center">
+  <img src="../assets/japan/cloud.jpeg" alt="云">
+  <figcaption>云<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+<div class="video-container">
+  <video controls="" autoplay="" name="media">
+      <source src="../assets/japan/video/osaka_train.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <figcaption class="video-title">haruka穿越海面</figcaption>
 </div>
 
-![type:video](./assets/japan/IMG_5395.mp4)
+### 游玩篇
 
-<video controls="" autoplay="" name="media">
-    <source src="../assets/japan/IMG_5395.mp4" type="video/mp4">
-    <source src="../assets/japan/IMG_5395.webm" type="video/webm">
-    Your browser does not support the video tag.
-</video>
+今天晚上因为住在附近就浅逛了一下友都八喜及梅田周边，找到了很多好吃的，到的比较晚就没有特别游玩其他地方。
 
-
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16905870640733.jpg)
-
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16905870844349.jpg)
+## Day 2 大阪市内
 
 ### 游玩篇
 
-今天晚上浅逛了一下友都八喜及梅田周边，找到了很多好吃的。
+1. **通天阁** ⭐️
 
-## Day 2 大阪
+<figure align="center">
+  <img src="../assets/japan/sky_osaka.jpg" alt="通天阁前小巷">
+  <figcaption>通天阁<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+</figure>
 
-### 游玩篇
+总的来说就是一座塔，附近有几条老旧的商业街，主要是餐饮店，所以也没什么好逛的，环境也比较脏乱（个人感受）。
 
-- 今日首站：通天阁 ☆
-  ![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16906379192295.jpg)
+2. **大阪海游馆** ⭐️⭐️⭐️⭐️⭐️
 
-总的来说就是一座塔，附近有几条老旧的商业街，主要是餐饮店，所以也没什么好逛的。
+海游馆在大阪港，临近海边，从梅田过去大概耗时40min，不算特别远。因为在海边所以有凉爽的海风，在炎热的夏天非常舒适。在入口处就能看到繁忙的大阪港，以及远处的大海，路过恰好看到一艘打扮成传统船只模样的游船，非常的有海贼王的风味。
 
-- 第二站：大阪海游馆 ☆☆☆☆☆
-  海游馆在大阪港，临近海边，从梅田过去大概耗时40min，不算特别远。因为在海边所以有凉爽的海风，在炎热的夏天非常舒适。在入口处就能看到繁忙的大阪港，以及远处的大海，路过恰好看到一艘打扮成传统船只模样的游船，非常的有海贼王的风味。
-  海游馆游览遵循从上到下的顺序，先到达最上端，然后旋转而下。
-  !!! info
-    这里的从上而下不仅是游览位置上的从上而下，海游馆本身的建造也是遵循从上而下的结构，从顶部的热带雨林，到下一步的海面，最后到深海，一步步向下探索。
-  最为惊喜的是游览后半段的“太平洋”大鱼缸，整个鱼缸非常大，从上而下三层，可以环绕观察，有的地方还配有座位，真是现实版的“我可以在湖边看上一整天的鱼”。浴缸里的蝠鲼非常可爱，我们还有幸见到了饲养员喂养鲸鱼“暴风吸入”的场景。
+<figure align="center">
+  <img src="../assets/japan/pirate.jpg" alt="图片描述">
+  <figcaption>海贼王游船<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+</figure>
 
-- 第三站：心斋桥及附近 ☆☆☆
-  心斋桥就是一整条购物街，晚上亮灯后看起来非常繁华，在心斋桥筋和难波之间有著名的格力高广告牌，景色还不错。
+海游馆游览遵循从上到下的顺序，先到达最上端，然后旋转而下。
+
+!!! tips
+    这里说的的从上而下不仅是游览位置上的从上而下，海游馆本身的建造也是遵循从上而下的结构，从顶部的热带雨林，到下一步的海面，最后到深海，一步步向下探索。
+
+最为惊喜的是游览后半段的“太平洋”大鱼缸，整个鱼缸非常大，从上而下三层，可以环绕观察，有的地方还配有座位，真是现实版的“我可以在湖边看上一整天的鱼”。浴缸里的蝠鲼非常可爱，我们还有幸见到了饲养员喂养鲸鱼“暴风吸入”的场景。
+
+<div class="video-container">
+  <video controls="" autoplay="" name="media">
+      <source src="../assets/japan/video/fish.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <figcaption class="video-title">蝠鲼路过</figcaption>
+</div>
+
+<div class="video-container">
+  <video controls="" name="media">
+      <source src="../assets/japan/video/whale.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <figcaption class="video-title">鲸鱼暴风吸入</figcaption>
+</div>
+
+3. **心斋桥及附近** ⭐️⭐️⭐️
+
+心斋桥就是一整条购物街，晚上亮灯后看起来非常繁华，在心斋桥筋和难波之间有著名的格力高广告牌，景色还不错。
+
+<figure align="center">
+  <img src="../assets/japan/shinsaibashi.jpg" alt="心斋桥">
+  <figcaption>心斋桥&难波之间<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+</figure>
 
 ### 购物篇
 
-任天堂中心，不多说了上张战果图，任粉直接冲就完事了！上午十点多到达领到了半小时后的整理券，据说晚上人会少一些。周边真的很多，看得眼花缭乱。
+去了大阪的任天堂中心，在梅田大丸百货，任粉直接冲就完事了！上午十点多到达领到了半小时后的整理券，据说晚上人会少一些。周边真的很多，红帽子绿帽子喷喷动森卡比皮克敏，看得眼花缭乱，然后光顾着买东西忘记拍照了。
+
+!!! warning
+    后来去了东京的任天堂中心，不用排队而且感觉货源更充足，大阪没有的一些amiibo在东京找到了，如果可以的话还是建议去那边。
 
 ### 餐饮篇
+- 午饭吃了美味青花鱼和三文鱼鱼籽版本的親子丼，青花鱼非常的不错，个人认为秒杀食其家。三文鱼Esrev表示一般，低于预期，也可能是因为预期太高了？
 
 !!! info
     親子丼在日本一般指鸡肉+鸡蛋的组合，也就是亲指鸡，子指鸡蛋。
 
-- 午饭吃了美味青花鱼和三文鱼鱼籽版本的親子丼，青花鱼非常的不错，个人认为秒杀食其家。三文鱼ywy表示一般，低于预期，也可能是因为预期太高了？
+<figure align="center">
+  <img src="../assets/japan/lunch1.jpeg" alt="午饭">
+  <figcaption>午饭親子丼<br>(Shot on iPhone 14 by Esrev)</figcaption>
+</figure>
+
 - 下午在海游馆坐在窗边欣赏海景并吃了海游馆特别冰激凌，看成分好像有海藻之类的，非常的黑科技，但是实际吃起来味道非常不错，白色的部分奶香味十足，蓝色的部分有些酸酸的也很合胃口。
+
+<figure align="center">
+  <img src="../assets/japan/icecream1.jpeg" alt="冰激凌1">
+  <figcaption>冰激凌汽水<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
 - 晚饭是名店北极星的蛋包饭，就餐的环境非常神奇，进门拖鞋后在榻榻米上盘腿就餐，所有人围坐在一个庭院周围，边吃边欣赏庭院中的美景，是很新奇的体验。但是蛋包饭本身的味道中规中矩，没有什么特别惊艳之处。
+
+<figure align="center">
+  <img src="../assets/japan/dinner1.jpeg" alt="晚饭">
+  <figcaption>北极星蛋包饭<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
 - 夜宵吃了心斋桥著名的Excelsior冰淇淋，点了抹茶味，冰激凌的牛乳味非常浓厚，外面的脆壳是饼干，味道也很不错，非常好评。
+
+<figure align="center">
+  <img src="../assets/japan/excelsior.jpg" alt="冰激凌2">
+  <figcaption>Excelsior抹茶冰激凌<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+</figure>
 
 ## Day 3 奈良
 
@@ -159,11 +187,11 @@ tags:
 
 ![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907258813960.jpg)
 
-- 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我和ywy的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
+- 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我和Esrev的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
 
 - 晚饭前吃了一个桃子大福：里面居然真的是桃子肉。
 
-- 晚上吃了和牛かつ，ywy：第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
+- 晚上吃了和牛かつ，Esrev：第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
 
 ## Day 4 大阪USJ
 
@@ -201,7 +229,7 @@ tags:
  期间限定项目，貌似九月份就🈚️了，所以排队的人很多。
  项目的形式是vr过山车，就是戴着vr眼睛乘坐室内小过山车，项目是全日语介绍所以大概只听懂了30%，内容大概就是和哆啦A梦他们一起逃离blabla的追击，vr的场景做的还是很炫的，因为是坐飞机也有一些失重感，而且左右晃的特别厉害，还是比较刺激的。戴眼镜也可以乘坐，并且体验也比较良好。
  !!! warning
-     ywy反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
+     Esrev反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
 
  #### 咒术回战4D电影 排队时间：30min
 

@@ -110,7 +110,7 @@ plugins:
         - en
         # 日语搜索汉字
         - ja
-  - mkdocs-video
+  # - mkdocs-video # 有点问题
   - glightbox:
       effect: zoom
       zoomable: true
@@ -253,7 +253,8 @@ extra:
 
 extra_css:
   - /assets/extra.css
-  - /assets/custom-image-grid.css
+  - /assets/custom-image-grid.css # 实现图片网格（暂时不启用，在手机和safari上显示存在问题）
+  - /assets/image_video.css # 实现图片视频居中和大小调节
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
