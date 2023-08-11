@@ -148,7 +148,7 @@ text-indent: 2em; /*首行缩进*/
 
 早上睡到自然醒，九点多才从酒店出发，大约十点二十到达近铁奈良站。
 
-- 春日大社
+- 春日大社⛩
   体验下来比较普通，也没有买票进入内部参观，就在外围逛了一下，但是买到了好看的小鹿签，抽到了大吉+小吉，快乐～
 
 ![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907257113843.jpg)
