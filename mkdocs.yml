@@ -88,9 +88,9 @@ theme:
     
     # Search
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
-    # - search.suggest # display the likeliest completion for the last word
-    # - search.highlight # highlight all occurrences
-    # - search.share # show a share button of the current search
+    - search.suggest # display the likeliest completion for the last word
+    - search.highlight # highlight all occurrences
+    - search.share # show a share button of the current search
 
     # Header
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/
@@ -105,11 +105,7 @@ theme:
 # Plugins
 #
 plugins:
-  - search: # must be included at the first place
-      lang:
-        - en
-        # 日语搜索汉字
-        - ja
+  - search # must be included at the first place
   # - mkdocs-video # 有点问题
   - glightbox:
       effect: zoom

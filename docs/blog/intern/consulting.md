@@ -5,6 +5,12 @@ tags:
   - Internship
 ---
 
+<style>
+p{
+text-indent: 2em; /*首行缩进*/
+}
+</style>
+
 ## 某B开头咨询公司
 !!! info "Summary" 
     - GOOD (๑•̀ㅂ•́)و✧：遇到的mentor人非常nice，所以workload没有很大，交流的过程也很轻松愉快。暑假里还去国金中心onsite了几天，只能说办公环境确实非常优越。

@@ -21,7 +21,7 @@ jobs:
         # 再安装Python3和相关环境
       - uses: actions/setup-python@v2 
         with:
-          python-version: "3.9.17"
+          python-version: "3.10.12"
         # 使用pip包管理工具安装mkdocs-material
       - run: python3 -m pip install -r requirements.txt
         # 使用mkdocs-material部署gh-pages分支

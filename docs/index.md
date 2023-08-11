@@ -28,7 +28,7 @@ while "False":
 	print("人生苦短，我用Python！")
 ```
 
-这里是张舟的个人网站，用来记录生活和一些有趣的个人项目(ﾉ ◕ ヮ ◕)ﾉ*:・ﾟ ✧
+这里是​​{==**张舟**==}的个人网站，用来记录生活和一些有趣的个人项目(ﾉ ◕ ヮ ◕)ﾉ*:・ﾟ ✧
 
 ::: row
 
@@ -68,9 +68,9 @@ while "False":
         [See articles](articles/index.md){.md-button}
 
 
-## :material-github: GitHub Stats
+<!-- ## :material-github: GitHub Stats -->
 
-::: row
+<!-- ::: row
 
     ::: col
 
@@ -80,5 +80,6 @@ while "False":
 
         ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sputnik103&layout=compact&langs_count=8&hide=html,autoit&hide_border=true&hide_title=true)
 
+> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats) -->
 
-> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats)
+<br/>

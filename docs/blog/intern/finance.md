@@ -5,6 +5,12 @@ tags:
   - Internship
 ---
 
+<style>
+p{
+text-indent: 2em; /*首行缩进*/
+}
+</style>
+
 ## 某G开头券商金工
 
 - GOOD (๑•̀ㅂ•́)و✧：总体感觉实习生工作比较轻松，当然也有很多写报告/做excel的dirty work。研究的因子对数理基础要求比较高，比较复杂，所以写因子的频率比较低。
