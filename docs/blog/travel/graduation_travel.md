@@ -35,7 +35,7 @@ text-indent: 2em; /*首行缩进*/
 </figure>
 
 <div class="video-container">
-  <video controls="" autoplay="" name="media">
+  <video controls="" name="media">
       <source src="../assets/japan/video/osaka_train.mp4" type="video/mp4">
       Your browser does not support the video tag.
   </video>
@@ -54,7 +54,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/sky_osaka.jpg" alt="通天阁前小巷">
-  <figcaption>通天阁<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+  <figcaption>通天阁<br>(Shot on FUJI xt200 by 文宝)</figcaption>
 </figure>
 
 总的来说就是一座塔，附近有几条老旧的商业街，主要是餐饮店，所以也没什么好逛的，环境也比较脏乱（个人感受）。
@@ -65,7 +65,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/pirate.jpg" alt="图片描述">
-  <figcaption>海贼王游船<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+  <figcaption>海贼王游船<br>(Shot on FUJI xt200 by 文宝)</figcaption>
 </figure>
 
 海游馆游览遵循从上到下的顺序，先到达最上端，然后旋转而下。
@@ -76,7 +76,7 @@ text-indent: 2em; /*首行缩进*/
 最为惊喜的是游览后半段的“太平洋”大鱼缸，整个鱼缸非常大，从上而下三层，可以环绕观察，有的地方还配有座位，真是现实版的“我可以在湖边看上一整天的鱼”。浴缸里的蝠鲼非常可爱，我们还有幸见到了饲养员喂养鲸鱼“暴风吸入”的场景。
 
 <div class="video-container">
-  <video controls="" autoplay="" name="media">
+  <video controls="" name="media">
       <source src="../assets/japan/video/fish.mp4" type="video/mp4">
       Your browser does not support the video tag.
   </video>
@@ -97,7 +97,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/shinsaibashi.jpg" alt="心斋桥">
-  <figcaption>心斋桥&难波之间<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+  <figcaption>心斋桥&难波之间<br>(Shot on FUJI xt200 by 文宝)</figcaption>
 </figure>
 
 ### 购物篇
@@ -111,14 +111,14 @@ text-indent: 2em; /*首行缩进*/
 !!! tips
     [Tabelog(食べログ)](https://tabelog.com/)是日本的大众点评，上面可以搜到各种日本餐厅以及相应的评分，比较实用。但是如果想下载的话需要去日区的app store。
 
-- 午饭吃了美味青花鱼和三文鱼鱼籽版本的親子丼，青花鱼非常的不错，个人认为秒杀食其家。三文鱼Esrev表示一般，低于预期，也可能是因为预期太高了？
+- 午饭吃了美味青花鱼和三文鱼鱼籽版本的親子丼，青花鱼非常的不错，个人认为秒杀食其家。三文鱼文宝表示一般，低于预期，也可能是因为预期太高了？
 
 !!! info
     親子丼在日本一般指鸡肉+鸡蛋的组合，也就是亲指鸡，子指鸡蛋。
 
 <figure align="center">
   <img src="../assets/japan/lunch1.jpeg" alt="午饭">
-  <figcaption>午饭親子丼<br>(Shot on iPhone 14 by Esrev)</figcaption>
+  <figcaption>午饭親子丼<br>(Shot on iPhone 14 by 文宝)</figcaption>
 </figure>
 
 - 下午在海游馆坐在窗边欣赏海景并吃了海游馆特别冰激凌🍦，看成分好像有海藻之类的，非常的黑科技，但是实际吃起来味道非常不错，白色的部分奶香味十足，蓝色的部分有些酸酸的也很合胃口。
@@ -139,7 +139,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/excelsior.jpg" alt="冰激凌2">
-  <figcaption>Excelsior抹茶冰激凌<br>(Shot on FUJI xt200 by Esrev)</figcaption>
+  <figcaption>Excelsior抹茶冰激凌<br>(Shot on FUJI xt200 by 文宝)</figcaption>
 </figure>
 
 ## Day 3 奈良
@@ -148,8 +148,8 @@ text-indent: 2em; /*首行缩进*/
 
 早上睡到自然醒，九点多才从酒店出发，大约十点二十到达近铁奈良站。
 
-- 春日大社⛩
-  体验下来比较普通，也没有买票进入内部参观，就在外围逛了一下，但是买到了好看的小鹿签，抽到了大吉+小吉，快乐～
+1. **春日大社⛩️** ⭐️⭐️⭐️
+体验下来比较普通，也没有买票进入内部参观，就在外围逛了一下，但是买到了好看的小鹿签，抽到了大吉+小吉，快乐～
 
 ![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907257113843.jpg)
 
@@ -190,11 +190,11 @@ text-indent: 2em; /*首行缩进*/
 
 ![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907258813960.jpg)
 
-- 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我和Esrev的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
+- 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我和文宝的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
 
 - 晚饭前吃了一个桃子大福：里面居然真的是桃子肉。
 
-- 晚上吃了和牛かつ，Esrev：第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
+- 晚上吃了和牛かつ，文宝：第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
 
 ## Day 4 大阪USJ
 
@@ -232,7 +232,7 @@ text-indent: 2em; /*首行缩进*/
  期间限定项目，貌似九月份就🈚️了，所以排队的人很多。
  项目的形式是vr过山车，就是戴着vr眼睛乘坐室内小过山车，项目是全日语介绍所以大概只听懂了30%，内容大概就是和哆啦A梦他们一起逃离blabla的追击，vr的场景做的还是很炫的，因为是坐飞机也有一些失重感，而且左右晃的特别厉害，还是比较刺激的。戴眼镜也可以乘坐，并且体验也比较良好。
  !!! warning
-     Esrev反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
+     文宝反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
 
  #### 咒术回战4D电影 排队时间：30min
 
