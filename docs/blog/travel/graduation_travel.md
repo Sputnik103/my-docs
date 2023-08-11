@@ -121,7 +121,7 @@ text-indent: 2em; /*首行缩进*/
   <figcaption>午饭親子丼<br>(Shot on iPhone 14 by Esrev)</figcaption>
 </figure>
 
-- 下午在海游馆坐在窗边欣赏海景并吃了海游馆特别冰激凌，看成分好像有海藻之类的，非常的黑科技，但是实际吃起来味道非常不错，白色的部分奶香味十足，蓝色的部分有些酸酸的也很合胃口。
+- 下午在海游馆坐在窗边欣赏海景并吃了海游馆特别冰激凌🍦，看成分好像有海藻之类的，非常的黑科技，但是实际吃起来味道非常不错，白色的部分奶香味十足，蓝色的部分有些酸酸的也很合胃口。
 
 <figure align="center">
   <img src="../assets/japan/icecream1.jpeg" alt="冰激凌1">
