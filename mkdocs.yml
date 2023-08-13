@@ -173,7 +173,7 @@ markdown_extensions:
   - toc: # generate a table of contents from documents
       permalink: '#' # anchor
       toc_depth: 4 # header 1 to header 4
-      slugify: !!python/name:pymdownx.slugs.uslugify # convert title to html-compatible text
+      # slugify: !!python/name:pymdownx.slugs.uslugify # convert title to html-compatible text
   - sane_lists # make better lists
   - smarty: # convert some special characters
       smart_angled_quotes: true
