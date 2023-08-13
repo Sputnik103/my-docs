@@ -1,3 +1,10 @@
+---
+title: Markdown基础语法
+tags: 
+  - Markdown
+  - Memo
+---
+
 >**<u>参考[菜鸟教程 > Markdown教程](https://www.runoob.com/markdown/md-tutorial.html)部分内容</u>**
 >印象笔记中Markdown的**脚注**功能不可用
 >[Github源代码](https://github.com/Tsanfer/Markdown_Template)

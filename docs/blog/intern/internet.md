@@ -1,8 +1,8 @@
 ---
 title: 互联网实习
 tags: 
-  - Internet_Giants
-  - Internship
+  - 互联网
+  - 实习
 ---
 
 <style>

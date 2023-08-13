@@ -26,7 +26,11 @@ nav:
     - Selenium爬虫应用实例: projects/spider.md
   - Articles:
     - articles/index.md
-    - Markdown常用格式: articles/markdown_template.md
+    - Stats:
+      - 有趣的小问题: articles/stats/question1.md
+    # - Python
+    - Markdown:
+      - Markdown常用格式: articles/markdown/markdown_template.md
   - Tags: tags/tags.md
 
 #

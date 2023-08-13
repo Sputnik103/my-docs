@@ -1,8 +1,8 @@
 ---
 title: 咨询实习
 tags: 
-  - Consulting
-  - Internship
+  - 咨询
+  - 实习
 ---
 
 <style>

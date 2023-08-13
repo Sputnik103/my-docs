@@ -1,9 +1,9 @@
 ---
 title: 毕业旅行：日本
 tags: 
-  - Graduation
-  - Travel
-  - Japan
+  - 毕业
+  - 旅行
+  - 日本
 ---
 
 <style>

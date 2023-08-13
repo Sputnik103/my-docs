@@ -1,8 +1,8 @@
 ---
 title: 量化实习
 tags: 
-  - Quant
-  - Internship
+  - 量化
+  - 实习
 ---
 
 <style>
