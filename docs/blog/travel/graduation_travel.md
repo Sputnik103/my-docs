@@ -199,34 +199,72 @@ text-indent: 2em; /*首行缩进*/
 
 4. **若草山** ⭐️⭐️⭐️⭐️
 
-爬的很累，地上都是小鹿💩，但是人很少草很绿，也能俯瞰整个公园，景色确实很不错。
+若草山是所有景点里离车站最远的，山不算高但是爬的很累，我们只爬上了一重目就已经很累了。山坡很美，但是地上都是小鹿💩，让人感到无从下脚。山顶上人很少草很绿，也能俯瞰整个公园，景色确实很不错。
 
-
+<figure align="center">
+  <img src="../assets/japan/ruocaoshan.jpg" alt="若草山">
+  <figcaption>若草山<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
 ### 特别篇
 
-- 小鹿
-  一般情况下小鹿观感：远远的看很可爱，走进了有点怕人，一靠近马上溜了，🦌💩有点点臭
-  拿出鹿饼时的小鹿观感：饿虎扑食！一块鹿饼会吸引附近一群小鹿，追着你咬&顶
+1. **小鹿**
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907256688081.jpg)
+小鹿感觉已经成为奈良的代名词了，从近铁站出来走不远就能看到成群结队的小鹿，以及地上到处都是的🦌💩。奈良有小鹿保护协会，主要是通过贩卖鹿饼给游客喂食赚取资金，从事一些小鹿保育的工作，感觉是个很不错的商业模式？
 
-- 夕阳
-  在若草山因为太累错过的日落在回程的近铁上看到了，这就是大吉吗。
+小鹿本身挺可爱的，下面是对小鹿的观感：
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907259786163.jpg)
+- 一般情况下小鹿观感：远远的看很可爱，走进了有点怕人，一靠近马上溜了，🦌💩有点点臭
+- 拿出鹿饼时的小鹿观感：饿虎扑食！一块鹿饼会吸引附近一群小鹿，追着你咬&顶
+
+<figure align="center">
+  <img src="../assets/japan/deer2.jpg" alt="小鹿">
+  <figcaption>我和小鹿<br>(Shot on iPhone 14 by 文宝)</figcaption>
+</figure>
+
+2. **夕阳**🌇
+
+在若草山因为太累错过的日落在回程的近铁上看到了，这就是大吉吗。
+
+<figure align="center">
+  <img src="../assets/japan/sunset.jpg" alt="夕阳">
+  <figcaption>近铁上的夕阳<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 ### 餐饮篇
 
 - 晚上吃了心心念念的可丽饼，在梅田Lucua的地下，然而实际吃到并不是很好吃，奶油也是植物奶油，水果也很少，感觉不如国内的。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907258813960.jpg)
+<figure align="center">
+  <img src="../assets/japan/keli.jpg" alt="可丽饼">
+  <figcaption>可丽饼<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 - 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我和文宝的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
 
+<figure align="center">
+  <img src="../assets/japan/narawudong.jpeg" alt="水谷茶屋">
+  <figcaption>水谷茶屋乌冬面<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/naraice.jpeg" alt="水谷茶屋">
+  <figcaption>水谷茶屋抹茶冰沙<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
 - 晚饭前吃了一个桃子大福：里面居然真的是桃子肉。
 
+<figure align="center">
+  <img src="../assets/japan/momodafu.jpeg" alt="大福">
+  <figcaption>桃子大福<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
 - 晚上吃了和牛かつ，文宝：第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
+
+<figure align="center">
+  <img src="../assets/japan/beef.jpeg" alt="和牛">
+  <figcaption>炸和牛<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
 ## Day 4 大阪USJ
 
