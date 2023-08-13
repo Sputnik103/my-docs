@@ -219,7 +219,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/deer2.jpg" alt="小鹿">
-  <figcaption>我和小鹿<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>我和小鹿<br>(Shot on FUJI xt200 by 文宝)</figcaption>
 </figure>
 
 2. **夕阳**🌇
@@ -244,12 +244,12 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/narawudong.jpeg" alt="水谷茶屋">
-  <figcaption>水谷茶屋乌冬面<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>水谷茶屋乌冬面<br>(Shot on iPhone 14 by 文宝)</figcaption>
 </figure>
 
 <figure align="center">
   <img src="../assets/japan/naraice.jpeg" alt="水谷茶屋">
-  <figcaption>水谷茶屋抹茶冰沙<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>水谷茶屋抹茶冰沙<br>(Shot on iPhone 14 by 文宝)</figcaption>
 </figure>
 
 - 晚饭前吃了一个桃子大福：里面居然真的是桃子肉。
@@ -271,125 +271,160 @@ text-indent: 2em; /*首行缩进*/
 !!! warning
     前方多图预警，巨开心的一天ฅ՞••՞ฅ
 
- ### 关于交通
+### 关于交通
 
- 早上6:30起床，7:00出发，🪖出击！
- 乘坐JR大阪环状线，然后换乘夢咲線（资料带补充），中间直接在同一个站台换乘，非常方便。
+早上6:30起床，7:00出发，🪖出击！乘坐JR大阪环状线，然后换乘夢咲線，中间直接在同一个站台换乘，非常方便。
 
- ### 关于项目
+!!! tips
+    夢咲線原名桜島線，大阪市政府在1990年决定引进USJ乐园后对地铁线路进行了全面改造，以适应USJ的人流量。该段地铁线路原本是通往港口的线路，有浓厚的工业风，改造后则几乎成了USJ游客专属的路线。在改造完成后政府对该段铁路的姓名进行了公开募集，现在的名称脱颖而出最终被选中。
 
- #### 酷霸王挑战书 排队时间：90min
+### 关于项目
 
- 有点像AR版的马车，代表马里奥team击败酷霸王team。整个排队都在酷霸王城堡内，全程空调并且有一些酷霸王城堡展示，所以体验尚可。
+1. **酷霸王挑战书** 排队时间：90min
 
-![炸弹兵！](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16908513543909.jpg)
+有点像AR版的马车，代表马里奥team击败酷霸王team。整个排队都在酷霸王城堡内，全程空调并且有一些酷霸王城堡展示，所以体验尚可。
+
+<figure align="center">
+  <img src="../assets/japan/kuba.jpeg" alt="酷霸王城堡">
+  <figcaption>酷霸王城堡<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
 排队最后还有一个炸弹兵工厂，展示炸弹兵制造过程，我真的哭死。（玩过纸片马里奥的应该都懂）
 
- 进入项目后会戴上AR头套，就可以像马车一样看到其他选手，通过吃问号收集龟壳进行攻击，击败其他选手。做的还是挺还原的，但是AR是一片在前面的镜片，往两边看很容易出戏。
+<div class="video-container">
+  <video controls="" name="media">
+      <source src="../assets/japan/video/bomb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <figcaption class="video-title">制造炸弹兵</figcaption>
+</div>
 
- #### 哈利波特禁忌之旅 排队时间：50min
+进入项目后会戴上AR头套，就可以像马车一样看到其他选手，通过吃问号收集龟壳进行攻击，击败其他选手。做的还是挺还原的，但是AR是一片在前面的镜片，往两边看很容易出戏。
 
- 室内实景过山车（有点类似过山车般飞跃地平线？），里面有很多哈利波特实景展示，部份是裸眼3D，比如火焰杯打龙的场景，部份是实景，比如禁林。
+2. **哈利波特禁忌之旅** 排队时间：50min
 
- - 看完魁地奇杯的感受：好想去哈利波特的世界！
-   坐完过山车：不好意思我不想
- - 看完罗恩禁林的感受：罗恩就这？
-   坐完过山车：我是罗恩
+室内实景过山车（有点类似过山车般飞跃地平线？），里面有很多哈利波特实景展示，部份是裸眼3D，比如火焰杯打龙的场景，部份是实景，比如禁林。
 
- #### 哆啦A梦天空的梦想乡 排队时间：70min
+- 看完魁地奇杯的感受：好想去哈利波特的世界！
+  坐完过山车：不好意思我不想
+- 看完罗恩禁林的感受：罗恩就这？
+  坐完过山车：我是罗恩
 
- 期间限定项目，貌似九月份就🈚️了，所以排队的人很多。
- 项目的形式是vr过山车，就是戴着vr眼睛乘坐室内小过山车，项目是全日语介绍所以大概只听懂了30%，内容大概就是和哆啦A梦他们一起逃离blabla的追击，vr的场景做的还是很炫的，因为是坐飞机也有一些失重感，而且左右晃的特别厉害，还是比较刺激的。戴眼镜也可以乘坐，并且体验也比较良好。
- !!! warning
-     文宝反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
+3. **哆啦A梦天空的梦想乡** 排队时间：70min
 
- #### 咒术回战4D电影 排队时间：30min
+期间限定项目，貌似九月份就🈚️了，所以排队的人很多。
+项目的形式是vr过山车，就是戴着vr眼睛乘坐室内小过山车，项目是全日语介绍所以大概只听懂了30%，内容大概就是和哆啦A梦他们一起逃离blabla的追击，vr的场景做的还是很炫的，因为是坐飞机也有一些失重感，而且左右晃的特别厉害，还是比较刺激的。戴眼镜也可以乘坐，并且体验也比较良好。
+!!! warning
+    文宝反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
 
- 这个也是全日语，内容大概讲的是一个黑心校长假装创办了大阪咒术高专，今天就是开学仪式。我们（观众）是新学生，但是实际上校长是饲养了一头咒灵想吸取我们的咒力，然后主角团+五条悟就过来打炮了校长。剧情比较简单，打斗为了迎合3D效果也有点回合制的意思。不过最后五条悟一炮打出一个洞，后面露出了一座桥，就是真实的usj后面的桥，还是挺有意思的彩蛋。
+4. **咒术回战4D电影** 排队时间：30min
 
- #### 侏罗纪漂流 排队时间：10min
+ 这个也是全日语，内容大概讲的是一个黑心校长假装创办了大阪咒术高专，今天就是开学仪式。我们（观众）是新学生，但是实际上校长是饲养了一头咒灵想吸取我们的咒力，然后主角团+五条悟就过来打炮了校长。剧情比较简单，打斗为了迎合3D效果也有点回合制的意思。不过最后五条悟一炮打出一个洞，后面露出了一座桥，就是真实的USJ后面的桥，还是挺有意思的彩蛋。
 
- 这个是老项目了，初中的时候来就玩了，乘船游览侏罗纪公园，属于是中规中矩。
- !!! warning
-     这个项目最后一段有很强的失重感，因为只固定了腿部所以还是非常刺激的。另外这个项目会有淋湿的风险，我们穿了雨衣。
+5. **侏罗纪漂流** 排队时间：10min
 
- ### 关于园区
+这个是老项目了，初中的时候来就玩了，乘船游览侏罗纪公园，属于是中规中矩。
+!!! warning
+    这个项目最后一段有很强的失重感，因为只固定了腿部所以还是非常刺激的。另外这个项目会有淋湿的风险，我们穿了雨衣。
 
- #### 马里奥园区
+### 关于园区
 
- 超超超还原，首先在接近园区的时候就能听到游戏内的吃金币音效，检查整理券的时候工作人员还带我们一起比了马里奥经典动作，代入感一下就上来了。
+1. **马里奥园区**
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16909728869592.jpg)
+超超超还原，首先在接近园区的时候就能听到游戏内的吃金币音效，检查整理券的时候工作人员还带我们一起比了马里奥经典动作，代入感一下就上来了。
 
+<figure align="center">
+  <img src="../assets/japan/nintendo1.jpg" alt="任天堂">
+  <figcaption>任天堂入园口logo<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
- 入口处是一根巨大的管子，看不见内部。穿过管子豁然开朗，一整个园区就呈现在面前，一整个震撼住。
- !!! info
-     马里奥的相关游戏中管子就是通往异世界的桥梁，一般穿过管子就能来到不一样的世界。
+入口处是一根巨大的管子，看不见内部。穿过管子豁然开朗，一整个园区就呈现在面前，一整个震撼住。
+!!! info
+    马里奥的相关游戏中管子就是通往异世界的桥梁，一般穿过管子就能来到不一样的世界。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16909728692374.jpg)
+<figure align="center">
+  <img src="../assets/japan/nintendo2.jpg" alt="任天堂">
+  <figcaption>任天堂入园口管子<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 园区内的所有道具，包括金币、花、龟龟、板栗全都非常还原，由于日本的天也非常的蓝，拍出来可以说和游戏中一模一样。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16909730906048.jpg)
+<figure align="center">
+  <img src="../assets/japan/nintendo3.jpeg" alt="任天堂">
+  <figcaption>任天堂园区<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 旁边还有酷霸王城堡和桃花公主城堡。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16909731784497.jpg)
+<figure align="center">
+  <img src="../assets/japan/nintendo4.jpg" alt="任天堂">
+  <figcaption>酷霸王城堡<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 总体感觉就是非常用心。非常推荐！
-!!! info
+
+!!! tips
     如果你买了马里奥相关的周边戴在身上（比如帽子），园区内所有的工作人员见到你都会夸夸你。
 
- #### 哈利波特园区
+2. **哈利波特园区**
 
- 同样的还原度也非常高，进入的地方还原了霍格莫德村，两边有魔法列车、三把扫帚酒吧、糖果店等等，还有很多魔杖互动道具，印象深刻的是挥挥魔杖能喷火/喷水之类的。
- !!! info
-     晚上亮灯后整个园区更加好看。
+同样的还原度也非常高，进入的地方还原了霍格莫德村，两边有魔法列车、三把扫帚酒吧、糖果店等等，还有很多魔杖互动道具，印象深刻的是挥挥魔杖能喷火/喷水之类的。晚上亮灯后整个园区更加好看。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16909744774575.jpg)
+<figure align="center">
+  <img src="../assets/japan/hp1.jpg" alt="哈利波特">
+  <figcaption>夜晚的哈利波特园区<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
- ### 关于美食
+### 关于美食
 
- #### 黄油啤酒
+1. **黄油啤酒**
 
- 我们买了无酒精的所以好像和啤酒毫无关系？（也不知道本来是否应该有关系）整体口感就是酸酸甜甜的冰沙，在夏天喝还是非常不错的。
+我们买了无酒精的所以好像和啤酒毫无关系？（也不知道本来是否应该有关系）整体口感就是酸酸甜甜的冰沙，在夏天喝还是非常不错的。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16909737533066.jpg)
+<figure align="center">
+  <img src="../assets/japan/beer.jpg" alt="黄油啤酒">
+  <figcaption>黄油啤酒<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
- #### 爆米花桶（虽然写在美食里但其实只是想要爆米花桶，应该算周边？）
+2. **爆米花桶**（虽然写在美食里但其实只是想要爆米花桶，应该算周边？）
 
- 园区内有很多非常精美的爆米花桶，人气都很高，我们看到了马里奥赛车、无敌星和五条悟的爆米花桶（虽然不便宜但是人气都很高，经常是下午就卖完了）。
- （图片）
+园区内有很多非常精美的爆米花桶，人气都很高，我们看到了马里奥赛车、无敌星和五条悟的爆米花桶（虽然不便宜但是人气都很高，经常是下午就卖完了）。
 
- #### 咒术回战包子
+3. **咒术回战包子**
 
- 造型是伏黑惠的玉犬，一黑一白🐩🐕‍🦺两只，黑的是生姜肉包，白的是披萨味包子，味道一般般。
- （图片）
+造型是伏黑惠的玉犬，一黑一白🐩🐕‍🦺两只，黑的是生姜肉包，白的是披萨味包子，味道一般般。
 
- #### 奇诺比奥餐厅
+<figure align="center">
+  <img src="../assets/japan/baozi.jpeg" alt="baozi">
+  <figcaption>咒术回战包子<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
- 推荐！遇到了超可爱的点单おじいちゃん👴，点单的时候语气非常可爱，和我们激情互动。
- 餐厅里的很多餐品都非常可爱，作为游乐园餐品来说味道也还可以，上菜的时候还有热情的工作人员来拍照📷。
-（图片）
+4. **奇诺比奥餐厅**
 
- ## Day 5 京都
+推荐！遇到了超可爱的点单おじいちゃん👴，点单的时候语气非常可爱，和我们激情互动。餐厅里的很多餐品都非常可爱，作为游乐园餐品来说味道也还可以，上菜的时候还有热情的工作人员来拍照📷。
 
- ### 游玩篇
+<figure align="center">
+  <img src="../assets/japan/restaurant.jpeg" alt="残影">
+  <figcaption>奇诺表餐厅<br>(Shot on iPhone 14 by 文宝)</figcaption>
+</figure>
 
- - 岚山
-   坐了岚山小火车🚂，
+## Day 5 京都
 
- - 鸭川
+### 游玩篇
 
+- 岚山
+  坐了岚山小火车🚂，
 
- ## 2023-08-02 day 6 京都
-
- ### 游玩篇
-
- - 伏见稻荷大社
+- 鸭川
 
 
- - 清水寺
+## Day 6 京都
+
+### 游玩篇
+
+- 伏见稻荷大社
+
+
+- 清水寺
 
  
