@@ -404,8 +404,8 @@ text-indent: 2em; /*首行缩进*/
 推荐！遇到了超可爱的点单おじいちゃん👴，点单的时候语气非常可爱，和我们激情互动。餐厅里的很多餐品都非常可爱，作为游乐园餐品来说味道也还可以，上菜的时候还有热情的工作人员来拍照📷。
 
 <figure align="center">
-  <img src="../assets/japan/restaurant.jpeg" alt="残影">
-  <figcaption>奇诺表餐厅<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <img src="../assets/japan/restaurant.jpeg" alt="餐厅">
+  <figcaption>奇诺比奥餐厅<br>(Shot on iPhone 14 by 文宝)</figcaption>
 </figure>
 
 ## Day 5 京都
