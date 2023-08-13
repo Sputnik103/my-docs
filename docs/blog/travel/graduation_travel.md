@@ -148,28 +148,60 @@ text-indent: 2em; /*首行缩进*/
 
 早上睡到自然醒，九点多才从酒店出发，乘坐奈良近铁大约十点二十到达近铁奈良站。
 
-1. **春日大社⛩️** ⭐️⭐️⭐️
-体验下来比较普通，也没有买票进入内部参观，就在外围逛了一下，但是买到了好看的小鹿签，抽到了大吉+小吉，快乐～
+!!! Tips
+    近铁一定要选“特急”，这样会少停很多站，到达速度会差很多。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907257113843.jpg)
+我们的游览路线大概如下图，由于想傍晚时到达若草山看日落（虽然最后因为我太累了提前下山了），所以我们走的路线比较绕。
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907248569020.jpg)
+<figure align="center">
+  <img src="../assets/japan/naramap.png" alt="map">
+  <figcaption>奈良地图<br>(From <a href="https://www.xiaohongshu.com/explore/64a3f0f1000000001c00e495">Xiaohongshu</a>)</figcaption>
+</figure>
 
-- 二月堂三月堂
-  二月堂景色非常好，地理位置比较高可以俯瞰整个东大寺附近，夏天更是凉风习习，坐在上面感觉很有禅意。
+1. **春日大社** ⭐️⭐️⭐️
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907249655375.jpg)
+春日大社是我们到奈良的第一站，从近铁站出发步行进入，也可以选择坐公交车直达。路上是一段林间小道，有很多小鹿探头。
+
+<figure align="center">
+  <img src="../assets/japan/deer1.jpg" alt="小鹿">
+  <figcaption>小鹿探头（一靠近就缩回去了）<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+春日大社体验下来比较普通，我们没有买票进入内部参观，就在外围逛了一下。但是春日大社有非常有特色且好看的小鹿签，还有各种小鹿御守，很难不心动。我们买了两个小鹿签，抽到了大吉，快乐～
+
+<figure align="center">
+  <img src="../assets/japan/deertoy.jpg" alt="小鹿签">
+  <figcaption>小鹿签<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+2. **二月堂三月堂** ⭐️⭐️⭐️⭐️⭐️
+
+二月堂景色非常好，去的人也很少，感觉是奈良宝藏景点。二月堂距离近铁站稍微有点远，在若草山附近，东大寺的上方，地理位置比较高可以俯瞰整个东大寺及附近的景色，夏天更是凉风习习，坐在上面感觉很有禅意。
+
+<figure align="center">
+  <img src="../assets/japan/eryuetang.jpeg" alt="二月堂">
+  <figcaption>二月堂<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/eryuetang2.jpg" alt="二月堂">
+  <figcaption>二月堂俯瞰<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+3. **东大寺** ⭐️⭐️⭐️
+
+纯木质结构的寺庙，非常宏伟，之前《东亚文明史》课上听韩昇老师说东大寺里藏了很多古籍的原本，到了现场看到一个巨大的梯子，感觉古籍可能藏在阁楼上了？但是因为在寺庙内所以没有拍照。（感觉是对佛祖的不敬hhh）
+
+<figure align="center">
+  <img src="../assets/japan/dongdasi.jpeg" alt="东大寺">
+  <figcaption>东大寺<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+4. **若草山** ⭐️⭐️⭐️⭐️
+
+爬的很累，地上都是小鹿💩，但是人很少草很绿，也能俯瞰整个公园，景色确实很不错。
 
 
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907249880716.jpg)
-
-- 东大寺
-  纯木质结构的寺庙，非常宏伟，之前《东亚文明史》课上听韩昇老师说东大寺里藏了很多古籍的原本，到了现场看到一个巨大的梯子，感觉古籍可能藏在阁楼上了？但是因为在寺庙内所以没有拍照。（感觉是对佛祖的不敬hhh）
-
-![](/Users/a10257/Library/Mobile Documents/iCloud~com~coderforart~iOS~MWeb/Documents/日本旅行/media/16907252786313.jpg)
-
-- 若草山
-  爬的很累，地上都是小鹿💩，但是人很少草很绿，也能俯瞰整个公园，景色确实很不错。
 
 ### 特别篇
 
