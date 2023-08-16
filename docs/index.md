@@ -67,7 +67,7 @@ while "False":
         [See articles](articles/index.md){.md-button}
 
 
-## :material-github: GitHub Stats
+<!-- ## :material-github: GitHub Stats
 
 ::: row
 
@@ -79,6 +79,6 @@ while "False":
 
         ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sputnik103&layout=compact&langs_count=8&hide=html,autoit&hide_border=true&hide_title=true)
 
-> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats)
+> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats) -->
 
 <br/>
