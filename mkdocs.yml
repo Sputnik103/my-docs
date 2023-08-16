@@ -227,8 +227,7 @@ extra:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
   analytics:
     provider: google
-    property: G-144Q0VJMBT
-    # property: UA-42618265-2
+    property: G-MKM2NTMFNW
   
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#cookie-consent
   consent:
