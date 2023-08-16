@@ -78,9 +78,15 @@
                         {{ lang.t("source.file.date.updated") }}:
                         {{ page.meta.git_revision_date_localized_raw_iso_date }}
                     {% endif %}
+                    {% if page.meta.git_creation_date_localized_raw_iso_date %}
+                        <br>
+                        {{ lang.t("source.file.date.created") }}:
+                        {{ page.meta.git_creation_date_localized_raw_iso_date }}
+                    {% endif %}
                     </span>
                 </p>
             </div>
+            
         </div>
     {% endif %}
 </div>

@@ -19,14 +19,14 @@
       {% else %}
         <input class="md-nav__toggle md-toggle" data-md-toggle="{{ path }}" type="checkbox" id="{{ path }}" {{ checked }}>
       {% endif %}
-      <!-- {% set indexes = [] %}
+      {% set indexes = [] %}
       {% if "navigation.indexes" in features %}
         {% for nav_item in nav_item.children %}
           {% if nav_item.is_index and not index is defined %}
             {% set _ = indexes.append(nav_item) %}
           {% endif %}
         {% endfor %}
-      {% endif %} -->
+      {% endif %}
       {% if not indexes %}
         <label class="md-nav__link" for="{{ path }}">
           {{ nav_item.title }}

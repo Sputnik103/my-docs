@@ -1,7 +1,8 @@
 ---
 title: 生·活
 description: ""
-disqus: ""
+hide:
+- comments
 ---
 
 <style>

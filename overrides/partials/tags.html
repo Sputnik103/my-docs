@@ -12,7 +12,7 @@
                 {% set icon = icon ~ " md-tag--" ~ tag.type %}
             {% endif %}
         {% endif %}
-    <a href="{{ config.site_url }}/tags/#{{ tag.name }}" class="md-tag{{ icon }}">
+    <a href="/tags/#{{ tag.name }}" class="md-tag{{ icon }}">
         {{- tag.name -}}
     </a>
     {% endfor %}
