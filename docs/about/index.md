@@ -1,7 +1,6 @@
 ---
 title: 关于我
 description: ""
-disqus: ""
 ---
 
 <style>

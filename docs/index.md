@@ -1,7 +1,6 @@
 ---
 title: Zhang Zhou's Website
 description: ""
-disqus: ""
 hide:
     - navigation
 ---
@@ -55,7 +54,7 @@ while "False":
 
         ## :material-file-code: Projects
 
-        A list of my projects which are done for learning and practicing in free time. Wanna give me a hand ?! Let's do it together.
+        这里是我在空闲时间为学习和练习而完成的项目列表，有任何想法的话请联系我一起学习。
 
         [See projects](projects/index.md){.md-button}
 	
@@ -63,14 +62,14 @@ while "False":
 
         ## :material-bookmark: Articles
 
-        A list of my projects which are done for learning and practicing in free time. Wanna give me a hand ?! Let's do it together.
+        这里是一些知识的分享，可能有用也可能无用，希望你能找到你想要的。
 
         [See articles](articles/index.md){.md-button}
 
 
 <!-- ## :material-github: GitHub Stats -->
 
-<!-- ::: row
+::: row
 
     ::: col
 
@@ -80,6 +79,6 @@ while "False":
 
         ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sputnik103&layout=compact&langs_count=8&hide=html,autoit&hide_border=true&hide_title=true)
 
-> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats) -->
+> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats)
 
 <br/>

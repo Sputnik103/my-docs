@@ -1,7 +1,8 @@
 ---
 title: 文章
 description: ""
-disqus: ""
+hide:
+    - comments
 ---
 
 <style>
@@ -13,4 +14,4 @@ disqus: ""
     }
 </style>
 
-Welcome to my website :)
+这里是一些个人分享，希望能给你带来帮助。
