@@ -67,7 +67,7 @@ while "False":
         [See articles](articles/index.md){.md-button}
 
 
-<!-- ## :material-github: GitHub Stats -->
+## :material-github: GitHub Stats
 
 ::: row
 
