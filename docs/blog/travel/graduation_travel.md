@@ -13,6 +13,24 @@ text-indent: 2em; /*首行缩进*/
 </style>
 
 
+## 写在前面
+
+应该是从初中开始就对日本有着一些神秘的好感，从动漫、音乐、文学、自然风光等等多个方面耳濡目染，都让我感到十分的新奇有趣，因此一直希望能够去实地看看。
+
+这次是我第三次前往日本，第一次是初中开学前与我母亲一同前往，第二次是高中毕业后与兄弟们一起前往，这次是本科毕业与女朋友一同前往。每次都是几乎相同的路线，从关西到关东，然而每次陪伴的人不同，自身情况不同，所见所得亦有所不同。
+
+私以为动森的音乐是最适合参观日本时播放的，在真正踏足日本时脑内也时常回响着这些音乐，在此就伴随着音乐观赏日本之旅。
+
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<div>
+    <meting-js server="netease" type="playlist" id="8676853852" autoplay="false" list-max-height=200px>
+    </meting-js>
+</div>
+
 ## Day 1 上海→大阪
 
 ### 交通篇
@@ -412,7 +430,7 @@ text-indent: 2em; /*首行缩进*/
 
 ### 游玩篇
 
-一早从大阪乘坐haruka特急前往京都，耗时大约是45min左右，比前往奈良的时间还要短一些，但是haruka的票价相对比较贵。
+一早从大阪乘坐haruka特急前往京都，耗时大约是45min左右，比前往奈良的时间还要短一些，但是haruka的票价相对比较贵，在普通列车的票加上还需要加特急费。
 
 1. **岚山** ⭐️⭐️⭐️
 

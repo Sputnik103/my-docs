@@ -26,6 +26,8 @@ nav:
     - Selenium爬虫应用实例: projects/spider.md
   - Articles:
     - articles/index.md
+    - Functions:
+      - 网易云音乐列表: articles/functions/music.md
     - Stats:
       - 有趣的小问题: articles/stats/question1.md
     # - Python
