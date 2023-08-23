@@ -434,10 +434,73 @@ text-indent: 2em; /*首行缩进*/
 
 1. **岚山** ⭐️⭐️⭐️
 
-放完行李出发前往今日首站岚山，说到岚山那就不得不提嵯峨野小火车🚂啦，
+放完行李出发前往今日首站岚山，说到岚山那就不得不提嵯峨野小火车🚂啦，几乎可以说是岚山的必去景点。嵯峨野小火车其实就是从龟冈市出发到嵯峨野为止的一段观光火车，沿途可以欣赏保津峡和岚山的自然风光，因此个人感觉春天和秋天来会比较好，冬天如果下雪的话也会非常好看，然而我们是夏天来。但是既然来了我们必然要坐一坐，我们事先在[关西JR的官网](https://www.westjr.co.jp/global/sc/)定好了车票，车票可以预定时间，同时也可以预定坐席，5号车厢是我们定的全透明车厢，视野比较好，想坐的话一定要提前预定。从京都出发先坐JR到马堀站，然后步行一段到达小火车龟冈站，我们预定的十二点半，勉强赶上，但是错过了小火车进站的精彩瞬间。
+
+坐上小火车，由于是开放式的车厢所以没有空调，但是穿行在山间还是比较凉爽的。左边和右边的乘客都有一段能够欣赏到车窗外的风景。车窗外就是美丽的岚山和保津峡，保津峡还有正在漂流的人们与我们挥手致意。
+
+<figure align="center">
+  <img src="../assets/japan/train1.jpg" alt="小火车">
+  <figcaption>小火车<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/bjriver.jpg" alt="保津峡">
+  <figcaption>保津峡<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+小火车大约坐了20分钟左右的样子，我们没有坐到最后一站，到岚山站就提前下车了，因为这里离岚山的主要景点天龙寺比较近。下了小火车我们首先参观了岚山竹林，这里应该是很多动漫的打卡地，比较熟悉的就是大老师名场面。现实里的竹林和漫画里的几乎一模一样，当然拍照的游人也非常多。
+
+<figure align="center">
+  <img src="../assets/japan/bamboo.jpg" alt="竹林">
+  <figcaption>现实里的岚山竹林<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/fakebamboo.webp" alt="竹林">
+  <figcaption>春物里的岚山竹林<br>(From [Bilibili](https://www.bilibili.com/read/cv2951354))</figcaption>
+</figure>
+
+下一站就是天龙寺，应该是岚山最大的寺庙了。上次来的时候就对天龙寺的风景印象深刻，其中的一亩方塘，前有石子堆砌而成的枯山水，后有岚山上的真山水，不可谓不妙，真如一副画一般美好的不真实。坐在寺中，享受着山风带来的阵阵凉意，欣赏着眼前美景，开玩笑的对文宝说我也感受到了一丝禅意，或许有些能理解为什么要出家了。
+
+<figure align="center">
+  <img src="../assets/japan/pond.jpeg" alt="半亩方塘">
+  <figcaption>半亩方塘<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/temple1.jpg" alt="天龙寺">
+  <figcaption>天龙寺<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+结束了天龙寺的旅程，下一站就到了岚山的大街上，这里的商业气息比较浓厚，类比苏州的话就是平江路山塘街这种感觉，路的两边是一些餐厅和小店，售卖一些景区周边。我们在这里吃了午饭，一份竹筒装的蘸面，因为是景区所以价格比较贵，旁边的豆制品味道就有点猎奇了。
+
+<figure align="center">
+  <img src="../assets/japan/arashifood.jpeg" alt="岚山午饭">
+  <figcaption>竹筒蘸面<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+岚山的最后一站是渡月桥，同样在春物里也有用到这里的场景。
+
+<figure align="center">
+  <img src="../assets/japan/duyuebridge.jpg" alt="渡月桥">
+  <figcaption>渡月桥<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
 2. **鸭川** ⭐️⭐️⭐️⭐️
 
+从岚山回来简单收拾了一下，前往鸭川吃晚餐。本来也没有对鸭川抱很高的期望，就是想吃完饭在河边散散步，然而鸭川边的美景以及川床料理确实让人心情愉悦。鸭川其实就是京都市内的一条河，是傍晚散步或骑车的好去处，其闻名于世的是附近的川床料理。川床料理其实就是在河边搭起吊脚楼样的平台，沿河一边享受美食，一边欣赏鸭川美景。听起来没啥但是实际坐在那里确实容易让人心情变好。我们坐公交车到四条河源町，走到鸭川边沿着小巷进入，旁边一整条都是川床料理店。
+
+<figure align="center">
+  <img src="../assets/japan/duckriver1.jpg" alt="纳凉床">
+  <figcaption>纳凉床小巷<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+最终我们随意挑了一家入内用餐，晚风非常的凉爽，一扫夏日的炎热。
+
+<figure align="center">
+  <img src="../assets/japan/duckriver2.jpg" alt="鸭川">
+  <figcaption>鸭川就餐<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
 ## Day 6 京都
 
@@ -445,7 +508,7 @@ text-indent: 2em; /*首行缩进*/
 
 1. **伏见稻荷大社** ⭐️⭐️⭐️⭐️⭐️
 
-这是我三次来日本中第一次到伏见稻荷大社，红色的神社本体和连绵不绝的红色千本鸟居都很壮观，同时也非常出片。
+和鸭川一样，这也是我三次来日本中第一次到伏见稻荷大社，红色的神社本体和连绵不绝的红色千本鸟居都很壮观，同时也非常出片。
 
 2. **二年坂三年坂+清水寺** ⭐️⭐️⭐️⭐️
 
