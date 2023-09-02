@@ -519,13 +519,37 @@ text-indent: 2em; /*首行缩进*/
 
 2. **二年坂三年坂+清水寺** ⭐️⭐️⭐️⭐️
 
-二年坂三年坂和清水寺虽然看起来是两处景点，但实际上完全可以就是一处景点。
+二年坂三年坂和清水寺虽然看起来是两处景点，但实际上完全可以就是一处景点。二年坂三年坂是从山下通往清水寺的两条小路，比较类似苏州的山塘街，主要是售卖一些日本传统的纪念品，比如折扇、和菓子之类。我们乘坐公交车到达三年坂入口处，一路向上边走边逛，由于清水寺附近有很多和服店，所以一路上都能看到很多人穿着和服在路上拍照。
 
-我们乘坐公交车到达三年坂入口处，
+<figure align="center">
+  <img src="../assets/japan/kiyomizu1.jpeg" alt="三年坂">
+  <figcaption>三年坂<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+走到三年坂的尽头，远远的已经能够看到清水寺经典的红色建筑了。一进清水寺的大门是一片风铃，挂在木结构的建筑上，风一吹所有的风铃一起发出清脆的响声，让人感觉非常的清爽。
+
+<figure align="center">
+  <img src="../assets/japan/kiyomizu2.jpg" alt="清水寺风铃">
+  <figcaption>清水寺风铃<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+清水寺最为著名的场景应该是柯南中的那个主殿露台，可以鸟瞰整个京都。据说整个建筑是纯木质结构，没有使用任何钉子。（之前看盐野米松的《留住手艺》，感慨日本对这类传统木工有着超越国内的重视和敬意）露台下方是音羽瀑布，由三股水流形成，可以在水流下用长柄勺取泉水洗涤双手，应该也是清水寺名字的由来？（未经考证）
+
+<figure align="center">
+  <img src="../assets/japan/kiyomizu3.jpeg" alt="清水寺">
+  <figcaption>清水寺露台<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
 
 ### 餐饮篇
 
 1. **草莓大福** ⭐️⭐️
+
+心心念念的草莓大福在伏见稻荷大社门口买到了，但是和想象中完全不一样，答复外面裹着一层干干的粉，口感不是很好，草莓很酸，总体评价就是不太行。
+
+<figure align="center">
+  <img src="../assets/japan/yichigodaifuku.jpg" alt="草莓大福">
+  <figcaption>草莓大福<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
 
 ### 交通篇
 
@@ -540,24 +564,23 @@ text-indent: 2em; /*首行缩进*/
 
 乘坐新干线的时候文宝购买了日本著名的铁路便当，达成了在新干线上吃便当的成就。但是事实证明这个便当并不好吃，因为是冷的。
 
-
+<figure align="center">
+  <img src="../assets/japan/bendou.jpeg" alt="便当">
+  <figcaption>铁路便当<br>(Shot on iPhone 14 by 文宝)</figcaption>
+</figure>
 
 在快要到达东京的时候我们再次遇到了日本列车因为xx原因延误的问题，我们坐的车在铁路中间停了好一会儿才继续运行。此前我们从关西国际机场前往大阪的时候也遇到过类似的情况，但是以我的日语能力并不能听懂到底是因为啥导致的。
 
-
-
 ## Day 7 东京
-
-大都市！
 
 ### 游玩篇
 
 1. **秋叶原** ⭐️⭐️⭐️
 
-
+今天去到了二次元圣地秋叶原，
 
  ### 餐饮篇
 
-1. **车站牛奶** ⭐️⭐️
+1. **车站牛奶** ⭐️⭐️⭐️
 
  
