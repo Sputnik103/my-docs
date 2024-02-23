@@ -25,6 +25,7 @@ text-indent: 2em; /*首行缩进*/
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
+
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 <div>
     <meting-js server="netease" type="playlist" id="8676853852" autoplay="false" list-max-height=200px>
@@ -547,7 +548,7 @@ text-indent: 2em; /*首行缩进*/
 心心念念的草莓大福在伏见稻荷大社门口买到了，但是和想象中完全不一样，答复外面裹着一层干干的粉，口感不是很好，草莓很酸，总体评价就是不太行。
 
 <figure align="center">
-  <img src="../assets/japan/yichigodaifuku.jpg" alt="草莓大福">
+  <img src="../assets/japan/ichigodaifuku.jpg" alt="草莓大福">
   <figcaption>草莓大福<br>(Shot on FUJI xt200 by 文宝)</figcaption>
 </figure>
 
@@ -577,10 +578,116 @@ text-indent: 2em; /*首行缩进*/
 
 1. **秋叶原** ⭐️⭐️⭐️
 
-今天去到了二次元圣地秋叶原，
+今天去到了二次元圣地秋叶原，因为之前来过一次了所以其实看到满街的巨幅广告挂画并没有很大的震撼。这次来主要逛了一下Animate，但是感觉自己已经过了买手办、买周边的年纪，深感岁月不饶人。但是还是在秋叶原成功打卡了春物里大老师经典的 Max Coffee，也算燃起了一些中二之魂。逛街时还遇到了麻衣学姐的巨大挂画，应该是青春猪头少年的拉面店，但是因为已经吃过午饭了所以没有进去。最后还在离开时的车站口看到了巨大的原神广告，不禁感叹原神在日本的人气。
 
- ### 餐饮篇
+<figure align="center">
+  <img src="../assets/japan/max_coffee.jpeg" alt="max coffee">
+  <figcaption>Max Coffee<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+2. **你的名字打卡** ⭐️⭐️⭐️⭐️⭐️
+
+离开秋叶原之后我们去打卡了几处君名取景地，还是16年的时候看的电影，转眼已经过去了七八年，第一次看的时候真的是给了我很大的震撼，后面又陆陆续续看完了灾难三部曲，但是君名依然是我最喜欢的一部。所以来到了东京之后我就一直想要去打卡一下君名的取景地，这次终于如愿以偿。我们主要去了信浓町和须贺神社附近，打卡了标志性的天桥、階段（楼梯）和十字路口。
+
+<figure align="center">
+  <img src="../assets/japan/namae1.png" alt="namae1">
+  <figcaption>标志性天桥<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/namae2.png" alt="namae2">
+  <figcaption>须贺神社十字路口<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/namae3.png" alt="namae3">
+  <figcaption>须贺神社楼梯<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+3. **JUMP官方谷子店** ⭐️⭐️⭐️⭐️⭐️
+
+排人天堂！へいへいへい！那个时候jjxx还没有变成iivv，所以还买了咒术回战的周边，还有间谍过家家。另外旁边就是任天堂官方店，所以不争气的又去逛了一圈。
+
+<figure align="center">
+  <img src="../assets/japan/haikyu.jpeg" alt="haikyu">
+  <figcaption>及川彻谷子<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+### 餐饮篇
 
 1. **车站牛奶** ⭐️⭐️⭐️
 
- 
+小红书上推荐的秋叶原车站牛奶，感觉就是类似早餐店的那种牛奶，味道没有特别惊艳。比较有趣的是这边买的牛奶需要当场喝完，因为是用玻璃瓶装的，喝完之后要把瓶子还给店家。
+
+<figure align="center">
+  <img src="../assets/japan/milk.jpeg" alt="milk">
+  <figcaption>车站牛奶<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+## Day 8 东京
+
+### 游玩篇
+
+1. **镰仓-江之岛** ⭐️⭐️⭐️⭐️⭐️
+
+我永远喜欢大海！镰仓距离东京大约有一小时的车程，我们乘坐了JR到达镰仓站，然后换乘了江之电，陆续参观了长谷寺，还有最著名的镰仓高校前站，也就是灌篮高手的取景地。这里的海风非常的凉爽，海风吹来的时候真的是非常舒服，一扫夏天的炎热。镰仓最美的个人感觉就是这种海边的公路设计，路的一边是江之电的铁路和车站，另一边就是毫无阻拦的防波堤，一眼就能看到无垠的大海，非常喜欢这种感觉。
+
+<figure align="center">
+  <img src="../assets/japan/liancang.JPG" alt="liancang">
+  <figcaption>镰仓路边<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+之后我们在黄昏时分去了江之岛，江之岛是镰仓的一个小岛，岛上有很多小店，还有一座寺庙。我们在这里吃了晚饭，吃的是江之岛的特色食品，一种叫做江之岛烧的食品，类似于日本的烧饼（？，但是里面有一些海鲜，例如巨大的虾和鱿鱼，味道还是非常不错的。由于岛上有很多鸟，例如海鸥和鹰，因此江之岛烧的店门口还特意提醒顾客注意飞禽抢食，让我们一路上都提心吊胆。另外从去往江之岛的路上还能看到富士山。
+
+<figure align="center">
+  <img src="../assets/japan/fuji.jpeg" alt="fuji">
+  <figcaption>远处的富士山<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/biscuit.jpeg" alt="biscuit">
+  <figcaption>江ノ島焼<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+回程的路上我们坐上了双层的JR，这种车厢在国内是非常少见的，从来没见过双层的火车，所以坐上去的时候还是非常兴奋的，结果做了一段时间得知这是要补票的。
+
+## Day 9 东京
+
+### 游玩篇
+
+1. **江户川花火大会** ⭐️⭐️⭐️⭐️⭐️
+
+我永远爱花火大会，感谢文宝提前做了很多攻略，最终我们这次花火大会才得以成行。江户川离我们住的新宿也有差不多一小时的车程，我们下午就早早出发，因为花火大会的人气非常高，本地人甚至会提前一天去占位置。江户川花火大会就在江户川河边举行，大家都会在河边铺垫席子，然后一边吃东西一边等待花火。我们也是提前去了江户川河边，在夹缝中找了一个比较好的位置，并且提前在全家买好了一些食物。
+
+!!! tips
+    由于花火大会现场的人非常多，但是厕所只有临时搭建的几处，所以还是尽量少吃东西，不然就要去厕所排大队了。
+
+整个花火大会会持续一个多小时，期间主要有几轮非常密集的烟花，在每轮烟花之间会一个一个的放单独的烟花。整个花火大会的烟花都非常的精彩，据说设计这些烟花的是日本职业的“烟花设计师”，我们观看的这场江户川花火大会本次最核心的应该是一个富士山造型的烟花，非常震撼。烟花绽放的同时还伴随着音乐，有日本的国民组合yoasobi的歌曲，还有一些动漫的BGM。沐浴着夏夜的晚风，听着熟悉的音乐，观赏最盛大的烟花，真的是世界上数一数二浪漫的事。
+
+<figure align="center">
+  <img src="../assets/japan/hanabi1.jpeg" alt="hanabi1">
+  <figcaption>花火大会<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="../assets/japan/hanabi2.JPG" alt="hanabi2">
+  <figcaption>富士山烟花<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+</figure>
+
+
+### 餐饮篇
+
+1. **寿司郎** ⭐️⭐️⭐️⭐️
+
+寿司郎是一家自助寿司店，最终吃了这家是因为正赶上寿司郎和小排球的联动，拿到了小排球周边的杯子，非常开心。寿司本身中规中矩，不过金枪鱼真的很肥美。
+
+<figure align="center">
+  <img src="../assets/japan/sushiro.jpeg" alt="sushiro">
+  <figcaption>可爱研磨.jpg<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
+</figure>
+
+## 后记
+
+至此我们的日本之旅告一段落，这已经是我第三次来日本，希望下次能去日本别处看看，北海道、九州、伊豆半岛等等，都是我未曾涉足的区域。
+
+另外，这次旅程结束返回宁波的机场时我还被抽中了流行病学检查，结果检查完第二天就发烧了，很难不怀疑是被日本的流感感染了。
