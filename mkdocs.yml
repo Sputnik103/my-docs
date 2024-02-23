@@ -19,8 +19,9 @@ nav:
       - 互联网实习: blog/intern/internet.md
       - 金融实习: blog/intern/finance.md
     - 旅行:
-      - 解封后旅行（回忆版）: blog/travel/travel_after_covid.md
-      - 毕业旅行——霓虹: blog/travel/graduation_travel.md
+      - 2023
+        - 解封后旅行（回忆版）: blog/travel/travel_after_covid.md
+        - 毕业旅行——霓虹: blog/travel/graduation_travel.md
   - Projects: 
     - projects/index.md
     - Selenium爬虫应用实例: projects/spider.md
