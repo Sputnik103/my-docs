@@ -15,10 +15,7 @@ text-indent: 2em; /*首行缩进*/
 
 毕业之际，最开心的是和文宝一起在毕业歌会上一起演奏了Lemon。
 
-<div class="video-container">
-  <video controls="" name="media">
-      <source src="../assets/graduation/video/grad_song.MP4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  <figcaption class="video-title">毕业歌会</figcaption>
-</div>
+<figure align="center">
+  <img src="../assets/graduation/grad_song.JPG" alt="毕业歌会">
+  <figcaption>毕业歌会</figcaption>
+</figure>
