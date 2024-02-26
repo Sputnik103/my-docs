@@ -25,7 +25,11 @@ nav:
       - 2024:
         - 元旦厦门行: blog/travel/xiamen_travel.md
         - 广州行+Eason演唱会: blog/travel/guangzhou_travel.md
-    - 其它:
+    - 柔术小记:
+      - blog/jiujitsu/index.md
+      - 入门12课:
+        - 三板斧: blog/jiujitsu/rumen12/sanbanfu.md
+    - 杂项:
       - 2023:
         - 毕业: blog/other/graduation.md
   - Projects: 
