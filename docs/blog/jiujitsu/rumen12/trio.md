@@ -21,6 +21,6 @@ text-indent: 2em; /*首行缩进*/
 3. 如果手过中线了，首先进入三角陷阱，做三角绞，对方会抬头规避，然后我们顺势转入十字固。
 
 <figure align="center">
-  <img src="../assets/trio.jpg" alt="trio">
+  <img src="../assets/Trio.jpg" alt="trio">
   <figcaption>三重奏逻辑图</figcaption>
 </figure>
