@@ -29,6 +29,9 @@ nav:
       - blog/jiujitsu/index.md
       - 入门12课:
         - 三板斧: blog/jiujitsu/rumen12/sanbanfu.md
+        - 三重奏: blog/jiujitsu/rumen12/trio.md
+      - 半防下位:
+        - 2024/03/03: blog/jiujitsu/banfangxiawei/2024-03-03.md
     - 杂项:
       - 2023:
         - 毕业: blog/other/graduation.md
