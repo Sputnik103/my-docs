@@ -35,9 +35,18 @@ nav:
     - 杂项:
       - 2023:
         - 毕业: blog/other/graduation.md
+    - 有趣的视频记录:
+      - blog/watch/index.md
+      - 科技类: 
+        - 老石谈芯对谈anker CEO阳萌: blog/watch/tech/laoshi_anker.md
   - Projects: 
     - projects/index.md
     - Selenium爬虫应用实例: projects/spider.md
+    - 程序设计与数据可视化课程:
+      - projects/course/index.md
+      - lab 1: projects/course/lab1课堂演示.ipynb
+      - lab 2: projects/course/lab2 (final).ipynb
+      - lab 3: projects/course/updated_lab3.ipynb
   - Articles:
     - articles/index.md
     - Functions:
@@ -126,6 +135,8 @@ theme:
 #
 plugins:
   - search # must be included at the first place
+  - mkdocs-jupyter: # directly use ipynb & python
+      ignore_h1_titles: True
   # - mkdocs-video # 有点问题
   - glightbox:
       effect: zoom
