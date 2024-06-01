@@ -1,0 +1,30 @@
+/* 图片居中 */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* 设置高度为视口高度，以垂直居中 */
+  position: relative; /* Add relative positioning to contain absolute elements */
+}
+
+.video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-title {
+  position: absolute;
+  bottom: -10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem; /* Adjust the font size as needed */
+  color: #313131; /* Use gray color for the title */
+  font-style: italic; /* Add italic style to the title */
+}
