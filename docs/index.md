@@ -29,6 +29,8 @@ while "False":
 
 这里是​​{==**张舟**==}的个人网站，用来记录生活和一些有趣的个人项目(ﾉ ◕ ヮ ◕)ﾉ*:・ﾟ ✧
 
+*2024年9月20日，本网站迎来了第一篇（可能也是唯一一篇）学术成果：本人和檀哥合作的文章被EMNLP2024接收啦！可喜可贺🎉🎉🎉！* [Explore](articles/paper/paper_emoji.md){.md-button}
+
 <!-- require APlayer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>

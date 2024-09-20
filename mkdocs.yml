@@ -49,6 +49,8 @@ nav:
       - lab 3: projects/course/updated_lab3.ipynb
   - Articles:
     - articles/index.md
+    - Paper:
+      - EMNLP 2024: articles/paper/paper_emoji.md
     - Functions:
       - 网易云音乐列表: articles/functions/music.md
     - Stats:
