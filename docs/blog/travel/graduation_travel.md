@@ -17,20 +17,13 @@ text-indent: 2em; /*首行缩进*/
 
 应该是从初中开始就对日本有着一些神秘的好感，从动漫、音乐、文学、自然风光等等多个方面耳濡目染，都让我感到十分的新奇有趣，因此一直希望能够去实地看看。
 
-这次是我第三次前往日本，第一次是初中开学前与我母亲一同前往，第二次是高中毕业后与兄弟们一起前往，这次是本科毕业与女朋友一同前往。每次都是几乎相同的路线，从关西到关东，然而每次陪伴的人不同，自身情况不同，所见所得亦有所不同。
+这次是我第三次前往日本，第一次是初中开学前与我母亲一同前往，第二次是高中毕业后与兄弟们一起前往，这次是本科毕业与朋友一同前往。每次都是几乎相同的路线，从关西到关东，然而每次陪伴的人不同，自身情况不同，所见所得亦有所不同。
 
 私以为动森的音乐是最适合参观日本时播放的，在真正踏足日本时脑内也时常回响着这些音乐，在此就伴随着音乐观赏日本之旅。
 
-<!-- require APlayer -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
+<iframe title="日本旅行背景音乐歌单" src="https://music.163.com/outchain/player?type=0&amp;id=8676853852&amp;auto=0&amp;height=430" width="330" height="450" style="max-width:100%;border:0" loading="lazy"></iframe>
 
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<div>
-    <meting-js server="netease" type="playlist" id="8676853852" autoplay="false" list-max-height=200px>
-    </meting-js>
-</div>
+[在网易云音乐中打开歌单](https://music.163.com/#/playlist?id=8676853852){target="_blank" rel="noopener noreferrer"}
 
 ## Day 1 上海→大阪
 
@@ -73,7 +66,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/sky_osaka.jpg" alt="通天阁前小巷">
-  <figcaption>通天阁<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>通天阁<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 总的来说就是一座塔，附近有几条老旧的商业街，主要是餐饮店，所以也没什么好逛的，环境也比较脏乱（个人感受）。
@@ -84,7 +77,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/pirate.jpg" alt="图片描述">
-  <figcaption>海贼王游船<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>海贼王游船<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 海游馆游览遵循从上到下的顺序，先到达最上端，然后旋转而下。
@@ -116,7 +109,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/shinsaibashi.jpg" alt="心斋桥">
-  <figcaption>心斋桥&难波之间<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>心斋桥&难波之间<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 ### 购物篇
@@ -130,14 +123,14 @@ text-indent: 2em; /*首行缩进*/
 !!! tips
     [Tabelog(食べログ)](https://tabelog.com/)是日本的大众点评，上面可以搜到各种日本餐厅以及相应的评分，比较实用。但是如果想下载的话需要去日区的app store。
 
-- 午饭吃了美味青花鱼和三文鱼鱼籽版本的親子丼，青花鱼非常的不错，个人认为秒杀食其家。三文鱼文宝表示一般，低于预期，也可能是因为预期太高了？
+- 午饭吃了美味青花鱼和三文鱼鱼籽版本的親子丼，青花鱼非常的不错，个人认为秒杀食其家。三文鱼一般，低于预期，也可能是因为预期太高了？
 
 !!! info
     親子丼在日本一般指鸡肉+鸡蛋的组合，也就是亲指鸡，子指鸡蛋。
 
 <figure align="center">
   <img src="../assets/japan/lunch1.jpeg" alt="午饭">
-  <figcaption>午饭親子丼<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>午饭親子丼<br>(Shot on iPhone 14 by ZZ)</figcaption>
 </figure>
 
 - 下午在海游馆坐在窗边欣赏海景并吃了海游馆特别冰激凌🍦，看成分好像有海藻之类的，非常的黑科技，但是实际吃起来味道非常不错，白色的部分奶香味十足，蓝色的部分有些酸酸的也很合胃口。
@@ -156,10 +149,10 @@ text-indent: 2em; /*首行缩进*/
 
 - 夜宵吃了心斋桥著名的[Excelsior冰淇淋](https://tabelog.com/en/osaka/A2701/A270101/27017746/)，点了抹茶味，冰激凌的牛乳味非常浓厚，外面的脆壳是饼干，味道也很不错，非常好评。
 
-<figure align="center">
+<!-- <figure align="center">
   <img src="../assets/japan/excelsior.jpg" alt="冰激凌2">
-  <figcaption>Excelsior抹茶冰激凌<br>(Shot on FUJI xt200 by 文宝)</figcaption>
-</figure>
+  <figcaption>Excelsior抹茶冰激凌<br>(Shot on FUJI xt200 by ZZ)</figcaption>
+</figure> -->
 
 ## Day 3 奈良
 
@@ -183,14 +176,14 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/deer1.jpg" alt="小鹿">
-  <figcaption>小鹿探头（一靠近就缩回去了）<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>小鹿探头（一靠近就缩回去了）<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 春日大社体验下来比较普通，我们没有买票进入内部参观，就在外围逛了一下。但是春日大社有非常有特色且好看的小鹿签，还有各种小鹿御守，很难不心动。我们买了两个小鹿签，抽到了大吉，快乐～
 
 <figure align="center">
   <img src="../assets/japan/deertoy.jpg" alt="小鹿签">
-  <figcaption>小鹿签<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>小鹿签<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 2. **二月堂三月堂** ⭐️⭐️⭐️⭐️⭐️
@@ -204,7 +197,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/eryuetang2.jpg" alt="二月堂">
-  <figcaption>二月堂俯瞰<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>二月堂俯瞰<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 3. **东大寺** ⭐️⭐️⭐️
@@ -222,7 +215,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/ruocaoshan.jpg" alt="若草山">
-  <figcaption>若草山<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>若草山<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 ### 特别篇
@@ -238,7 +231,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/deer2.jpg" alt="小鹿">
-  <figcaption>我和小鹿<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>我和小鹿<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 2. **夕阳**🌇
@@ -259,30 +252,30 @@ text-indent: 2em; /*首行缩进*/
   <figcaption>可丽饼<br>(Shot on iPhone 14 Pro by ZZ)</figcaption>
 </figure>
 
-- 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我和文宝的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
+- 中午吃到了水谷茶屋的乌冬面和冰沙，味道非常不错，面非常的劲道，汤相比国内也更清淡些，符合我的口味。抹茶冰沙很大一碗，我们吃了很久才吃完hhh。
 
 <figure align="center">
   <img src="../assets/japan/narawudong.jpeg" alt="水谷茶屋">
-  <figcaption>水谷茶屋乌冬面<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>水谷茶屋乌冬面<br>(Shot on iPhone 14 by ZZ)</figcaption>
 </figure>
 
 <figure align="center">
   <img src="../assets/japan/naraice.jpeg" alt="水谷茶屋">
-  <figcaption>水谷茶屋抹茶冰沙<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>水谷茶屋抹茶冰沙<br>(Shot on iPhone 14 by ZZ)</figcaption>
 </figure>
 
 - 晚饭前吃了一个桃子大福：里面居然真的是桃子肉。
 
 <figure align="center">
   <img src="../assets/japan/momodafu.jpeg" alt="大福">
-  <figcaption>桃子大福<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>桃子大福<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
-- 晚上吃了和牛かつ，文宝：第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
+- 晚上吃了和牛かつ，第一次吃炸的牛排，略有点生但在酱的配合下味道还不错，就是有点小贵，可能这就是和牛吧。
 
 <figure align="center">
   <img src="../assets/japan/beef.jpeg" alt="和牛">
-  <figcaption>炸和牛<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>炸和牛<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 ## Day 4 大阪USJ
@@ -305,7 +298,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/kuba.jpeg" alt="酷霸王城堡">
-  <figcaption>酷霸王城堡<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>酷霸王城堡<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 排队最后还有一个炸弹兵工厂，展示炸弹兵制造过程，我真的哭死。（玩过纸片马里奥的应该都懂）
@@ -334,7 +327,7 @@ text-indent: 2em; /*首行缩进*/
 期间限定项目，貌似九月份就🈚️了，所以排队的人很多。
 项目的形式是vr过山车，就是戴着vr眼睛乘坐室内小过山车，项目是全日语介绍所以大概只听懂了30%，内容大概就是和哆啦A梦他们一起逃离blabla的追击，vr的场景做的还是很炫的，因为是坐飞机也有一些失重感，而且左右晃的特别厉害，还是比较刺激的。戴眼镜也可以乘坐，并且体验也比较良好。
 !!! warning
-    文宝反映vr眼镜有带不住的情况，她后半程全程扶眼镜。
+    vr眼镜有带不住的情况，后半程全程扶眼镜。
 
 4. **咒术回战4D电影** 排队时间：30min
 
@@ -391,7 +384,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/hp1.jpg" alt="哈利波特">
-  <figcaption>夜晚的哈利波特园区<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>夜晚的哈利波特园区<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 ### 关于美食
@@ -402,7 +395,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/beer.jpg" alt="黄油啤酒">
-  <figcaption>黄油啤酒<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>黄油啤酒<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 2. **爆米花桶**（虽然写在美食里但其实只是想要爆米花桶，应该算周边？）
@@ -424,7 +417,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/restaurant.jpeg" alt="餐厅">
-  <figcaption>奇诺比奥餐厅<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>奇诺比奥餐厅<br>(Shot on iPhone 14 by ZZ)</figcaption>
 </figure>
 
 ## Day 5 京都
@@ -441,19 +434,19 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/train1.jpg" alt="小火车">
-  <figcaption>小火车<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>小火车<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 <figure align="center">
   <img src="../assets/japan/bjriver.jpg" alt="保津峡">
-  <figcaption>保津峡<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>保津峡<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 小火车大约坐了20分钟左右的样子，我们没有坐到最后一站，到岚山站就提前下车了，因为这里离岚山的主要景点天龙寺比较近。下了小火车我们首先参观了岚山竹林，这里应该是很多动漫的打卡地，比较熟悉的就是大老师名场面。现实里的竹林和漫画里的几乎一模一样，当然拍照的游人也非常多。
 
 <figure align="center">
   <img src="../assets/japan/bamboo.jpg" alt="竹林">
-  <figcaption>现实里的岚山竹林<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>现实里的岚山竹林<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 <figure align="center">
@@ -461,7 +454,7 @@ text-indent: 2em; /*首行缩进*/
   <figcaption>春物里的岚山竹林<br>(From [Bilibili](https://www.bilibili.com/read/cv2951354))</figcaption>
 </figure>
 
-下一站就是天龙寺，应该是岚山最大的寺庙了。上次来的时候就对天龙寺的风景印象深刻，其中的一亩方塘，前有石子堆砌而成的枯山水，后有岚山上的真山水，不可谓不妙，真如一副画一般美好的不真实。坐在寺中，享受着山风带来的阵阵凉意，欣赏着眼前美景，开玩笑的对文宝说我也感受到了一丝禅意，或许有些能理解为什么要出家了。
+下一站就是天龙寺，应该是岚山最大的寺庙了。上次来的时候就对天龙寺的风景印象深刻，其中的一亩方塘，前有石子堆砌而成的枯山水，后有岚山上的真山水，不可谓不妙，真如一副画一般美好的不真实。坐在寺中，享受着山风带来的阵阵凉意，欣赏着眼前美景，开玩笑的说我也感受到了一丝禅意，或许有些能理解为什么要出家了。
 
 <figure align="center">
   <img src="../assets/japan/pond.jpeg" alt="半亩方塘">
@@ -470,7 +463,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/temple1.jpg" alt="天龙寺">
-  <figcaption>天龙寺<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>天龙寺<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 结束了天龙寺的旅程，下一站就到了岚山的大街上，这里的商业气息比较浓厚，类比苏州的话就是平江路山塘街这种感觉，路的两边是一些餐厅和小店，售卖一些景区周边。我们在这里吃了午饭，一份竹筒装的蘸面，因为是景区所以价格比较贵，旁边的豆制品味道就有点猎奇了。
@@ -484,7 +477,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/duyuebridge.jpg" alt="渡月桥">
-  <figcaption>渡月桥<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>渡月桥<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 2. **鸭川** ⭐️⭐️⭐️⭐️
@@ -493,14 +486,14 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/duckriver1.jpg" alt="纳凉床">
-  <figcaption>纳凉床小巷<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>纳凉床小巷<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 最终我们随意挑了一家入内用餐，晚风非常的凉爽，一扫夏日的炎热。
 
 <figure align="center">
   <img src="../assets/japan/duckriver2.jpg" alt="鸭川">
-  <figcaption>鸭川就餐<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>鸭川就餐<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 ## Day 6 京都
@@ -515,7 +508,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/niaoju.jpeg" alt="千本鸟居">
-  <figcaption>千本鸟居<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>千本鸟居<br>(Shot on iPhone 14 by ZZ)</figcaption>
 </figure>
 
 2. **二年坂三年坂+清水寺** ⭐️⭐️⭐️⭐️
@@ -531,7 +524,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/kiyomizu2.jpg" alt="清水寺风铃">
-  <figcaption>清水寺风铃<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>清水寺风铃<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 清水寺最为著名的场景应该是柯南中的那个主殿露台，可以鸟瞰整个京都。据说整个建筑是纯木质结构，没有使用任何钉子。（之前看盐野米松的《留住手艺》，感慨日本对这类传统木工有着超越国内的重视和敬意）露台下方是音羽瀑布，由三股水流形成，可以在水流下用长柄勺取泉水洗涤双手，应该也是清水寺名字的由来？（未经考证）
@@ -549,7 +542,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/ichigodaifuku.jpg" alt="草莓大福">
-  <figcaption>草莓大福<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>草莓大福<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 ### 交通篇
@@ -563,11 +556,11 @@ text-indent: 2em; /*首行缩进*/
 !!! tips
     我们出发的时候总计换了100,000日元，一开始还觉得换的有点多，因为酒店/机票/USJ门票等一些大头支出都已经在国内事先预定了，但事实证明还是多换一点日元有备无患，在很多场景下都是现金要方便一些，包括餐厅里结账，贩卖机买水（日本真的超多贩卖机啊）等。
 
-乘坐新干线的时候文宝购买了日本著名的铁路便当，达成了在新干线上吃便当的成就。但是事实证明这个便当并不好吃，因为是冷的。
+乘坐新干线的时候购买了日本著名的铁路便当，达成了在新干线上吃便当的成就。但是事实证明这个便当并不好吃，因为是冷的。
 
 <figure align="center">
   <img src="../assets/japan/bendou.jpeg" alt="便当">
-  <figcaption>铁路便当<br>(Shot on iPhone 14 by 文宝)</figcaption>
+  <figcaption>铁路便当<br>(Shot on iPhone 14 by ZZ)</figcaption>
 </figure>
 
 在快要到达东京的时候我们再次遇到了日本列车因为xx原因延误的问题，我们坐的车在铁路中间停了好一会儿才继续运行。此前我们从关西国际机场前往大阪的时候也遇到过类似的情况，但是以我的日语能力并不能听懂到底是因为啥导致的。
@@ -591,7 +584,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/namae1.png" alt="namae1">
-  <figcaption>标志性天桥<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>标志性天桥<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 <figure align="center">
@@ -601,7 +594,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/namae3.png" alt="namae3">
-  <figcaption>须贺神社楼梯<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>须贺神社楼梯<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 3. **JUMP官方谷子店** ⭐️⭐️⭐️⭐️⭐️
@@ -634,7 +627,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/liancang.JPG" alt="liancang">
-  <figcaption>镰仓路边<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>镰仓路边<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 之后我们在黄昏时分去了江之岛，江之岛是镰仓的一个小岛，岛上有很多小店，还有一座寺庙。我们在这里吃了晚饭，吃的是江之岛的特色食品，一种叫做江之岛烧的食品，类似于日本的烧饼（？，但是里面有一些海鲜，例如巨大的虾和鱿鱼，味道还是非常不错的。由于岛上有很多鸟，例如海鸥和鹰，因此江之岛烧的店门口还特意提醒顾客注意飞禽抢食，让我们一路上都提心吊胆。另外从去往江之岛的路上还能看到富士山。
@@ -657,7 +650,7 @@ text-indent: 2em; /*首行缩进*/
 
 1. **江户川花火大会** ⭐️⭐️⭐️⭐️⭐️
 
-我永远爱花火大会，感谢文宝提前做了很多攻略，最终我们这次花火大会才得以成行。江户川离我们住的新宿也有差不多一小时的车程，我们下午就早早出发，因为花火大会的人气非常高，本地人甚至会提前一天去占位置。江户川花火大会就在江户川河边举行，大家都会在河边铺垫席子，然后一边吃东西一边等待花火。我们也是提前去了江户川河边，在夹缝中找了一个比较好的位置，并且提前在全家买好了一些食物。
+我永远爱花火大会，提前做了很多攻略，最终这次花火大会才得以成行。江户川离我们住的新宿也有差不多一小时的车程，我们下午就早早出发，因为花火大会的人气非常高，本地人甚至会提前一天去占位置。江户川花火大会就在江户川河边举行，大家都会在河边铺垫席子，然后一边吃东西一边等待花火。我们也是提前去了江户川河边，在夹缝中找了一个比较好的位置，并且提前在全家买好了一些食物。
 
 !!! tips
     由于花火大会现场的人非常多，但是厕所只有临时搭建的几处，所以还是尽量少吃东西，不然就要去厕所排大队了。
@@ -671,7 +664,7 @@ text-indent: 2em; /*首行缩进*/
 
 <figure align="center">
   <img src="../assets/japan/hanabi2.JPG" alt="hanabi2">
-  <figcaption>富士山烟花<br>(Shot on FUJI xt200 by 文宝)</figcaption>
+  <figcaption>富士山烟花<br>(Shot on FUJI xt200 by ZZ)</figcaption>
 </figure>
 
 

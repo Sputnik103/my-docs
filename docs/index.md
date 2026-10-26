@@ -31,15 +31,9 @@ while "False":
 
 *2024年9月20日，本网站迎来了第一篇（可能也是唯一一篇）学术成果：本人和檀哥合作的文章被EMNLP2024接收啦！可喜可贺🎉🎉🎉！* [Explore](articles/paper/paper_emoji.md){.md-button}
 
-<!-- require APlayer -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<div>
-    <meting-js server="netease" type="song" id="1433983480" autoplay="false" list-max-height=200px>
-    </meting-js>
-</div>
+<iframe title="网易云音乐单曲播放器" src="https://music.163.com/outchain/player?type=2&amp;id=1433983480&amp;auto=0&amp;height=66" width="330" height="86" style="max-width:100%;border:0" loading="lazy"></iframe>
+
+[在网易云音乐中播放](https://music.163.com/#/song?id=1433983480){target="_blank" rel="noopener noreferrer"}
 
 ::: row
 

@@ -6,10 +6,14 @@ on:
   push: 
     branches:
       - main
-  # 在main分支合并别人提的pr时
-  pull_request: 
-    branches:
-      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-site
+  cancel-in-progress: false
 # 工作流的具体内容
 jobs: 
   deploy:
@@ -17,11 +21,13 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
         # 先checkout到main分支
-      - uses: actions/checkout@v2 
-        # 再安装Python3和相关环境
-      - uses: actions/setup-python@v2 
+      - uses: actions/checkout@v4
         with:
-          python-version: "3.10.12"
+          fetch-depth: 0
+        # 再安装Python3和相关环境
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
         # 使用pip包管理工具安装mkdocs-material
       - run: python3 -m pip install -r requirements.txt
         # 使用mkdocs-material部署gh-pages分支
