@@ -25,11 +25,11 @@
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-MKM2NTMFNW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-MKM2NTMFNW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-MKM2NTMFNW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
 <!-- Open Graph -->
-<meta content="website" property="og:type">
-<meta content="网易云播放列表功能 - Zhang Zhou's website" property="og:title">
-<meta content=" - Interesting little things in my life and learning process." property="og:description">
-<meta content="https://zhangzhou.site/articles/functions/music/" property="og:url">
-<meta content="https://zhangzhou.site/assets/banner.jpg" property="og:image">
+<meta content="website" property="og:type"/>
+<meta content="网易云播放列表功能 - Zhang Zhou's website" property="og:title"/>
+<meta content=" - Interesting little things in my life and learning process." property="og:description"/>
+<meta content="https://zhangzhou.site/articles/functions/music/" property="og:url"/>
+<meta content="https://zhangzhou.site/assets/banner.jpg" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -38,7 +38,7 @@
 <meta content="网易云播放列表功能 - Zhang Zhou's website" name="twitter:title"/>
 <meta content=" - Interesting little things in my life and learning process." name="twitter:description"/>
 <meta content="https://zhangzhou.site/assets/banner.jpg" name="twitter:image"/>
-</meta></meta></meta></meta></meta><link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -1201,12 +1201,12 @@
 <span>
                     
                         最后更新:
-                        2024-09-20
+                        2026-10-26
                     
                     
                         <br/>
                         创建日期:
-                        2024-09-20
+                        2023-08-21
                     
                     </span>
 </p>
@@ -1261,6 +1261,10 @@ text-indent: 2em; /*首行缩进*/
 }
 </style>
 <p>为了给我的网站引入音乐，给浏览的用户（主要是我自己）增加一点使用体验，所以研究了一下如何把喜爱的音乐引入网站。自己下载下来直接播放容易引起版权问题，因此就想着能不能把网易云的歌单直接集成起来。</p>
+<div class="admonition info">
+<p class="admonition-title">2026 年 10 月更新</p>
+<p>首页和日本旅行文章现已改用网易云官方外链播放器，避免依赖第三方音乐解析接口。播放器不自动播放；如果嵌入播放受浏览器、地区或歌曲权限限制，可以使用播放器下方的链接前往网易云音乐。下文保留原来的 APlayer / MetingJS 使用记录。</p>
+</div>
 <p>先尝试了杨哥的做法，通过iframe直接导入单曲，但是这样做有两个问题，一是只能一首歌曲一首歌曲添加，非常的麻烦；二是长得确实不太好看。因此在网上搜了一下别人的做法，在搜索网易云的 API 的时候，发现竟然有人已经写好了：MetingJS，用得是 aplayer，我就去github给了他一个大大的⭐️，并记录下用法。</p>
 <div class="highlight"><span class="filename">引入js</span><pre><span></span><code><span class="cm">&lt;!-- require APlayer --&gt;</span>
 <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"</span><span class="p">&gt;</span>
