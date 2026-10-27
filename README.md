@@ -52,3 +52,8 @@ Keep private sources, original assets and backups out of Git.
 Validation: MkDocs build passed; headless Edge unlocked the encrypted release,
 converted a libheif HEIC sample, saved/read the encrypted photo and recovered it
 after reload. iPhone Safari has not been tested on a physical device.
+
+Uploaded photos have a Rename action (1-80 Unicode characters after trimming).
+Names are encrypted with the image, persist across reloads and travel with photo
+backups. Renaming preserves the photo ID and original ordering, including older
+photos. Built-in photos retain their curated captions.
