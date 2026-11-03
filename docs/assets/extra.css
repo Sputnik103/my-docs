@@ -489,12 +489,18 @@ html .md-typeset :is(.admonition-title,summary):last-child {
 }
 /* button */
 .md-typeset .md-button {
+    text-indent: 0;
+    text-align: center;
     /* background-color: orangered; */
     color: navy;
     border: 1px solid navy;
     padding: 0.125em 0.5em;
     font-weight: unset;
     font-size: revert;
+}
+.md-typeset .md-button--primary {
+    background-color: navy;
+    color: white;
 }
 .md-typeset .md-button:hover {
     background-color: navy;

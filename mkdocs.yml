@@ -5,6 +5,8 @@ site_name: Zhang Zhou's website
 site_url: https://zhangzhou.site/ # must have the trailing slash
 site_author: Zhang Zhou(jason_zhang_03@icloud.com)
 site_description: Interesting little things in my life and learning process.
+hooks:
+  - hooks/page_dates.py
 copyright: > # should remain a link to the original theme
   &copy; 2023-2023 Zhang Zhou's website<br>
   <a href="https://github.com/Sputnik103/my-docs">Blog Theme</a> /
@@ -96,7 +98,7 @@ theme:
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
   font:
-    text: Noto Serif
+    text: Noto Serif SC
     code: Roboto Mono
 
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
@@ -153,7 +155,8 @@ plugins:
   # - section-index # must be after awesome-pages, replaced by navigation.indexes
   - git-revision-date-localized:
         enable_creation_date: true
-        fallback_to_build_date: true
+        fallback_to_build_date: false
+        timezone: Asia/Shanghai
         type: iso_date
   - encryptcontent:
         hljs: false
@@ -281,7 +284,8 @@ extra_css:
   - /assets/extra.css
   - /assets/custom-image-grid.css # 实现图片网格（暂时不启用，在手机和safari上显示存在问题）
   - /assets/image_video.css # 实现图片视频居中和大小调节
+  - /assets/journal.css
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - /assets/journal.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js
