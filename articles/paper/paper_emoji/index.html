@@ -16,11 +16,12 @@
 <link href="../../../assets/stylesheets/main.eebd395e.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ecc896b0.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Noto Serif";--md-code-font:"Roboto Mono"}</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
 <link href="/assets/extra.css" rel="stylesheet"/>
 <link href="/assets/custom-image-grid.css" rel="stylesheet"/>
 <link href="/assets/image_video.css" rel="stylesheet"/>
+<link href="/assets/journal.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-MKM2NTMFNW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-MKM2NTMFNW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-MKM2NTMFNW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
@@ -55,6 +56,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#emoji">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -82,65 +86,7 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
-<!-- Logo -->
-<img alt="logo" src="/assets/logo_light.gif"/>
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
+<span aria-hidden="true" class="journal-monogram">Z.</span>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -285,65 +231,7 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
-<!-- Logo -->
-<img alt="logo" src="/assets/logo_light.gif"/>
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
+<span aria-hidden="true" class="journal-monogram">Z.</span>
 </a>
     Zhang Zhou's website
   </label>
@@ -690,9 +578,79 @@
           var _pel = document.getElementById(_pid);
           _pel.checked  = false;
         })()' type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          EMNLP 2024
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         EMNLP 2024
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emoji">
+    为什么要研究 emoji？
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emoji_1">
+    方法：让帖子、词语和 emoji 在图中交流
+  </a>
+<nav aria-label="方法：让帖子、词语和 emoji 在图中交流" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+    1. 构建异构图
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+    2. 节点级子图对比学习
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+    3. 边级链接重建
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    实验：这些表示能带来什么？
+  </a>
+<nav aria-label="实验：这些表示能带来什么？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    小红书帖子热度预测
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#twitter">
+    Twitter 情感分类
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    哪些部分起了作用？
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    局限与思考
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -767,15 +725,9 @@
 </li>
 </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="目录" class="md-nav md-nav--secondary">
-</nav>
-<div class="tag-cloud-toc">
+<br/>
+<br/>
+<div class="tag-cloud-nav">
 <style>
     .tag-cloud {
         margin-top:0;
@@ -1143,6 +1095,78 @@
 </div>
 </div>
 </div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emoji">
+    为什么要研究 emoji？
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emoji_1">
+    方法：让帖子、词语和 emoji 在图中交流
+  </a>
+<nav aria-label="方法：让帖子、词语和 emoji 在图中交流" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+    1. 构建异构图
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+    2. 节点级子图对比学习
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+    3. 边级链接重建
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    实验：这些表示能带来什么？
+  </a>
+<nav aria-label="实验：这些表示能带来什么？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    小红书帖子热度预测
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#twitter">
+    Twitter 情感分类
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    哪些部分起了作用？
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    局限与思考
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <style>
@@ -1201,12 +1225,12 @@
 <span>
                     
                         最后更新:
-                        2024-09-20
+                        2026-11-03
                     
                     
                         <br/>
                         创建日期:
-                        2024-09-20
+                        2024-09-21
                     
                     </span>
 </p>
@@ -1253,6 +1277,70 @@
 <div class="toc">
 <h2>Table of Content</h2>
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emoji">
+    为什么要研究 emoji？
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#emoji_1">
+    方法：让帖子、词语和 emoji 在图中交流
+  </a>
+<nav aria-label="方法：让帖子、词语和 emoji 在图中交流" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+    1. 构建异构图
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+    2. 节点级子图对比学习
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+    3. 边级链接重建
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    实验：这些表示能带来什么？
+  </a>
+<nav aria-label="实验：这些表示能带来什么？" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    小红书帖子热度预测
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#twitter">
+    Twitter 情感分类
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    哪些部分起了作用？
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    局限与思考
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 <style>
@@ -1260,12 +1348,108 @@ p{
 text-indent: 2em; /*首行缩进*/
 }
 </style>
-<p>2024年9月20日，本网站的作者（也就是本人）在EMNLP 2024上发表了论文《Unleashing the Power of Emojis in Texts via Self-supervised Graph Pre-Training》。</p>
+<p>2024年9月20日，收到了论文《Unleashing the Power of Emojis in Texts via Self-supervised Graph Pre-Training》被 <strong>EMNLP 2024 主会</strong>录用的消息！</p>
 <p>历史性的一刻！本网站建立的初衷其实就是为了记录自己的研究成果，但是在投paper的路上坎坎坷坷，遇到许多困难，后来本网站也逐渐转型成一个记录自己的学习生活的平台。今天终于回归本职工作！</p>
-<p>本论文的主要工作是：通过设计两类自监督图预训练（self-supervised graph pre-training）任务，学习文本中emoji的语义和结构信息，得到emoji的表征，并基于emoji的表征进行多种下游任务。</p>
-<p>详细内容会在我整理完成后更新在本网站上。</p>
+<p><a class="md-button md-button--primary" href="https://arxiv.org/abs/2409.14552" rel="noopener noreferrer" target="_blank">阅读论文 · arXiv</a>
+<a class="md-button" href="https://arxiv.org/pdf/2409.14552" rel="noopener noreferrer" target="_blank">PDF 全文</a></p>
+<p><strong>作者：</strong> Zhou Zhang、Dongzeng Tan、Jiaan Wang、Yilong Chen、Jiarong Xu。本人和 Dongzeng Tan 为共同第一作者。</p>
+<div class="admonition abstract">
+<p class="admonition-title">这篇论文做了什么？</p>
+<p>我们把社交媒体中的帖子、词语和 emoji 放进同一张异构图，通过节点级对比学习与边级链接重建，让文本和 emoji 的表征相互补充。学到的表征可以与语言模型结合，用于帖子热度预测和情感分类。</p>
+</div>
+<h2 id="emoji">为什么要研究 emoji？<a class="headerlink" href="#emoji" title="Permanent link">#</a></h2>
+<p>在社交媒体上，emoji 往往承载着文字之外的情绪和语气。同一个表情放在不同句子里，可能表达喜悦、无奈，甚至反讽。直接删掉它会丢失信息；只把它当成一个普通字符，或者替换成固定的文字描述，也很难保留这种依赖上下文的含义。</p>
+<p>因此，我们关心的问题是：<strong>能否利用帖子本身的结构和上下文，在不依赖人工语义标注的预训练阶段，同时学习文本和 emoji 的表示？</strong></p>
+<h2 id="emoji_1">方法：让帖子、词语和 emoji 在图中交流<a class="headerlink" href="#emoji_1" title="Permanent link">#</a></h2>
+<figure class="paper-figure">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/emoji/all_task.png"><img alt="整体流程：左侧构建帖子、词语和 emoji 异构图，中间通过节点级与边级任务进行图预训练，右侧融合表示并完成热度预测和情感分类。" loading="lazy" src="../assets/emoji/all_task.png" style="width:100%;background:white"/></a>
+<figcaption>整体流程示意：异构图构建 → 图预训练 → 表征融合与下游分类。点击图片可放大查看。</figcaption>
+</figure>
+<p>读图可以从左往右看：先把帖子中的文字和表情连接起来，再通过图上的自监督任务学习表征，最后把这些表示用于具体的预测任务。</p>
+<div class="admonition note">
+<p class="admonition-title">原图标注说明</p>
+<p>上图来自我本地保留的研究流程图，保持原样展示。图中边级任务的 “Contrastive learning” 是原始示意图标注；论文最终采用的是<strong>边级链接重建</strong>，即区分真实连接和采样的非连接。具体训练目标以论文及下文说明为准。</p>
+</div>
+<h3 id="1">1. 构建异构图<a class="headerlink" href="#1" title="Permanent link">#</a></h3>
+<p>图中包含三类节点：<strong>帖子、词语、emoji</strong>。帖子和词语的初始表示来自预训练语言模型，emoji 的表示随机初始化，再通过图预训练学习。</p>
+<table>
+<thead>
+<tr>
+<th>连接关系</th>
+<th>如何构建</th>
+<th>希望保留的信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>帖子 ↔ emoji</td>
+<td>连接帖子与其中出现的 emoji</td>
+<td>表情与整篇内容的关联</td>
+</tr>
+<tr>
+<td>帖子 ↔ 词语</td>
+<td>连接帖子与 hashtag 中的关键词</td>
+<td>帖子的主题，避免连接全部词语带来噪声</td>
+</tr>
+<tr>
+<td>词语 ↔ emoji</td>
+<td>连接 emoji 与其局部窗口内的邻近词</td>
+<td>表情的位置及附近语境</td>
+</tr>
+</tbody>
+</table>
+<p>这样，使用相同表情或主题词的帖子可以建立间接联系，emoji 也可以从不同帖子的使用方式中积累语义信息。</p>
+<h3 id="2">2. 节点级子图对比学习<a class="headerlink" href="#2" title="Permanent link">#</a></h3>
+<p>从某个节点出发，通过随机游走采样不同子图。同一出发节点得到的子图作为正样本对；不同出发节点（但节点类型相同）得到的子图作为负样本对。利用 InfoNCE 对比损失，让同一节点的不同邻域视图更接近，帮助模型学习相对稳定的语义表示。这个任务分别用于帖子、词语和 emoji 节点。</p>
+<h3 id="3">3. 边级链接重建<a class="headerlink" href="#3" title="Permanent link">#</a></h3>
+<p>将图中真实存在的边作为正样本，随机采样不存在的连接作为负样本，让模型判断两个节点之间是否应当有边。三类连接都参与训练，分别对应帖子与表情的关联、关键词识别以及表情与邻近词的位置关系。</p>
+<p>两个任务分别从节点邻域和跨类型连接出发，使用图神经网络编码器学习表示；实验采用两层 GIN。预训练后，将帖子中的 emoji 表征、文本与整个 emoji 表征集合的交互特征，与语言模型给出的文本表示拼接，再完成下游分类。</p>
+<h2 id="_1">实验：这些表示能带来什么？<a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
+<h3 id="_2">小红书帖子热度预测<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<p>我们收集了超过 400 万条小红书帖子。分别针对点赞、收藏和评论数量，按分位数划分低、中、高三档，把热度预测建模为三分类任务，而不是直接预测精确的互动次数。评价使用 <strong>加权 F1（Weighted F1）</strong>，实验重复 10 次并报告平均结果。</p>
+<p>下面摘录论文表 2 中 <strong>Llama2-7B 作为文本骨干模型</strong>时的结果。比较对象是同一骨干下各任务表现最好的基线：</p>
+<table>
+<thead>
+<tr>
+<th>预测任务</th>
+<th>最佳基线</th>
+<th>我们的方法</th>
+<th>加权 F1 绝对提升</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>点赞档位</td>
+<td>Emoji Co-occurrence：0.4912</td>
+<td><strong>0.5120</strong></td>
+<td>+0.0208</td>
+</tr>
+<tr>
+<td>收藏档位</td>
+<td>Emoji2vec：0.4695</td>
+<td><strong>0.4776</strong></td>
+<td>+0.0081</td>
+</tr>
+<tr>
+<td>评论档位</td>
+<td>Emoji2vec：0.4631</td>
+<td><strong>0.4695</strong></td>
+<td>+0.0064</td>
+</tr>
+</tbody>
+</table>
+<p>论文也比较了 BERT、GPT2、RoBERTa 和 OPT-1.3B 等文本骨干。这里的增量是 F1 的绝对差值，不是相对百分比，也不代表对未来传播效果的因果判断。</p>
+<h3 id="twitter">Twitter 情感分类<a class="headerlink" href="#twitter" title="Permanent link">#</a></h3>
+<p>在包含 emoji 的 Twitter 帖子上，模型区分正面、中性和负面三类情感。论文表 4 中，我们的方法取得 <strong>0.5679</strong> 的加权 F1，高于 SEntiMoji 的 <strong>0.5512</strong> 和 Emoji2vec 的 <strong>0.5507</strong>。相较最强基线 SEntiMoji，绝对提升为 <strong>0.0167</strong>。</p>
+<h3 id="_3">哪些部分起了作用？<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<p>消融实验逐一移除节点级或边级预训练子任务，热度预测表现都会下降。这说明，在论文的实验设置下，帖子、词语、emoji 的邻域信息及它们之间的连接关系，都能为最终表示提供帮助。</p>
+<h2 id="_4">局限与思考<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
+<p>这项工作的前提是能正确识别和切分 emoji。它尚不能直接处理图片形式的表情包；对反讽、跨文化语义和多个表情混合表达的复杂情绪，也仍有判断错误。预训练中未出现的词语或 emoji 在下游处理中会被丢弃，存在词表覆盖的限制。另外，小红书数据出于隐私与伦理考虑不公开。</p>
+<p>对我来说，这篇工作的一个收获是：理解社交媒体文本时，除了文字本身，还值得认真对待表情、局部位置和帖子之间共享的结构信息。</p>
+<hr/>
+<p>本文的方法与实验介绍依据 <a href="https://arxiv.org/html/2409.14552v2">arXiv v2 全文</a>整理；具体设置、完整结果和参考文献请以论文为准。</p>
 <h2 id="__comments">评论</h2>
-<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOJ71KPs4CYpHp" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Sputnik103/my-docs" data-repo-id="R_kgDOJ71KPg" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOJ71KPs4CYpHp" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Sputnik103/my-docs" data-repo-id="R_kgDOJ71KPg" data-strict="0" data-theme="light" src="https://giscus.app/client.js">
 </script>
 <!-- Synchronize Giscus theme with palette -->
 <script>
@@ -1281,6 +1465,7 @@ text-indent: 2em; /*首行缩进*/
     /* Register event handlers after documented loaded */
     document.addEventListener("DOMContentLoaded", function() {
       var ref = document.querySelector("[data-md-component=palette]")
+      if (!ref) return;
       ref.addEventListener("change", function() {
         var palette = __md_get("__palette")
         if (palette && typeof palette.color === "object") {
@@ -1288,6 +1473,7 @@ text-indent: 2em; /*首行缩进*/
 
           /* Instruct Giscus to change theme */
           var frame = document.querySelector(".giscus-frame")
+          if (!frame) return;
           frame.contentWindow.postMessage(
             { giscus: { setConfig: { theme } } },
             "https://giscus.app"
@@ -1356,7 +1542,7 @@ text-indent: 2em; /*首行缩进*/
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
 <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="/assets/journal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

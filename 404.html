@@ -52,8 +52,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Serif";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -62,6 +62,8 @@
       <link rel="stylesheet" href="/assets/custom-image-grid.css">
     
       <link rel="stylesheet" href="/assets/image_video.css">
+    
+      <link rel="stylesheet" href="/assets/journal.css">
     
     <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -149,70 +151,7 @@
   IN THE SOFTWARE.
 -->
 
-<!-- Logo -->
-
-  <img src="/assets/logo_light.gif" alt="logo" />
-
-
-
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
-  
+<span class="journal-monogram" aria-hidden="true">Z.</span>
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
@@ -587,7 +526,7 @@
       <script src="/assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+          <script src="/assets/journal.js"></script>
         
       
         

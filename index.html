@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Interesting little things in my life and learning process." name="description"/>
+<meta content="张舟的个人网站，记录研究、代码与生活。" name="description"/>
 <meta content="Zhang Zhou(jason_zhang_03@icloud.com)" name="author"/>
 <link href="https://zhangzhou.site/" rel="canonical"/>
 <link href="about/" rel="next"/>
@@ -15,18 +15,19 @@
 <link href="assets/stylesheets/main.eebd395e.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.ecc896b0.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Noto Serif";--md-code-font:"Roboto Mono"}</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
 <link href="/assets/extra.css" rel="stylesheet"/>
 <link href="/assets/custom-image-grid.css" rel="stylesheet"/>
 <link href="/assets/image_video.css" rel="stylesheet"/>
+<link href="/assets/journal.css" rel="stylesheet"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-MKM2NTMFNW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-MKM2NTMFNW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-MKM2NTMFNW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
 <!-- Open Graph -->
 <meta content="website" property="og:type"/>
 <meta content="Zhang Zhou's Website - Zhang Zhou's website" property="og:title"/>
-<meta content=" - Interesting little things in my life and learning process." property="og:description"/>
+<meta content="张舟的个人网站，记录研究、代码与生活。 - Interesting little things in my life and learning process." property="og:description"/>
 <meta content="https://zhangzhou.site/" property="og:url"/>
 <meta content="https://zhangzhou.site/assets/banner.jpg" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
@@ -35,7 +36,7 @@
 <!-- Twitter Cards -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Zhang Zhou's Website - Zhang Zhou's website" name="twitter:title"/>
-<meta content=" - Interesting little things in my life and learning process." name="twitter:description"/>
+<meta content="张舟的个人网站，记录研究、代码与生活。 - Interesting little things in my life and learning process." name="twitter:description"/>
 <meta content="https://zhangzhou.site/assets/banner.jpg" name="twitter:image"/>
 <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -54,9 +55,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#congrats-you-found-me">
-          跳转至
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -84,65 +82,7 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
-<!-- Logo -->
-<img alt="logo" src="/assets/logo_light.gif"/>
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
+<span aria-hidden="true" class="journal-monogram">Z.</span>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -255,7 +195,7 @@
 </nav>
 <main class="md-main" data-md-component="main">
 <div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden="">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
@@ -282,65 +222,7 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
-<!-- Logo -->
-<img alt="logo" src="/assets/logo_light.gif"/>
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
+<span aria-hidden="true" class="journal-monogram">Z.</span>
 </a>
     Zhang Zhou's website
   </label>
@@ -351,41 +233,9 @@
           var _pel = document.getElementById(_pid);
           _pel.checked  = false;
         })()' type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-</label>
 <a class="md-nav__link md-nav__link--active" href=".">
         Home
       </a>
-<nav aria-label="目录" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#about">
-    About
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#blog">
-    Blog
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#projects">
-    Projects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#articles">
-    Articles
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="about/">
@@ -796,377 +646,10 @@
 </li>
 </ul>
 </nav>
-<br/>
-<br/>
-<div class="tag-cloud-nav">
-<style>
-    .tag-cloud {
-        margin-top:0;
-        margin-bottom: 0.5em;
-    }
-    .tag-cloud-content {
-        padding: 0 0.6rem;
-        
-    }
-</style>
-<p class="md-nav tag-cloud">
-<label class="md-nav__title">Tag cloud</label>
-</p>
-<div class="tag-cloud-content">
-<a class="tag" href="https://zhangzhou.site//tags/#功能">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkGoldenrod;
-                ">功能 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#音乐">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.6rem;
-                    
-                    color:DarkGreen;
-                ">音乐 
-                </span>
-<!--<sup class="tag-count">2</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#Markdown">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkOliveGreen;
-                ">Markdown 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#Memo">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkCyan;
-                ">Memo 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#EMNLP">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkTurquoise;
-                ">EMNLP 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#paper">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkBlue;
-                ">paper 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#统计学">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkMagenta;
-                ">统计学 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#随机过程">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkViolet;
-                ">随机过程 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#咨询">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkSlateBlue;
-                ">咨询 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#实习">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.65rem;
-                    
-                    color:DarkOrchid;
-                ">实习 
-                </span>
-<!--<sup class="tag-count">3</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#量化">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkSlateGray;
-                ">量化 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#互联网">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkRed;
-                ">互联网 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#柔术">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.65rem;
-                    
-                    color:DarkGoldenrod;
-                ">柔术 
-                </span>
-<!--<sup class="tag-count">3</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#半防下位">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkGreen;
-                ">半防下位 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#封闭式防守">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.65rem;
-                    
-                    color:DarkOliveGreen;
-                ">封闭式防守 
-                </span>
-<!--<sup class="tag-count">3</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#入门十二课">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.6rem;
-                    
-                    color:DarkCyan;
-                ">入门十二课 
-                </span>
-<!--<sup class="tag-count">2</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#毕业">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.6rem;
-                    
-                    color:DarkTurquoise;
-                ">毕业 
-                </span>
-<!--<sup class="tag-count">2</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#复旦大学">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkBlue;
-                ">复旦大学 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#旅行">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.7rem;
-                    
-                    color:DarkMagenta;
-                ">旅行 
-                </span>
-<!--<sup class="tag-count">4</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#日本">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkViolet;
-                ">日本 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#广州">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkSlateBlue;
-                ">广州 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#陈奕迅">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkOrchid;
-                ">陈奕迅 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#Covid">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkSlateGray;
-                ">Covid 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#厦门">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkRed;
-                ">厦门 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#泉州">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkGoldenrod;
-                ">泉州 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#看视频">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkGreen;
-                ">看视频 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#科技">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkOliveGreen;
-                ">科技 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#爬虫">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkCyan;
-                ">爬虫 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
-<a class="tag" href="https://zhangzhou.site//tags/#Python">
-<span class="tag-name" style="
-                    
-                        
-                    
-                        font-size:0.55rem;
-                    
-                    color:DarkTurquoise;
-                ">Python 
-                </span>
-<!--<sup class="tag-count">1</sup>-->
-</a>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <div class="tag-cloud-toc">
@@ -1539,222 +1022,29 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<style>
-    .md-typeset .cover {
-        margin-bottom: 1em;
-    }
-    .md-typeset .page-category {
-        color: gray;
-        font-size: large;
-    }
-    .md-typeset .page-title {
-        margin-left: -0.0625em;
-    }
-    .md-typeset .page-extra {
-        color: gray;
-        font-size: small;
-    }
-    .md-typeset .page-tags {
-        margin: 0;
-    }
-    .md-typeset .page-date {
-        margin: 0;
-        text-align: end;
-    }
-    @media print {
-        .md-typeset .cover {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .md-typeset .cover + * {
-            margin-top: 0;
-        }
-    }
-</style>
-<div class="cover">
-<h1 class="page-title"> Zhang Zhou's Website </h1>
-<div class="page-extra row">
-<div class="col">
+<div class="journal-home">
+<section class="hero"><div class="hero-copy"><div class="eyebrow" id="hero-label">A SMALL CORNER OF THE INTERNET</div><h1>Stay curious.<br/><i>Keep living.</i></h1><p class="intro">你好，我是张舟。<br/>在研究里保持好奇，在生活里收集片刻。<br/>这里放着我的论文、代码，还有走过的风景。</p><div class="hero-actions"><a class="pill" href="/about/">认识一下我 ↗</a><a href="#selected" style="font-size:12px">随便逛逛 ↓</a></div></div><figure class="portrait"><img alt="日本旅行中拍摄的大阪通天阁街景" src="/blog/travel/assets/japan/sky_osaka.jpg"/><figcaption><span>OSAKA, JAPAN</span><span>FROM MY TRAVEL JOURNAL ↗</span></figcaption></figure></section>
+<div class="layout"><section class="content" id="selected"><div class="section-title">SELECTED STORIES <span>研究与生活的切片</span></div><div class="stories">
+<a class="story" href="/articles/paper/paper_emoji/"><span class="eyebrow">01 / RESEARCH</span><h2>让模型读懂<br/>文字之外的表情。</h2><p>EMNLP 2024 · 用自监督图预训练，学习文本与 emoji 的关联。</p><span class="read">阅读论文介绍 ↗</span></a>
+<a class="story travel" href="/blog/travel/graduation_travel/"><img alt="日本旅行中的竹林" loading="lazy" src="/blog/travel/assets/japan/bamboo.jpg"/><div class="inside"><span class="eyebrow">02 / ON THE ROAD</span><h2>再一次，走进日本。</h2><p>从关西到关东，记录旅途中那些值得留下的瞬间。</p><span class="read">翻开旅行手记 ↗</span></div></a>
+<a class="research" href="/projects/"><div><span class="eyebrow">03 / BUILD &amp; EXPLORE</span><h3>把一些想法，写成可以运行的东西。</h3><p>Python、数据与可视化，以及做项目时的小小发现。</p></div><span class="arrow">↗</span></a>
+</div><div class="directory"><a href="/about/">关于我 ↗</a><a href="/articles/">知识分享 ↗</a><a href="/tags/">按标签探索 ↗</a><a href="https://github.com/Sputnik103" rel="noopener noreferrer" target="_blank">GitHub ↗</a></div></section>
+<aside><div class="aside-label">ON MY DESK / 此时此刻</div><section class="widget"><div class="widget-top"><span><i class="live-dot"></i>此刻 · UTC+8</span><span>LIVE</span></div><div class="clock" id="clock">--:--:--</div><div class="clock-date" id="date"></div></section>
+<section class="widget"><div class="widget-top"><span>CALENDAR</span><span>日常的刻度</span></div><div class="cal-header"><button aria-label="上个月" id="prev">‹</button><span id="month"></span><button aria-label="下个月" id="next">›</button></div><div aria-label="月历" class="calendar" id="calendar"></div><button class="today-button" id="today">回到本月 ↗</button></section>
+<section aria-label="阅读配乐" class="widget music-widget">
+<div class="widget-top"><span>THE SOUNDTRACK</span><span>VOL. 01</span></div>
+<div class="music-sleeve">
+<div aria-hidden="true" class="music-record"><span></span></div>
+<div class="music-track"><span class="music-kicker">给阅读配一点音乐</span><h4>Welcome Horizons</h4><span class="music-artist">Nintendo Sound Team</span></div>
 </div>
-<div class="col">
-<p class="page-date">
-<span>
-                    
-                        最后更新:
-                        2026-10-26
-                    
-                    
-                        <br/>
-                        创建日期:
-                        2023-07-15
-                    
-                    </span>
-</p>
+<details class="music-controls">
+<summary><span aria-hidden="true">▷</span> 展开播放器 <span aria-hidden="true" class="music-toggle">＋</span></summary>
+<div class="music-shell"><iframe loading="lazy" src="https://music.163.com/outchain/player?type=2&amp;id=1433983480&amp;auto=0&amp;height=66" title="网易云音乐播放器"></iframe></div>
+<p class="music-note">在下方控件中点击播放，不会自动播放。</p>
+</details>
+<a class="music-link" href="https://music.163.com/#/song?id=1433983480" rel="noopener noreferrer" target="_blank">网易云音乐 ↗</a>
+</section></aside></div>
 </div>
-</div>
-</div>
-<hr class="screen-only"/>
-<style>
-    .md-typeset .toc {
-        display: none;
-    }
-    .md-typeset .toc label {
-        display: none;
-    }
-    .md-typeset .toc .md-nav {
-        font-size: unset;
-        line-height: 1.6;
-    }
-    .md-typeset .toc .md-nav--secondary {
-        margin-left: -2em;
-    }
-    .md-typeset .toc .md-nav__list {
-        margin: 0;
-    }
-    .md-typeset .toc ul {
-        list-style: none;
-    }
-    @media print {
-        .md-typeset .toc {
-            display: block;
-            page-break-after: always;
-        }
-        .md-typeset .toc .md-nav__link {
-            color: var(--md-typeset-a-color);
-        }
-        .md-typeset .toc .md-nav__link.md-nav__link--active {
-            font-weight: unset;
-        }
-        .md-typeset .toc + * {
-            margin-top: 0;
-        }
-    }
-</style>
-<div class="toc">
-<h2>Table of Content</h2>
-<nav aria-label="目录" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#about">
-    About
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#blog">
-    Blog
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#projects">
-    Projects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#articles">
-    Articles
-  </a>
-</li>
-</ul>
-</nav>
-</div>
-<style>
-    .md-typeset .cover {
-        display: none;
-    }
-    .md-typeset .cover + hr {
-        display: none;
-    }
-    .md-typeset h1 {
-        color: orange;
-    }
-    .md-typeset h2 {
-        color: black;
-    }
-</style>
-<h1 id="congrats-you-found-me">🎉Congrats! You found me🎉!<a class="headerlink" href="#congrats-you-found-me" title="Permanent link">#</a></h1>
-<div class="highlight"><span class="filename">Hello.py</span><pre><span></span><code><span class="k">while</span> <span class="s2">"False"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"人生苦短，我用Python！"</span><span class="p">)</span>
-</code></pre></div>
-<p>这里是​​<mark class="critic"><strong>张舟</strong></mark>的个人网站，用来记录生活和一些有趣的个人项目(ﾉ ◕ ヮ ◕)ﾉ*:・ﾟ ✧</p>
-<p><em>2024年9月20日，本网站迎来了第一篇（可能也是唯一一篇）学术成果：本人和檀哥合作的文章被EMNLP2024接收啦！可喜可贺🎉🎉🎉！</em> <a class="md-button" href="articles/paper/paper_emoji/">Explore</a></p>
-<iframe height="86" loading="lazy" src="https://music.163.com/outchain/player?type=2&amp;id=1433983480&amp;auto=0&amp;height=66" style="max-width:100%;border:0" title="网易云音乐单曲播放器" width="330"></iframe>
-<p><a href="https://music.163.com/#/song?id=1433983480" rel="noopener noreferrer" target="_blank">在网易云音乐中播放</a></p>
-<div class="row">
-<div class="col">
-<h2 id="about"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"></path></svg></span> About<a class="headerlink" href="#about" title="Permanent link">#</a></h2>
-<p>1999年10月3日（生日）以来的经历，音乐，电影，书籍……这里是一切与我相关，想了解我的话就来看吧！</p>
-<p><a class="md-button" href="about/">Explore</a></p>
-</div>
-<div class="col">
-<h2 id="blog"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12Z"></path></svg></span> Blog<a class="headerlink" href="#blog" title="Permanent link">#</a></h2>
-<p>这里是我的一些随想与见闻，记录下来与你分享，希望你至少能在这里收获快乐。</p>
-<p><a class="md-button" href="blog/">Read news</a></p>
-</div>
-</div>
-<div class="row">
-<div class="col">
-<h2 id="projects"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m.12 13.5 3.74 3.74 1.42-1.41-2.33-2.33 2.33-2.33-1.42-1.41-3.74 3.74m11.16 0-3.74-3.74-1.42 1.41 2.33 2.33-2.33 2.33 1.42 1.41 3.74-3.74Z"></path></svg></span> Projects<a class="headerlink" href="#projects" title="Permanent link">#</a></h2>
-<p>这里是我在空闲时间为学习和练习而完成的项目列表，有任何想法的话请联系我一起学习。</p>
-<p><a class="md-button" href="projects/">See projects</a></p>
-</div>
-<div class="col">
-<h2 id="articles"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3 7 3V5a2 2 0 0 0-2-2Z"></path></svg></span> Articles<a class="headerlink" href="#articles" title="Permanent link">#</a></h2>
-<p>这里是一些知识的分享，可能有用也可能无用，希望你能找到你想要的。</p>
-<p><a class="md-button" href="articles/">See articles</a></p>
-</div>
-</div>
-<!-- ## :material-github: GitHub Stats
-
-::: row
-
-    ::: col
-
-        ![](https://github-readme-stats.vercel.app/api?username=Sputnik103&count_private=true&show_icons=true&hide_border=true&hide_title=true)
-
-    ::: col
-
-        ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sputnik103&layout=compact&langs_count=8&hide=html,autoit&hide_border=true&hide_title=true)
-
-> Using __GitHub Stats__ and __Top Langs__ by [:material-github: anuraghazra](https://github.com/anuraghazra/github-readme-stats) -->
-<p><br/></p>
-<h2 id="__comments">评论</h2>
-<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOJ71KPs4CYpHp" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Sputnik103/my-docs" data-repo-id="R_kgDOJ71KPg" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
-</script>
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1815,7 +1105,7 @@
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
 <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
 <script src="assets/javascripts/bundle.220ee61c.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="/assets/journal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

@@ -16,11 +16,12 @@
 <link href="../../../assets/stylesheets/main.eebd395e.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ecc896b0.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Noto Serif";--md-code-font:"Roboto Mono"}</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
 <link href="/assets/extra.css" rel="stylesheet"/>
 <link href="/assets/custom-image-grid.css" rel="stylesheet"/>
 <link href="/assets/image_video.css" rel="stylesheet"/>
+<link href="/assets/journal.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-MKM2NTMFNW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-MKM2NTMFNW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-MKM2NTMFNW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
@@ -85,65 +86,7 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
-<!-- Logo -->
-<img alt="logo" src="/assets/logo_light.gif"/>
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
+<span aria-hidden="true" class="journal-monogram">Z.</span>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -288,65 +231,7 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
-<!-- Logo -->
-<img alt="logo" src="/assets/logo_light.gif"/>
-<!-- Add this inside the <body> section -->
-<script>
-  // Function to toggle the logo based on the theme
-  function toggleLogoBasedOnTheme() {
-    const logoElement = document.querySelector('.md-header__button.md-logo img');
-    const lightLogoSrc = '/assets/logo_light.gif';
-    const darkLogoSrc = '/assets/logo_dark.gif';
-
-    // Get the value of data-md-color-scheme attribute
-    const colorScheme = document.body.getAttribute('data-md-color-scheme');
-
-    // Check if the current theme is dark (slate)
-    const isDarkTheme = colorScheme === 'slate';
-
-    // Set the appropriate logo based on the theme
-    logoElement.src = isDarkTheme ? darkLogoSrc : lightLogoSrc;
-  }
-
-  // Function to handle the theme change event
-  function handleThemeChange() {
-    // Listen for the themechange event on the document
-    document.addEventListener('themechange', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the dark mode switch event
-  function handleDarkModeSwitch() {
-    const darkModeInput = document.getElementById('__palette_2');
-
-    // Listen for the change event on the dark mode switch
-    darkModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Function to handle the light mode switch event
-  function handleLightModeSwitch() {
-    const lightModeInput = document.getElementById('__palette_1');
-
-    // Listen for the change event on the light mode switch
-    lightModeInput.addEventListener('change', function () {
-      // Call the function to toggle the logo based on the theme
-      toggleLogoBasedOnTheme();
-    });
-  }
-
-  // Call the function when the page loads
-  document.addEventListener('DOMContentLoaded', function () {
-    toggleLogoBasedOnTheme(); // Set the logo based on the initial theme
-    handleThemeChange(); // Add event listener for theme change
-    handleDarkModeSwitch(); // Add event listener for dark mode switch
-    handleLightModeSwitch(); // Add event listener for light mode switch
-  });
-</script>
+<span aria-hidden="true" class="journal-monogram">Z.</span>
 </a>
     Zhang Zhou's website
   </label>
@@ -1244,12 +1129,12 @@
 <span>
                     
                         最后更新:
-                        2026-10-26
+                        2026-10-27
                     
                     
                         <br/>
                         创建日期:
-                        2023-07-21
+                        2023-07-22
                     
                     </span>
 </p>
@@ -1337,7 +1222,7 @@ text-indent: 2em; /*首行缩进*/
 </figure>
 <p>最后就是去了重庆的四川美术学院美术馆，然后冷的买了件外套🤡。重庆的火锅和烧烤确实味道很棒，下次还想再去吃。</p>
 <h2 id="__comments">评论</h2>
-<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOJ71KPs4CYpHp" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Sputnik103/my-docs" data-repo-id="R_kgDOJ71KPg" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOJ71KPs4CYpHp" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Sputnik103/my-docs" data-repo-id="R_kgDOJ71KPg" data-strict="0" data-theme="light" src="https://giscus.app/client.js">
 </script>
 <!-- Synchronize Giscus theme with palette -->
 <script>
@@ -1353,6 +1238,7 @@ text-indent: 2em; /*首行缩进*/
     /* Register event handlers after documented loaded */
     document.addEventListener("DOMContentLoaded", function() {
       var ref = document.querySelector("[data-md-component=palette]")
+      if (!ref) return;
       ref.addEventListener("change", function() {
         var palette = __md_get("__palette")
         if (palette && typeof palette.color === "object") {
@@ -1360,6 +1246,7 @@ text-indent: 2em; /*首行缩进*/
 
           /* Instruct Giscus to change theme */
           var frame = document.querySelector(".giscus-frame")
+          if (!frame) return;
           frame.contentWindow.postMessage(
             { giscus: { setConfig: { theme } } },
             "https://giscus.app"
@@ -1428,7 +1315,7 @@ text-indent: 2em; /*首行缩进*/
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
 <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="/assets/journal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
