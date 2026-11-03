@@ -4,7 +4,8 @@
 
 {# scan all pages #}
 {% for p in pages %}
-  {% if p.page.meta.tags %}
+  {% set hidden = p.page.meta.hide and 'in_recent_list' in p.page.meta.hide %}
+  {% if p.page.meta.tags and not hidden %}
     {# extract tags if available #}
     {% for tag in p.page.meta.tags %}
       {% if tags|length %}

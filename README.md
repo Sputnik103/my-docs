@@ -36,6 +36,13 @@ the final paper's link-reconstruction objective. No private drafts are bundled.
 
 ## Editorial theme
 
+Tag clouds retain the original per-tag colors and frequency-based font sizes.
+The Japan graduation travel page uses `hide: [in_recent_list]` and is omitted
+from explicit navigation, article lists, tag listings and tag-cloud counts.
+The homepage travel recommendation links to Xiamen instead. The Japan page and
+its existing URL remain built and included in site search; this is discoverability
+control, not password protection.
+
 `docs/assets/journal.css` layers a warm ivory / olive editorial design over the
 existing Material navigation, search, article lists, tables, code and metadata.
 Headings use Georgia / Noto Serif SC with system fallbacks. Existing article
@@ -56,6 +63,10 @@ and obsolete polyfill dependency are no longer loaded. The three independent
 design studies remain outside the repository in `../homepage-previews/`.
 
 Changes are for local review until explicitly published.
+
+The homepage hides its permanent sidebar only at Material's desktop breakpoint
+(76.25em and up). Below that breakpoint the same sidebar remains available as
+the drawer, including tablet widths between 60em and 76.25em.
 
 Validation: full MkDocs build; browser checks of homepage, paper, blog and tags;
 390px homepage and paper without horizontal overflow; live clock, calendar

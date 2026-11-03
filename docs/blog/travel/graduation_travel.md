@@ -1,5 +1,7 @@
 ---
 title: 毕业旅行：日本
+hide:
+  - in_recent_list
 tags: 
   - 毕业
   - 旅行
