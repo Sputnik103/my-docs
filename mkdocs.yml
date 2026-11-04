@@ -42,6 +42,7 @@ nav:
         - 老石谈芯对谈anker CEO阳萌: blog/watch/tech/laoshi_anker.md
   - Projects: 
     - projects/index.md
+    - 2048 强化学习实验: projects/2048.md
     - Selenium爬虫应用实例: projects/spider.md
     - 程序设计与数据可视化课程:
       - projects/course/index.md
