@@ -43,6 +43,7 @@ nav:
   - Projects: 
     - projects/index.md
     - 2048 强化学习实验: projects/2048.md
+    - 日麻 AI 探索: projects/riichi-ai.md
     - Selenium爬虫应用实例: projects/spider.md
     - 程序设计与数据可视化课程:
       - projects/course/index.md
