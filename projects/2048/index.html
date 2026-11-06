@@ -1367,6 +1367,7 @@
 </div>
 <p>最初只是想做一个能在电脑上玩的 2048，后来又多了一个问题：能不能让模型自己玩、自己积累经验，逐渐学会合出更大的方块？于是，这个小项目从本地游戏扩展成了一套包含规则引擎、训练环境、模型播放和对照实验的强化学习实验平台。</p>
 <p>目前完成了三轮实验。最好的方法是 <strong>n-tuple afterstate TD 加后期局面训练</strong>，三个训练种子的独立测试平均分为 <strong>16,828.80</strong>，2048 达成率为 <strong>19.3%</strong>。用于窗口展示的单个模型达成率为 <strong>21.7%（65/300）</strong>。这是一份阶段性实验记录，还没有实现稳定通关。</p>
+<p><a class="md-button md-button--primary" href="https://github.com/Sputnik103/2048-reinforcement-learning">在 GitHub 查看源码与实验结果</a></p>
 <p>
 <figure><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/2048/preview.png"><img src="../assets/2048/preview.png"/></a><figcaption>2048 本地游戏窗口示例</figcaption>
 </figure>
