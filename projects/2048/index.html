@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、afterstate TD 与 n-tuple 的三轮实验。" name="description"/>
+<meta content="用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、n-tuple afterstate TD 和 GPU CNN 的四轮实验。" name="description"/>
 <meta content="Zhang Zhou(jason_zhang_03@icloud.com)" name="author"/>
 <link href="https://zhangzhou.site/projects/2048/" rel="canonical"/>
 <link href="../" rel="prev"/>
@@ -28,7 +28,7 @@
 <!-- Open Graph -->
 <meta content="website" property="og:type"/>
 <meta content="从本地游戏到强化学习：我的 2048 实验 - Zhang Zhou's website" property="og:title"/>
-<meta content="用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、afterstate TD 与 n-tuple 的三轮实验。 - Interesting little things in my life and learning process." property="og:description"/>
+<meta content="用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、n-tuple afterstate TD 和 GPU CNN 的四轮实验。 - Interesting little things in my life and learning process." property="og:description"/>
 <meta content="https://zhangzhou.site/projects/2048/" property="og:url"/>
 <meta content="https://zhangzhou.site/assets/banner.jpg" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
@@ -37,7 +37,7 @@
 <!-- Twitter Cards -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="从本地游戏到强化学习：我的 2048 实验 - Zhang Zhou's website" name="twitter:title"/>
-<meta content="用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、afterstate TD 与 n-tuple 的三轮实验。 - Interesting little things in my life and learning process." name="twitter:description"/>
+<meta content="用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、n-tuple afterstate TD 和 GPU CNN 的四轮实验。 - Interesting little things in my life and learning process." name="twitter:description"/>
 <meta content="https://zhangzhou.site/assets/banner.jpg" name="twitter:image"/>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -542,18 +542,32 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    用同一套新测试种子比较结果
+    第三轮独立测试
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
-    代表模型学到了什么，还缺什么？
+    第三轮代表模型与中后盘瓶颈
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
     为什么不能直接和论文的高达成率相比？
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gpu">
+    第四轮：用 GPU 比较卷积网络与棋盘对称性
+  </a>
+<nav aria-label="第四轮：用 GPU 比较卷积网络与棋盘对称性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#d4-cnn-2048">
+    看 D4 CNN 合出 2048
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
@@ -1166,18 +1180,32 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    用同一套新测试种子比较结果
+    第三轮独立测试
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
-    代表模型学到了什么，还缺什么？
+    第三轮代表模型与中后盘瓶颈
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
     为什么不能直接和论文的高达成率相比？
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gpu">
+    第四轮：用 GPU 比较卷积网络与棋盘对称性
+  </a>
+<nav aria-label="第四轮：用 GPU 比较卷积网络与棋盘对称性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#d4-cnn-2048">
+    看 D4 CNN 合出 2048
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
@@ -1233,7 +1261,7 @@
 <div class="cover">
 <h1 class="page-title"> 从本地游戏到强化学习：我的 2048 实验 </h1>
 <p class="page-description">
-            用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、afterstate TD 与 n-tuple 的三轮实验。
+            用同一套 2048 规则连接本地游戏、Gymnasium 环境和强化学习，记录 Double DQN、n-tuple afterstate TD 和 GPU CNN 的四轮实验。
         </p>
 <div class="page-extra row">
 <div class="col">
@@ -1260,7 +1288,7 @@
 <span>
                     
                         最后更新:
-                        2026-11-06
+                        2026-11-11
                     
                     
                         <br/>
@@ -1339,18 +1367,32 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    用同一套新测试种子比较结果
+    第三轮独立测试
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
-    代表模型学到了什么，还缺什么？
+    第三轮代表模型与中后盘瓶颈
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
     为什么不能直接和论文的高达成率相比？
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gpu">
+    第四轮：用 GPU 比较卷积网络与棋盘对称性
+  </a>
+<nav aria-label="第四轮：用 GPU 比较卷积网络与棋盘对称性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#d4-cnn-2048">
+    看 D4 CNN 合出 2048
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
@@ -1366,7 +1408,7 @@
 </nav>
 </div>
 <p>最初只是想做一个能在电脑上玩的 2048，后来又多了一个问题：能不能让模型自己玩、自己积累经验，逐渐学会合出更大的方块？于是，这个小项目从本地游戏扩展成了一套包含规则引擎、训练环境、模型播放和对照实验的强化学习实验平台。</p>
-<p>目前完成了三轮实验。最好的方法是 <strong>n-tuple afterstate TD 加后期局面训练</strong>，三个训练种子的独立测试平均分为 <strong>16,828.80</strong>，2048 达成率为 <strong>19.3%</strong>。用于窗口展示的单个模型达成率为 <strong>21.7%（65/300）</strong>。这是一份阶段性实验记录，还没有实现稳定通关。</p>
+<p>目前完成了四轮实验。第四轮中，加入旋转和镜像平均的 <strong>单输入 D4 CNN</strong> 将三种子平均 2048 达成率从普通 CNN 的 <strong>3.7% 提高到 18.7%</strong>。同一套测试种子上，上一轮 n-tuple H 的平均分与达成率仍最高。按验证集选出的 D4 CNN 展示模型在独立测试中有 <strong>87/300 局（29.0%）</strong> 达到 2048。</p>
 <p><a class="md-button md-button--primary" href="https://github.com/Sputnik103/2048-reinforcement-learning">在 GitHub 查看源码与实验结果</a></p>
 <p>
 <figure><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/2048/preview.png"><img src="../assets/2048/preview.png"/></a><figcaption>2048 本地游戏窗口示例</figcaption>
@@ -1445,7 +1487,7 @@
 </table>
 <p>n-tuple 用四组五格模式查询可训练权重，再将它们相加得到价值；旋转、镜像共享参数，共约 419 万个表格权重。它属于强化学习中的函数逼近方法，并不是深度神经网络。</p>
 <p>H 在 F/G 验证比较后采用表现更好的 n-tuple 方法，从头训练。训练每次重开时有 25% 的概率从局面池开始，池中只保存训练时真实到达的 256、512、1024 局面。验证和测试全部使用标准开局，不从这些后期棋盘起步，也不把保存局面的历史分数记作新奖励。</p>
-<h2 id="_4">用同一套新测试种子比较结果<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
+<h2 id="_4">第三轮独立测试<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
 <p>F/G/H 各训练三个种子（42、43、44），每个模型 300 万环境步。每 25 万步使用固定 100 局验证集，先按 2048 达成率、再按平均分选检查点。方法与代表模型的选择都在查看最终测试成绩前冻结。</p>
 <p>最终每个模型使用同一套 300 个新游戏种子，从标准开局测试，同时复测上一轮三个 DQN 模型及随机、贪心基线。</p>
 <table>
@@ -1503,15 +1545,67 @@
 </p>
 <p><em>第三轮原始实验图。误差条表示三个训练种子平均分的标准差，不是置信区间。</em></p>
 <p>H 相比 G 的平均分提升约 <strong>6.5%</strong>，2048 达成率增加约 <strong>5.9 个百分点</strong>。但不是每个训练种子都改善，seed 43 略有退步。F 与 G 的表示、参数量和更新机制也不同，这是完整方法之间的对照，不能只归因于换了一种表示。旧 DQN 每个种子只训练 100 万步，与第三轮并非等预算消融。</p>
-<h2 id="_5">代表模型学到了什么，还缺什么？<a class="headerlink" href="#_5" title="Permanent link">#</a></h2>
+<h2 id="_5">第三轮代表模型与中后盘瓶颈<a class="headerlink" href="#_5" title="Permanent link">#</a></h2>
 <p>按验证集选出的展示模型是 H 的 seed 42、300 万步检查点。它在独立测试中平均得分 <strong>17,475.41</strong>，65/300 局达到 2048，最高分 <strong>43,020</strong>。这里的 21.7% 是单个模型成绩，19.3% 才是 H 三个训练种子的平均达成率。</p>
 <p>H 组 900 次测试里，有 523 次最终最大方块停在 1024，没有出现 4096。模型已经比早期 DQN 更能维持棋盘结构，但中后盘依然是明显瓶颈。</p>
 <p>第三轮全部 4,200 个测试组合均自然结束，没有步数截断。实验启动前通过了 45 项自动测试，最终核对了核心代码指纹、代表模型与选定检查点的一致性，并验证模型可在 Pygame 游戏循环中加载和选择动作。这些是该轮保存的验证记录。</p>
 <h2 id="_6">为什么不能直接和论文的高达成率相比？<a class="headerlink" href="#_6" title="Permanent link">#</a></h2>
-<p>项目参考了 Szubert 与 Jaśkowski 的 <a href="https://mszubert.github.io/papers/Szubert_2014_CIG.pdf">2014 年 afterstate / n-tuple TD 论文</a>，但当前实现不是逐项复现。尤其需要区分 <strong>训练步数</strong> 与 <strong>完整游戏局数</strong>：当前代表模型训练 300 万次移动，完成了 4,055 局正常游戏和 1,316 个重启片段，不能当作训练了 300 万局。</p>
+<p>项目参考了 Szubert 与 Jaśkowski 的 <a href="https://mszubert.github.io/papers/Szubert_2014_CIG.pdf">2014 年 afterstate / n-tuple TD 论文</a>，但当前实现不是逐项复现。尤其需要区分 <strong>训练步数</strong> 与 <strong>完整游戏局数</strong>：第三轮代表模型训练 300 万次移动，完成了 4,055 局正常游戏和 1,316 个重启片段，不能当作训练了 300 万局。</p>
 <p>当前使用四组五格模式，并保留随机探索与自己的归一化权重更新方式。后续若与论文比较，应先对齐特征结构、训练策略、更新规则和完整游戏预算，再讨论达成率差异；现在不能把二成左右的成绩看作 n-tuple 方法的上限。</p>
+<h2 id="gpu">第四轮：用 GPU 比较卷积网络与棋盘对称性<a class="headerlink" href="#gpu" title="Permanent link">#</a></h2>
+<p>这一轮继续用 afterstate 估计未来得分。普通 CNN 读取移动并合并后的棋盘。单输入 D4 CNN 对棋盘的八种旋转与镜像分别估值，再取平均。双输入 D4 CNN 还读取移动前的棋盘，两个棋盘一起旋转或镜像。</p>
+<p>三组各用训练 seed 42、43、44，每个模型在 RTX 4070 Ti 上训练 300 万环境步。三组共享训练预算、回放比例和课程学习设置，按验证集达成率、再按平均分选取检查点。选型冻结后，每个模型用相同的 300 个新游戏种子从两个随机方块开局，同时复测上一轮的三个 n-tuple H 模型。全部 3,600 个模型与游戏的组合都自然结束。</p>
+<table>
+<thead>
+<tr>
+<th>模型组</th>
+<th style="text-align: right;">独立测试平均分</th>
+<th style="text-align: right;">2048 达成次数</th>
+<th style="text-align: right;">达成率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通 CNN</td>
+<td style="text-align: right;">9,369.18</td>
+<td style="text-align: right;">33 / 900</td>
+<td style="text-align: right;">3.7%</td>
+</tr>
+<tr>
+<td>单输入 D4 CNN</td>
+<td style="text-align: right;">13,927.83</td>
+<td style="text-align: right;">168 / 900</td>
+<td style="text-align: right;">18.7%</td>
+</tr>
+<tr>
+<td>双输入 D4 CNN</td>
+<td style="text-align: right;">9,940.64</td>
+<td style="text-align: right;">67 / 900</td>
+<td style="text-align: right;">7.4%</td>
+</tr>
+<tr>
+<td>上一轮 n-tuple H，同种子复测</td>
+<td style="text-align: right;">17,165.05</td>
+<td style="text-align: right;">179 / 900</td>
+<td style="text-align: right;">19.9%</td>
+</tr>
+</tbody>
+</table>
+<p>加入 D4 对称平均后，三个训练种子的平均分和达成率都提高了，组达成率增加 <strong>15.0 个百分点</strong>。在 D4 基础上额外输入移动前棋盘后，三个种子的两项指标都下降了。n-tuple H 在同种子复测中仍领先 CNN。它使用在线表格更新，CNN 使用经验回放，因此这部分是两种完整训练方案的比较。</p>
+<p>
+<figure><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/2048/cnn_results.png"><img src="../assets/2048/cnn_results.png"/></a><figcaption>第四轮验证曲线与独立测试对比</figcaption>
+</figure>
+</p>
+<p><em>验证曲线阴影表示三个训练种子的范围。测试分数误差条表示三个种子平均分的标准差。</em></p>
+<h3 id="d4-cnn-2048">看 D4 CNN 合出 2048<a class="headerlink" href="#d4-cnn-2048" title="Permanent link">#</a></h3>
+<p>验证集选出的展示模型是单输入 D4 CNN 的 seed 43，在第 300 万步保存。该模型在独立测试中的平均分为 <strong>16,048.85</strong>，达成率为 <strong>29.0%（87/300）</strong>。同组三个模型的达成率分别为 3.0%、29.0% 和 24.0%，组平均为 18.7%。</p>
+<p>下方是一局选出的成功回放，游戏 seed 为 9000109。模型从标准开局出发，在第 <strong>986 步</strong>首次合出 2048，当时得分 <strong>20,492</strong>。视频约 51 秒，最后 28 步放慢播放。</p>
+<video controls="" height="770" playsinline="" poster="../assets/2048/cnn_replay_final.png" preload="metadata" style="display:block;max-width:100%;height:auto" width="528">
+<source src="../assets/2048/cnn_replay.mp4" type="video/mp4"/>
+</video>
+<p><a href="../assets/2048/cnn_replay.mp4">打开 MP4 回放</a> · <a href="../assets/2048/cnn_replay_final.png">查看合出 2048 时的棋盘</a></p>
 <h2 id="_7">在本地运行<a class="headerlink" href="#_7" title="Permanent link">#</a></h2>
-<p>以下命令在已有项目源码目录中执行。游戏与训练依赖分开管理，训练和已训练模型播放需要 PyTorch；本项目验证使用的是 Windows CPU 环境。</p>
+<p>以下命令在已有项目源码目录中执行。游戏与训练依赖分开管理，训练和已训练模型播放需要 PyTorch；前三轮在 Windows CPU 环境运行，第四轮的 CNN 训练使用 CUDA。</p>
 <div class="highlight"><pre><span></span><code><span class="c"># 真人游玩</span>
 <span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">rl2048</span>
 
@@ -1522,9 +1616,10 @@
 <span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">rl2048</span><span class="p">.</span><span class="n">train_afterstate</span> <span class="p">-</span><span class="n">-kind</span> <span class="n">ntuple</span> <span class="p">-</span><span class="n">-output</span> <span class="n">runs</span><span class="p">/</span><span class="n">ntuple_new</span> <span class="p">-</span><span class="n">-steps</span> <span class="n">3000000</span>
 </code></pre></div>
 <p>方向键或 WASD 移动，R 重新开局，Tab 在真人与 AI 间切换；AI 模式下可用空格暂停、N 单步、加减号调整速度。</p>
-<p>这篇页面展示项目过程与保存的结果，本地 Pygame 游戏和训练程序仍在电脑上运行，网页没有执行模型训练或提供在线模型试玩。</p>
+<p>这篇页面展示项目过程与保存的结果，本地 Pygame 游戏和训练程序仍在电脑上运行，网页提供录制好的模型回放。</p>
 <h2 id="_8">实验资料<a class="headerlink" href="#_8" title="Permanent link">#</a></h2>
 <ul>
+<li><a href="../assets/2048/cnn-report/">第四轮完整实验报告</a>：逐模型结果与测试口径。</li>
 <li><a href="../assets/2048/afterstate-report/">第三轮完整实验报告</a>：逐模型结果、训练预算与评估口径。</li>
 <li><a href="../assets/2048/afterstate_results.png">查看原始训练曲线大图</a>。</li>
 </ul>
