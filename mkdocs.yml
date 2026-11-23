@@ -55,6 +55,7 @@ nav:
       - lab 3: projects/course/updated_lab3.ipynb
   - Articles:
     - articles/index.md
+    - 商品期货回测笔记: articles/commodity-futures-research.md
     - Paper:
       - EMNLP 2024: articles/paper/paper_emoji.md
     - Functions:
