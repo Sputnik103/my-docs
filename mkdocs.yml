@@ -61,6 +61,8 @@ nav:
       - 网易云音乐列表: articles/functions/music.md
     - 金融衍生品:
       - Dispersion 策略: articles/finance/dispersion.md
+    - 事件驱动:
+      - 并购套利: articles/finance/merger-arbitrage.md
     - Stats:
       - 有趣的小问题: articles/stats/question1.md
     # - Python
