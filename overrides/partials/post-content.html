@@ -9,7 +9,9 @@
 
 <hr class="screen-only">
 
-{% include "partials/post-toc.html" %}
+{% if not (page.meta and page.meta.hide and "toc" in page.meta.hide) %}
+    {% include "partials/post-toc.html" %}
+{% endif %}
 
 {# show the children pages if no content #}
 {% if page.markdown == '' and page.parent.children %}

@@ -55,20 +55,17 @@ nav:
       - lab 3: projects/course/updated_lab3.ipynb
   - Articles:
     - articles/index.md
-    - 商品期货回测笔记: articles/commodity-futures-research.md
-    - Paper:
-      - EMNLP 2024: articles/paper/paper_emoji.md
-    - Functions:
-      - 网易云音乐列表: articles/functions/music.md
-    - 金融衍生品:
+    - 量化策略与研究:
+      - 商品期货回测笔记: articles/commodity-futures-research.md
       - Dispersion 策略: articles/finance/dispersion.md
-    - 事件驱动:
       - 并购套利: articles/finance/merger-arbitrage.md
-    - Stats:
+    - 学术论文:
+      - EMNLP 2024: articles/paper/paper_emoji.md
+    - 统计学:
       - 有趣的小问题: articles/stats/question1.md
-    # - Python
-    - Markdown:
-      - Markdown常用格式: articles/markdown/markdown_template.md
+    - 工具与笔记:
+      - 网易云音乐列表: articles/functions/music.md
+      - Markdown 常用格式: articles/markdown/markdown_template.md
   - Tags: tags.md
 
 #
