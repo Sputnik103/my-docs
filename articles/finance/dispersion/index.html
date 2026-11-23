@@ -1,0 +1,1668 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Interesting little things in my life and learning process." name="description"/>
+<meta content="Zhang Zhou(jason_zhang_03@icloud.com)" name="author"/>
+<link href="https://zhangzhou.site/articles/finance/dispersion/" rel="canonical"/>
+<link href="../../functions/music/" rel="prev"/>
+<link href="../../stats/question1/" rel="next"/>
+<link href="/assets/favicon3.png" rel="icon"/>
+<meta content="mkdocs-1.5.0, mkdocs-material-9.1.20" name="generator"/>
+<title>Dispersion 策略的数学原理 - Zhang Zhou's website</title>
+<link href="../../../assets/stylesheets/main.eebd395e.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ecc896b0.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
+<link href="/assets/extra.css" rel="stylesheet"/>
+<link href="/assets/custom-image-grid.css" rel="stylesheet"/>
+<link href="/assets/image_video.css" rel="stylesheet"/>
+<link href="/assets/journal.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-MKM2NTMFNW"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-MKM2NTMFNW",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-MKM2NTMFNW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+<script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="Dispersion 策略的数学原理 - Zhang Zhou's website" property="og:title"/>
+<meta content=" - Interesting little things in my life and learning process." property="og:description"/>
+<meta content="https://zhangzhou.site/articles/finance/dispersion/" property="og:url"/>
+<meta content="https://zhangzhou.site/assets/banner.jpg" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Cards -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Dispersion 策略的数学原理 - Zhang Zhou's website" name="twitter:title"/>
+<meta content=" - Interesting little things in my life and learning process." name="twitter:description"/>
+<meta content="https://zhangzhou.site/assets/banner.jpg" name="twitter:image"/>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="deep-orange" data-md-color-primary="white" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#dispersion">
+          跳转至
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="" class="md-header__inner md-grid">
+<a aria-label="Zhang Zhou's website" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Zhang Zhou's website">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<span aria-hidden="true" class="journal-monogram">Z.</span>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Zhang Zhou's website
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Dispersion 策略的数学原理
+            
+          </span>
+</div>
+<style>
+                .md-header__nav {
+                    float: right;
+                }
+                .md-header__nav__inner:not([hidden]) {
+                    display: flex;
+                }
+            </style>
+<div class="md-header__nav">
+<nav class="md-header__nav__inner">
+<a aria-label="上一页: 网易云音乐列表" href="../../functions/music/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+</a>
+<a aria-label="下一页: 有趣的小问题" href="../../stats/question1/" rel="next">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="搜索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="搜索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="查找" class="md-search__options">
+<a aria-label="分享" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="分享">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="清空当前内容" class="md-search__icon md-icon" tabindex="-1" title="清空当前内容" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="标签" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../about/">
+      About
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../blog/">
+        Blog
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../projects/">
+        Projects
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../">
+        Articles
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../tags/">
+      Tags
+    </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Zhang Zhou's website" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Zhang Zhou's website">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<span aria-hidden="true" class="journal-monogram">Z.</span>
+</a>
+    Zhang Zhou's website
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../about/">
+        About
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../blog/">Blog</a>
+<label for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Blog" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2">
+          バイト（打工）
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="バイト（打工）" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          バイト（打工）
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/intern/consulting/">
+        咨询实习
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/intern/internet/">
+        互联网实习
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/intern/finance/">
+        金融实习
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          旅行
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="旅行" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          旅行
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" id="__nav_3_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1">
+          2025
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="2025" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_1">
+<span class="md-nav__icon md-icon"></span>
+          2025
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/travel/japan_central_2025/">
+        日本中部行（和王老师）
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_2" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2">
+          2024
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="2024" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
+<span class="md-nav__icon md-icon"></span>
+          2024
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/travel/macau_2024/">
+        澳门新年行（和高中同学）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/travel/xiamen_travel/">
+        元旦厦门行
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/travel/guangzhou_travel/">
+        广州行+Eason演唱会
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_3" id="__nav_3_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_3">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="2023" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_3">
+<span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/travel/travel_after_covid/">
+        解封后旅行（回忆版）
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" id="__nav_3_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../blog/jiujitsu/">柔术小记</a>
+<label for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="柔术小记" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+          柔术小记
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_2" id="__nav_3_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_2">
+          入门12课
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="入门12课" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_2">
+<span class="md-nav__icon md-icon"></span>
+          入门12课
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/jiujitsu/rumen12/sanbanfu/">
+        三板斧
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/jiujitsu/rumen12/trio/">
+        三重奏
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_3" id="__nav_3_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_3">
+          半防下位
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="半防下位" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_3">
+<span class="md-nav__icon md-icon"></span>
+          半防下位
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/jiujitsu/banfangxiawei/2024-03-03/">
+        2024/03/03
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5">
+          杂项
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="杂项" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+          杂项
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_1" id="__nav_3_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_1">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="2023" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_1">
+<span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/other/graduation/">
+        毕业
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" id="__nav_3_6" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../blog/watch/">有趣的视频记录</a>
+<label for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="有趣的视频记录" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+          有趣的视频记录
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6_2" id="__nav_3_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6_2">
+          科技类
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="科技类" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_6_2">
+<span class="md-nav__icon md-icon"></span>
+          科技类
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/watch/tech/laoshi_anker/">
+        老石谈芯对谈anker CEO阳萌
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../projects/">Projects</a>
+<label for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Projects" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../projects/2048/">
+        2048 强化学习实验
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../projects/riichi-ai/">
+        日麻 AI 探索
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../projects/spider/">
+        Selenium爬虫应用实例
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../projects/course/">程序设计与数据可视化课程</a>
+<label for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="程序设计与数据可视化课程" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          程序设计与数据可视化课程
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../projects/course/lab1%E8%AF%BE%E5%A0%82%E6%BC%94%E7%A4%BA/">
+        lab 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../projects/course/lab2%20%28final%29/">
+        lab 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../projects/course/updated_lab3/">
+        lab 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../">Articles</a>
+<label for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Articles" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Articles
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_2">
+          Paper
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Paper" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Paper
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../paper/paper_emoji/">
+        EMNLP 2024
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3">
+          Functions
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Functions" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Functions
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../functions/music/">
+        网易云音乐列表
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_4">
+          金融衍生品
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="金融衍生品" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          金融衍生品
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" onchange='(function(){
+          var _pid = "__nav_5_4_1".slice(0, -2);
+          var _pel = document.getElementById(_pid);
+          _pel.checked  = false;
+        })()' type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Dispersion 策略
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Dispersion 策略
+      </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    方差互换如何构建
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    为什么多单股、空指数是在做空相关性
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gammavega-theta">
+    Gamma、vega 和 theta 中性如何配权
+  </a>
+<nav aria-label="Gamma、vega 和 theta 中性如何配权" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    三种中性的关系
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    用方差名义表示三种配权
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    数字例子
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    参考资料
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_5">
+          Stats
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Stats" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Stats
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stats/question1/">
+        有趣的小问题
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_6">
+          Markdown
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Markdown" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Markdown
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../markdown/markdown_template/">
+        Markdown常用格式
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../tags/">
+        Tags
+      </a>
+</li>
+</ul>
+</nav>
+<br/>
+<br/>
+<div class="tag-cloud-nav">
+<style>
+    .tag-cloud {
+        margin-top:0;
+        margin-bottom: 0.5em;
+    }
+    .tag-cloud-content {
+        padding: 0 0.6rem;
+        
+    }
+</style>
+<p class="md-nav tag-cloud">
+<label class="md-nav__title">Tag cloud</label>
+</p>
+<div class="tag-cloud-content">
+<a class="tag" href="https://zhangzhou.site//tags/#量化金融">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGoldenrod;
+                ">量化金融 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#衍生品">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGreen;
+                ">衍生品 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#功能">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkOliveGreen;
+                ">功能 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#音乐">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.6rem;
+                    
+                    color:DarkCyan;
+                ">音乐 
+                </span>
+<!--<sup class="tag-count">2</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#Markdown">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkTurquoise;
+                ">Markdown 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#Memo">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkBlue;
+                ">Memo 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#EMNLP">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkMagenta;
+                ">EMNLP 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#paper">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkViolet;
+                ">paper 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#统计学">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkSlateBlue;
+                ">统计学 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#随机过程">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkOrchid;
+                ">随机过程 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#咨询">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkSlateGray;
+                ">咨询 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#实习">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.65rem;
+                    
+                    color:DarkRed;
+                ">实习 
+                </span>
+<!--<sup class="tag-count">3</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#量化">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGoldenrod;
+                ">量化 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#互联网">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGreen;
+                ">互联网 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#柔术">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.65rem;
+                    
+                    color:DarkOliveGreen;
+                ">柔术 
+                </span>
+<!--<sup class="tag-count">3</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#半防下位">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkCyan;
+                ">半防下位 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#封闭式防守">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.65rem;
+                    
+                    color:DarkTurquoise;
+                ">封闭式防守 
+                </span>
+<!--<sup class="tag-count">3</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#入门十二课">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.6rem;
+                    
+                    color:DarkBlue;
+                ">入门十二课 
+                </span>
+<!--<sup class="tag-count">2</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#毕业">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkMagenta;
+                ">毕业 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#复旦大学">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkViolet;
+                ">复旦大学 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#旅行">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.75rem;
+                    
+                    color:DarkSlateBlue;
+                ">旅行 
+                </span>
+<!--<sup class="tag-count">5</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#广州">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkOrchid;
+                ">广州 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#陈奕迅">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkSlateGray;
+                ">陈奕迅 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#日本">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkRed;
+                ">日本 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#澳门">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGoldenrod;
+                ">澳门 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#Covid">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGreen;
+                ">Covid 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#厦门">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkOliveGreen;
+                ">厦门 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#泉州">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkCyan;
+                ">泉州 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#看视频">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkTurquoise;
+                ">看视频 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#科技">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkBlue;
+                ">科技 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#Python">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.6rem;
+                    
+                    color:DarkMagenta;
+                ">Python 
+                </span>
+<!--<sup class="tag-count">2</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#强化学习">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkViolet;
+                ">强化学习 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#2048">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkSlateBlue;
+                ">2048 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#日麻">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkOrchid;
+                ">日麻 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#AI">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkSlateGray;
+                ">AI 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#工具实践">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkRed;
+                ">工具实践 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+<a class="tag" href="https://zhangzhou.site//tags/#爬虫">
+<span class="tag-name" style="
+                    
+                        
+                    
+                        font-size:0.55rem;
+                    
+                    color:DarkGoldenrod;
+                ">爬虫 
+                </span>
+<!--<sup class="tag-count">1</sup>-->
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    方差互换如何构建
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    为什么多单股、空指数是在做空相关性
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gammavega-theta">
+    Gamma、vega 和 theta 中性如何配权
+  </a>
+<nav aria-label="Gamma、vega 和 theta 中性如何配权" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    三种中性的关系
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    用方差名义表示三种配权
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    数字例子
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    参考资料
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<style>
+    .md-typeset .cover {
+        margin-bottom: 1em;
+    }
+    .md-typeset .page-category {
+        color: gray;
+        font-size: large;
+    }
+    .md-typeset .page-title {
+        margin-left: -0.0625em;
+    }
+    .md-typeset .page-extra {
+        color: gray;
+        font-size: small;
+    }
+    .md-typeset .page-tags {
+        margin: 0;
+    }
+    .md-typeset .page-date {
+        margin: 0;
+        text-align: end;
+    }
+    @media print {
+        .md-typeset .cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .md-typeset .cover + * {
+            margin-top: 0;
+        }
+    }
+</style>
+<div class="cover">
+<h1 class="page-title"> Dispersion 策略的数学原理 </h1>
+<div class="page-extra row">
+<div class="col">
+<p class="page-tags">
+<a class="tag" href="https://zhangzhou.site/tags/#量化金融">
+<span class="tag-name">
+                                #量化金融  
+                            </span>
+</a>
+<a class="tag" href="https://zhangzhou.site/tags/#衍生品">
+<span class="tag-name">
+                                #衍生品  
+                            </span>
+</a>
+</p>
+</div>
+<div class="col">
+<p class="page-date">
+<span>
+                    
+                        最后更新:
+                        2026-11-23
+                    
+                    
+                        <br/>
+                        创建日期:
+                        2026-11-23
+                    
+                    </span>
+</p>
+</div>
+</div>
+</div>
+<hr class="screen-only"/>
+<style>
+    .md-typeset .toc {
+        display: none;
+    }
+    .md-typeset .toc label {
+        display: none;
+    }
+    .md-typeset .toc .md-nav {
+        font-size: unset;
+        line-height: 1.6;
+    }
+    .md-typeset .toc .md-nav--secondary {
+        margin-left: -2em;
+    }
+    .md-typeset .toc .md-nav__list {
+        margin: 0;
+    }
+    .md-typeset .toc ul {
+        list-style: none;
+    }
+    @media print {
+        .md-typeset .toc {
+            display: block;
+            page-break-after: always;
+        }
+        .md-typeset .toc .md-nav__link {
+            color: var(--md-typeset-a-color);
+        }
+        .md-typeset .toc .md-nav__link.md-nav__link--active {
+            font-weight: unset;
+        }
+        .md-typeset .toc + * {
+            margin-top: 0;
+        }
+    }
+</style>
+<div class="toc">
+<h2>Table of Content</h2>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    方差互换如何构建
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    为什么多单股、空指数是在做空相关性
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gammavega-theta">
+    Gamma、vega 和 theta 中性如何配权
+  </a>
+<nav aria-label="Gamma、vega 和 theta 中性如何配权" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    三种中性的关系
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    用方差名义表示三种配权
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    数字例子
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    参考资料
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+<h1 id="dispersion">Dispersion 策略的数学原理：从方差互换到中性权重<a class="headerlink" href="#dispersion" title="Permanent link">#</a></h1>
+<p><strong>做多成分股方差、做空指数方差，通常带来负的相关性敞口。</strong> 指数方差包含成分股自身的方差，也包含股票两两之间的协方差。按指数权重的平方配置个股方差腿，可以消去前一部分。Gamma、vega 和 theta 中性回答的是另外三个问题：组合对共同的现货波动、隐含波动率变动以及时间流逝各有多敏感。它们一般给出不同的头寸。</p>
+<h2 id="_1">方差互换如何构建<a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
+<p>设到期时间为 <span class="arithmatex">\(T\)</span> 年，有 <span class="arithmatex">\(m\)</span> 个观察区间。以一致的价格调整和观察时点计算对数收益，简化的离散实现方差为</p>
+<div class="arithmatex">\[
+RV=\frac{1}{T}\sum_{k=1}^m \left(\log\frac{S_k}{S_{k-1}}\right)^2.
+\]</div>
+<p>等间隔日频合约常用 <span class="arithmatex">\(252/m\)</span> 替代 <span class="arithmatex">\(1/T\)</span>。多头到期收取 <span class="arithmatex">\(N_{\rm var}(RV-K_{\rm var})\)</span>，其中 <span class="arithmatex">\(K_{\rm var}\)</span> 是<strong>方差</strong>执行价。如果市场报价是波动率 <span class="arithmatex">\(K_{\rm vol}\)</span>，则 <span class="arithmatex">\(K_{\rm var}=K_{\rm vol}^2\)</span>。用小数波动率时，执行价附近每一个波动率点对应的金额约为 <span class="arithmatex">\(0.01\times 2N_{\rm var}K_{\rm vol}\)</span>。这解释了为何必须先把不同报价单位转换成同一方差名义再比较头寸。</p>
+<p>在连续路径、连续观察、确定性的利率及连续股息率假设下，令 <span class="arithmatex">\(F_t\)</span> 为同一期限的远期价格。Itô 公式给出</p>
+<div class="arithmatex">\[
+[\log S]_T=2\int_0^T\frac{dF_t}{F_t}-2\log(F_T/F_0).
+\]</div>
+<p>第一项由动态远期交易构建，第二项是到期对数合约，可由现金、远期及一整条虚值期权带静态复制。因为 <span class="arithmatex">\(-2\log(s/F_0)\)</span> 对 <span class="arithmatex">\(s\)</span> 的二阶导数为 <span class="arithmatex">\(2/s^2\)</span>，执行价 <span class="arithmatex">\(K\)</span> 附近的期权权重与 <span class="arithmatex">\(2\,dK/K^2\)</span> 成正比。若 <span class="arithmatex">\(P(K),C(K)\)</span> 是同一到期日的贴现期权价格，<span class="arithmatex">\(D(0,T)\)</span> 是贴现因子，则理论公平执行价为</p>
+<div class="arithmatex">\[
+K_{\rm var}=\frac{2}{T D(0,T)}
+\left[\int_0^{F_0}\frac{P(K)}{K^2}dK+
+\int_{F_0}^{\infty}\frac{C(K)}{K^2}dK\right].
+\]</div>
+<p>实际执行用离散行权价、有限尾部和离散再平衡。跳跃也会破坏路径复制等式。例如对数跳幅为 <span class="arithmatex">\(x\)</span> 时，动态远期加对数合约在该跳点贡献 <span class="arithmatex">\(2(e^x-1-x)\)</span>，而标准实现方差贡献 <span class="arithmatex">\(x^2\)</span>。个股财报跳空、期权流动性和合约方差上限都会影响两腿的实际匹配。</p>
+<h2 id="_2">为什么多单股、空指数是在做空相关性<a class="headerlink" href="#_2" title="Permanent link">#</a></h2>
+<p>设 <span class="arithmatex">\(w_i\)</span> 为成分股权重，<span class="arithmatex">\(\sigma_i\)</span> 是同一口径下的波动率，<span class="arithmatex">\(\rho_{ij}\)</span> 是收益相关系数。固定权重下，指数方差满足</p>
+<div class="arithmatex">\[
+\sigma_I^2=\sum_i w_i^2\sigma_i^2+2\sum_{i&lt;j}w_iw_j\sigma_i\sigma_j\rho_{ij}.
+\]</div>
+<p>在连续时间的指数二次变差中，对应关系逐时成立，使用当时的指数权重。以下为便于推导，假定权重固定、所有成分股均可交易。将指数空头方差名义归一为 1，单股多头方差名义设为 <span class="arithmatex">\(a_i\)</span>。组合损益为</p>
+<div class="arithmatex">\[
+\Pi=\sum_i(a_i-w_i^2)(RV_i-K_i)
+ -2\sum_{i&lt;j}w_iw_j\,{\rm Cov}^{R}_{ij}
+ +K_I-\sum_iw_i^2K_i,
+\]</div>
+<p>其中 <span class="arithmatex">\(K_i,K_I\)</span> 都是方差执行价，<span class="arithmatex">\({\rm Cov}^{R}_{ij}\)</span> 为同窗口年化实现协方差。取 <span class="arithmatex">\(a_i=w_i^2\)</span> 后，单股实现方差的对角项消去。对给定的单股实现波动率，任意一对成分股相关性的边际敞口为 <span class="arithmatex">\(-2w_iw_j\sigma_i^R\sigma_j^R\)</span>。</p>
+<p>令 <span class="arithmatex">\(B(v)=2\sum_{i&lt;j}w_iw_jv_iv_j\)</span>，用 <span class="arithmatex">\(v_i=\sqrt{K_i}\)</span> 定义执行价隐含的等效相关性</p>
+<div class="arithmatex">\[
+\rho_{\rm imp}=\frac{K_I-\sum_iw_i^2K_i}{B(\sqrt K)}.
+\]</div>
+<p>同样令 <span class="arithmatex">\(\rho_R=2\sum_{i&lt;j}w_iw_j{\rm Cov}_{ij}^{R}/B(\sigma^R)\)</span>。当分母为正时，平方权重组合损益可写成</p>
+<div class="arithmatex">\[
+\Pi=B(\sqrt K)\rho_{\rm imp}-B(\sigma^R)\rho_R.
+\]</div>
+<p>当实现与隐含的波动率乘积接近时，盈利主要来自实现相关性低于隐含相关性。一般情况下，两个 <span class="arithmatex">\(B\)</span> 不同，所以组合也暴露于波动率水平。隐含指标是从方差执行价反推的等效参数，对不同单股对的权重与其波动率乘积有关。实际指数调仓、权重漂移、抽样成分股和离散对数收益也会留下残余敞口。</p>
+<h2 id="gammavega-theta">Gamma、vega 和 theta 中性如何配权<a class="headerlink" href="#gammavega-theta" title="Permanent link">#</a></h2>
+<p>以下用同一币种、同一时点、同一 Greeks 单位计算。设 <span class="arithmatex">\(q_i\ge0\)</span> 是个股期权腿的合约数，空 1 份指数期权腿，各腿的乘数已计入 Greeks。分别记 <span class="arithmatex">\(G_j=S_j^2\Gamma_j\)</span>、<span class="arithmatex">\(V_j=\partial P_j/\partial \sigma_j\)</span>、<span class="arithmatex">\(\Theta_j=\partial P_j/\partial t\)</span>，其中 <span class="arithmatex">\(t\)</span> 是流逝的日历时间。Gamma 使用百分比收益对应的现金 gamma，二阶损益是 <span class="arithmatex">\(\tfrac12 G_j(\Delta S_j/S_j)^2\)</span>。</p>
+<p>先选非负的个股分配比例 <span class="arithmatex">\(p_i\)</span>（例如目标名义或流动性约束给出的比例），再令 <span class="arithmatex">\(q_i=c p_i\)</span>。对任意一个目标 <span class="arithmatex">\(X\)</span>，只要分母非零且所得比例符合多空约束，就可取</p>
+<div class="arithmatex">\[
+ c_X=\frac{X_I}{\sum_i p_iX_i}.
+\]</div>
+<p>也可以先规定每只股票承担目标 Greek 的份额 <span class="arithmatex">\(b_i\)</span>，其中 <span class="arithmatex">\(b_i\ge0, \sum_i b_i=1\)</span>，再直接求 <span class="arithmatex">\(q_i=b_iX_I/X_i\)</span>。两种方法分别固定合约数比例和风险贡献比例。若固定指数腿后只剩一个篮子缩放系数，通常只能精确中和一个独立约束。</p>
+<table>
+<thead>
+<tr>
+<th>中性目标</th>
+<th>等式</th>
+<th>对应的情景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cash gamma 中性</td>
+<td><span class="arithmatex">\(\sum_i q_iG_i=G_I\)</span></td>
+<td>所有成分股与指数同步发生同样幅度的百分比变动时，二阶损益抵消</td>
+</tr>
+<tr>
+<td>Vega 中性</td>
+<td><span class="arithmatex">\(\sum_i q_iV_i=V_I\)</span></td>
+<td>单股和指数隐波同时变动相同绝对点数时，一阶重估抵消</td>
+</tr>
+<tr>
+<td>Theta 中性</td>
+<td><span class="arithmatex">\(\sum_i q_i\Theta_i=\Theta_I\)</span></td>
+<td>现货与采用的隐波标记固定时，瞬时的日历时间损益抵消</td>
+</tr>
+</tbody>
+</table>
+<p>从成分股收益向量 <span class="arithmatex">\(r\)</span> 看，指数收益近似为 <span class="arithmatex">\(w^\top r\)</span>，因此组合的局部二阶损益为</p>
+<div class="arithmatex">\[
+\tfrac12 r^\top\left[\operatorname{diag}(q_iG_i)-G_Iww^\top\right]r.
+\]</div>
+<p>取 <span class="arithmatex">\(q_iG_i=G_Iw_i^2\)</span> 可以消掉矩阵的对角项，同时保留 <span class="arithmatex">\(-G_Iw_iw_j\)</span> 的非对角项。共同冲击 gamma 中性只要求该二次型在所有成分股同涨同跌的方向上为零。两个目标的差异，正是平方权重和 cash gamma 中性权重通常不同的原因。</p>
+<p>若用同一市场因子做 gamma 对冲，令个股收益近似为 <span class="arithmatex">\(\beta_i\Delta S_I/S_I\)</span>，则用 <span class="arithmatex">\(\sum_i q_iG_i\beta_i^2=G_I\)</span>。若对冲的是隐波因子，且个股隐波对该因子的载荷为 <span class="arithmatex">\(h_i\)</span>、指数载荷为 <span class="arithmatex">\(h_I\)</span>，则用 <span class="arithmatex">\(\sum_i q_iV_i h_i=V_I h_I\)</span>。相对百分比隐波冲击相当于使用 <span class="arithmatex">\(h_j=\sigma_j\)</span>。上述约束是指定情景下的组合中性，单股和指数的 delta 仍须分别管理。</p>
+<h3 id="_3">三种中性的关系<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<p>在 Black–Scholes、利率和股息率均为零、各腿按自身隐波标记时，令 <span class="arithmatex">\(\tau_j\)</span> 为剩余期限。对单一期权，或同标的、同期限、同一波动率参数下的一组期权，</p>
+<div class="arithmatex">\[
+V_j=\tau_j\sigma_jG_j,\qquad
+\Theta_j=-\tfrac12\sigma_j^2G_j.
+\]</div>
+<p>第一式由 vega 和 gamma 公式中的同一个 <span class="arithmatex">\(d_1\)</span> 密度项相消得到。第二式来自 Black–Scholes PDE。利率和股息率非零时，日历 theta 还包括融资和股息项 <span class="arithmatex">\(r_jP_j-(r_j-d_j)S_j\Delta_j\)</span>，其中 <span class="arithmatex">\(d_j\)</span> 是股息率。有 skew 时应逐行权价计算，再按组合头寸加总。</p>
+<p>因此，在零利率、零股息的同期限模型下，gamma、vega、theta 分别在匹配 <span class="arithmatex">\(G\)</span>、<span class="arithmatex">\(\sigma G\)</span>、<span class="arithmatex">\(\sigma^2G\)</span>。共同期限且所有腿隐波相同，则三条约束成比例。若隐波不同，三者一般分离。进一步，若所有单股腿都是正 gamma，要求三者同时为零，则以 <span class="arithmatex">\(q_iG_i/G_I\)</span> 为概率权重时，单股隐波的一阶矩必须为 <span class="arithmatex">\(\sigma_I\)</span>，二阶矩必须为 <span class="arithmatex">\(\sigma_I^2\)</span>。这意味着该加权分布的方差为零，所有持有正 gamma 的个股隐波都必须与指数隐波相同。多个可调头寸时，可解线性方程或在非负及仓位限制下最小化标准化的残余 Greeks。是否存在精确解取决于风险向量的张成空间及多空约束。</p>
+<h3 id="_4">用方差名义表示三种配权<a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
+<p>对同一总期限、同一剩余期限的理想方差互换，用平坦隐含方差曲线、忽略贴现和远期方差期限结构的简化标记。若已实现部分按总期限归一后为 <span class="arithmatex">\(A_t\)</span>，总期限为 <span class="arithmatex">\(T\)</span>，则</p>
+<div class="arithmatex">\[
+M_t=N_{\rm var}\left[A_t+\frac{\tau}{T}\sigma^2-K_{\rm var}\right].
+\]</div>
+<p>单位方差名义的平行 vol vega 为 <span class="arithmatex">\(2(\tau/T)\sigma\)</span>，冻结实现项和隐波的日历 theta 为 <span class="arithmatex">\(-\sigma^2/T\)</span>。在连续复制下，现金 gamma 对新实现方差的系数是 <span class="arithmatex">\(2/T\)</span>，因为 <span class="arithmatex">\(\tfrac12 G\,d[\log S]=d[\log S]/T\)</span>。于是，指数空头方差名义取 1 时，有三种匹配条件：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\sum_i a_i &amp;= 1 &amp;&amp; \text{（gamma 中性）}\\
+\sum_i a_i\sigma_i &amp;= \sigma_I &amp;&amp; \text{（vega 中性）}\\
+\sum_i a_i\sigma_i^2 &amp;= \sigma_I^2 &amp;&amp; \text{（theta 中性）}
+\end{aligned}
+\]</div>
+<p>这里 gamma 指复制组合对新实现变差的损益敞口。Theta 定义中冻结已实现部分，所以发生真实收益变动时，新增实现方差需另计。当初始隐波来自各腿的同期限公平执行价时，theta 中性也让初始组合的固定支付 <span class="arithmatex">\(\sum_i a_i K_i-K_I\)</span> 为零。期限、观察口径、曲面或市场冲击定义改变时，应使用各腿实际的风险量。</p>
+<h2 id="_5">数字例子<a class="headerlink" href="#_5" title="Permanent link">#</a></h2>
+<p>两只股票指数权重各 50%，单股隐波为 30% 和 40%，指数隐波为 25%。隐含等效相关性为 <span class="arithmatex">\((0.25^2-0.25(0.30^2+0.40^2))/(2\times0.5\times0.5\times0.30\times0.40)=0\)</span>。各单股使用相同方差名义 <span class="arithmatex">\(a\)</span>，指数空 1 单位。按上面的同期限方差互换假设计算：</p>
+<table>
+<thead>
+<tr>
+<th>目标</th>
+<th style="text-align: right;">每只股票方差名义 <span class="arithmatex">\(a\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>消掉自身实现方差的对角项</td>
+<td style="text-align: right;">0.2500</td>
+</tr>
+<tr>
+<td>共同冲击 cash gamma 中性</td>
+<td style="text-align: right;">0.5000</td>
+</tr>
+<tr>
+<td>平行绝对波动率变动 vega 中性</td>
+<td style="text-align: right;">0.3571</td>
+</tr>
+<tr>
+<td>Theta 中性</td>
+<td style="text-align: right;">0.2500</td>
+</tr>
+</tbody>
+</table>
+<p>本例 theta 与平方权重恰好重合，因为隐含等效相关性为零。若指数隐波改为 27%，隐含等效相关性约为 17.33%，每只个股的 theta 中性名义变为 0.2916，平方权重仍为 0.25。此时若选 theta 中性头寸，两只股票的自身实现方差都有额外的正敞口。比较不同配置的经济含义时，可先报告协方差敞口，再列出各头寸带来的单股残余和情景 Greeks。</p>
+<h2 id="_6">参考资料<a class="headerlink" href="#_6" title="Permanent link">#</a></h2>
+<ul>
+<li>Demeterfi、Derman、Kamal 和 Zou，《More Than You Ever Wanted to Know About Volatility Swaps》。<a href="https://emanuelderman.com/more-than-you-ever-wanted-to-know-about-volatility-swaps/">论文</a></li>
+<li>Jacquier 和 Slaoui，《Variance Dispersion and Correlation Swaps》。<a href="https://arxiv.org/abs/1004.0125">arXiv</a></li>
+</ul>
+<h2 id="__comments">评论</h2>
+<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOJ71KPs4CYpHp" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Sputnik103/my-docs" data-repo-id="R_kgDOJ71KPg" data-strict="0" data-theme="light" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      if (!ref) return;
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          if (!frame) return;
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            回到页面顶部
+          </button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2023-2023 Zhang Zhou's website<br/> <a href="https://github.com/Sputnik103/my-docs">Blog Theme</a> / <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
+</div>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/Sputnik103" rel="noopener" target="_blank" title="GitHub | Sputnik103">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://space.bilibili.com/13132391" rel="noopener" target="_blank" title="BiliBili | Jason_ZZ">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" id="__settings" type="checkbox"/>
+<div class="md-consent__settings">
+<ul class="task-list">
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="analytics" type="checkbox"/>
+<span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+</li>
+</ul>
+</div>
+<div class="md-consent__controls">
+<button class="md-button md-button--primary">同意</button>
+<label class="md-button" for="__settings">管理设定</label>
+</div>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+<script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+<script src="/assets/journal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
