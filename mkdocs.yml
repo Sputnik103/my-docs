@@ -59,6 +59,8 @@ nav:
       - EMNLP 2024: articles/paper/paper_emoji.md
     - Functions:
       - 网易云音乐列表: articles/functions/music.md
+    - 金融衍生品:
+      - Dispersion 策略: articles/finance/dispersion.md
     - Stats:
       - 有趣的小问题: articles/stats/question1.md
     # - Python
